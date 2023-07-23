@@ -2,7 +2,7 @@
 👀 I’m interested in collaboration, learning and technology
 
 
-To give you a bit of perspective.
+▶️ To give you a bit of perspective. 💼 LinkedIn [engr-farhan](https://www.linkedin.com/in/engr-farhan/)
 -  Over a decade, I have spent thousands of man hours in managing operarions & delivery plannig fo mission crtical process/product
 -   developing & industrial graded systems
 -     & realtime solution for large scale procecessing  
@@ -18,6 +18,6 @@ To give you a bit of perspective.
 ## 
 ![sie](https://github.com/intigration/intigration/assets/25178774/59c69c17-040b-494f-bfb8-9faac6c4fa07)
 
-* - 💼 LinkedIn [engr-farhan](https://www.linkedin.com/in/engr-farhan/)
+
 
 
