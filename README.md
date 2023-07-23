@@ -1,4 +1,4 @@
-### 👋 Hi, I’m Muhammad Farhan. I work for ▶️  crtical process/product
+### 👋 Hi, I’m Muhammad Farhan.  ▶️  crtical process/product
 
   ## 🤖 **A****I** Systems & **Robotics** engineer
   - An enthusiastic & passionate about purposeful and sellable technology. 
@@ -11,8 +11,7 @@
   -     **Industrial IoT Systems**
         **AI ML workflows**
 
-   
-     ## 
+   I work for ![sie](https://github.com/intigration/intigration/assets/25178774/bb7918ca-8f4f-4e1d-ad5e-fe6d8254fef4)  
 💼 Muhammad Farhan Profile [engr-farhan](https://www.linkedin.com/in/engr-farhan/)
 
 
