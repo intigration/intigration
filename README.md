@@ -1,4 +1,4 @@
-### 👋 Hi, I’m Muhammad Farhan. 
+### 👋 Hi, I’m Muhammad Farhan. I work for ▶️  crtical process/product
 
   ## 🤖 **A****I** Systems & **Robotics** engineer
   - An enthusiastic & passionate about purposeful and sellable technology. 
@@ -7,7 +7,6 @@
 
  To give you a bit of perspective. 
 -  Over a decade, I have spent thousands of man hours in managing operarions & developing & industrial graded systems
--  ▶️ delivery plannig fo mission crtical process/product
 -     & realtime solution for large scale procecessing  
   -     **Industrial IoT Systems**
         **AI ML workflows**
