@@ -1,5 +1,5 @@
-## 👋 Hi, I’m Muhammad Farhan. 
-- An enthusiastic & passionate **AI** &  🤖 **robotics** engineer
+## 👋 Hi, I’m Muhammad Farhan. 🤖 **Robotics** engineer
+- An enthusiastic & passionate about **Industrial IoT Systems & AI based Machine Learning workflows** applications.
 - 👀 I’m interested in collaboration, learning and technology
 
 * - 💼 LinkedIn [engr-farhan](https://www.linkedin.com/in/engr-farhan/)
