@@ -1,6 +1,7 @@
-### 👋 Hi, I’m Muhammad Farhan.  ▶️  crtical process/product
+## 👋 Hi, I’m Muhammad Farhan.  
+### ▶️  expertise in realtime & mission crtical product, process
 
-  ## 🤖 **A****I** Systems & **Robotics** engineer
+  ### 🤖 **A****I** Systems & **Robotics** engineer
   - An enthusiastic & passionate about purposeful and sellable technology. 
 👀 I’m interested in collaboration, learning and technology
 
