@@ -1,7 +1,9 @@
 ## 👋 Hi, I’m Muhammad Farhan.  
-### ▶️  expertise in realtime & mission crtical product, process
-
-  ### 🤖 **A****I** Systems & **Robotics** engineer
+### ▶️  System fuinctionality expertise in realtime & mission crtical process
+  ### 🤖 **AI** Systems 
+  **Robotics**
+  **Industrial AI**
+  
   - An enthusiastic & passionate about purposeful and sellable technology. 
 👀 I’m interested in collaboration, learning and technology
 
