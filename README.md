@@ -1,10 +1,10 @@
 ## 👋 Hi, I’m Muhammad Farhan. 
-An enthusiastic & passionate about making technology purposeful and sellable.  
+🗣️An enthusiastic & passionate about making technology purposeful and sellable.  
 ▶️Expertise in  Realtime mission critical systems & process (- Design - Implementation - Verification)
-  ### 🤖 **AI** Systems 
+  ###  AI & Data Intelligence Systems 
     - Industrial IoT Systems
       - AI ML workflows
-       - Robotics
+       - 🤖Robotics
        -Industrial AI   
     - 👀 I’m interested in collaboration, learning and technology
   - To give you a bit of perspective. 
