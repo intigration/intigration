@@ -1,11 +1,10 @@
-## 👋 Hi, I’m Muhammad Farhan.     
+## 👋 Hi, I’m Muhammad Farhan. An enthusiastic & passionate about making technology 🚀![image](https://github.com/intigration/intigration/assets/25178774/4afd726e-7ac7-4071-b52b-47dd2fcd231d) purposeful and sellable.  
   ### ▶️  Expertise in  Realtime mission critical systems & process (- Design - Implementation - Verification)
   ### 🤖 **AI** Systems 
     - Industrial IoT Systems
       - AI ML workflows
        - Robotics
        -Industrial AI   
-  - An enthusiastic & passionate about purposeful and making technology sellable.
     - 👀 I’m interested in collaboration, learning and technology
   - To give you a bit of perspective. 
     -  Over a decade, I have spent thousands of man hours in managing operarions & developing & industrial graded systems & realtime solution for large scale procecessing  
