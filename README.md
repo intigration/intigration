@@ -1,12 +1,12 @@
 ## 👋 Hi, I’m Muhammad Farhan. 
-I work for ![sie](https://github.com/intigration/intigration/assets/25178774/bb7918ca-8f4f-4e1d-ad5e-fe6d8254fef4) 
+  ### ▶️  Expertise in  Realtime mission critical systems & process & I work for ![sie](https://github.com/intigration/intigration/assets/25178774/bb7918ca-8f4f-4e1d-ad5e-fe6d8254fef4) as key technology expert
   ### 🤖 **AI** Systems 
     - Industrial IoT Systems
       - AI ML workflows
        - Robotics
        -Industrial AI   
 
-  ### ▶️  Expertise in  Realtime mission critical systems & process
+
  _   designing
     implmenting
     verifying
