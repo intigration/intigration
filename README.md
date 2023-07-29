@@ -8,5 +8,6 @@
     -Industrial AI & 🤖Robotics
 
 👀 I’m interested in collaboration, learning and technology, I work for ![sie](https://github.com/intigration/intigration/assets/25178774/bb7918ca-8f4f-4e1d-ad5e-fe6d8254fef4) as key technology expert. Please see some of the highlights & 
+![collective-suucess](https://github.com/intigration/intigration/assets/25178774/e5aaf20b-1204-4619-8086-5cf8b2b2c93f)
 
 🤝[Let's get connect at linkedIn](https://www.linkedin.com/in/engr-farhan/)
