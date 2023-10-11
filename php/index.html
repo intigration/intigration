@@ -1,0 +1,1426 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-php">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-php">
+	<div class="grid-inner">
+		<h1>
+			
+				PHP
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<h2 id="performance" class="anchor-heading">Performance <a class="subhead-anchor" href="#performance"><span>#performance</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+
+<p>Writing performant code is absolutely critical, especially at the enterprise level. There are a number of strategies and best practices we must employ to ensure our code is optimized for high-traffic situations.</p>
+
+<h3 id="efficient-database-queries">Efficient Database Queries</h3>
+
+<p>When querying the database in WordPress, you should generally use a <a href="https://developer.wordpress.org/reference/classes/wp_query/"><code class="language-plaintext highlighter-rouge">WP_Query</code></a> object. <code class="language-plaintext highlighter-rouge">WP_Query</code> objects take a number of useful arguments and do things behind-the-scenes that other database access methods such as <a href="https://developer.wordpress.org/reference/functions/get_posts/"><code class="language-plaintext highlighter-rouge">get_posts()</code></a> do not.</p>
+
+<p>Here are a few key points:</p>
+
+<ul>
+  <li>
+    <p>Only run the queries that you need.</p>
+
+    <p>A new <code class="language-plaintext highlighter-rouge">WP_Query</code> object runs five queries by default, including calculating pagination and priming the term and meta caches. Each of the following arguments will remove a query:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">'no_found_rows' =&gt; true</code>: useful when pagination is not needed.</li>
+      <li><code class="language-plaintext highlighter-rouge">'update_post_meta_cache' =&gt; false</code>: useful when post meta will not be utilized.</li>
+      <li><code class="language-plaintext highlighter-rouge">'update_post_term_cache' =&gt; false</code>: useful when taxonomy terms will not be utilized.</li>
+      <li><code class="language-plaintext highlighter-rouge">'fields' =&gt; 'ids'</code>: useful when only the post IDs are needed (less typical).</li>
+    </ul>
+  </li>
+  <li>
+    <p>Do not use <code class="language-plaintext highlighter-rouge">posts_per_page =&gt; -1</code>.</p>
+
+    <p>This is a performance hazard. What if we have 100,000 posts? This could crash the site. If you are writing a widget, for example, and just want to grab all of a custom post type, determine a reasonable upper limit for your situation.</p>
+
+    <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// Query for 500 posts.</span>
+<span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span>
+  <span class="s1">'posts_per_page'</span> <span class="o">=&gt;</span> <span class="mi">500</span><span class="p">,</span>
+<span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Do not use <code class="language-plaintext highlighter-rouge">$wpdb</code> or <code class="language-plaintext highlighter-rouge">get_posts()</code> unless you have good reason.</p>
+
+    <p><code class="language-plaintext highlighter-rouge">get_posts()</code> actually calls <code class="language-plaintext highlighter-rouge">WP_Query</code>, but calling <code class="language-plaintext highlighter-rouge">get_posts()</code> directly bypasses a number of filters by default. Not sure whether you need these things or not? You probably don’t.</p>
+  </li>
+  <li>
+    <p>If you don’t plan to paginate query results, always pass <code class="language-plaintext highlighter-rouge">no_found_rows =&gt; true</code> to <code class="language-plaintext highlighter-rouge">WP_Query</code>.</p>
+
+    <p>This will tell WordPress not to run <code class="language-plaintext highlighter-rouge">SQL_CALC_FOUND_ROWS</code> on the SQL query, drastically speeding up your query. <code class="language-plaintext highlighter-rouge">SQL_CALC_FOUND_ROWS</code> calculates the total number of rows in your query which is required to know the total amount of “pages” for pagination.</p>
+
+    <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// Skip SQL_CALC_FOUND_ROWS for performance (no pagination).</span>
+<span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span>
+  <span class="s1">'no_found_rows'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Avoid using <code class="language-plaintext highlighter-rouge">post__not_in</code>.</p>
+
+    <p>In most cases it’s quicker to filter out the posts you don’t need in PHP instead of within the query. This also means it can take advantage of better caching. This won’t work correctly (without additional tweaks) for pagination.</p>
+
+    <p>Use :</p>
+
+    <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$foo_query</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'post_type'</span> <span class="o">=&gt;</span> <span class="s1">'post'</span><span class="p">,</span>
+    <span class="s1">'posts_per_page'</span> <span class="o">=&gt;</span> <span class="mi">30</span> <span class="o">+</span> <span class="nb">count</span><span class="p">(</span> <span class="nv">$posts_to_exclude</span> <span class="p">)</span>
+<span class="p">)</span> <span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span> <span class="nv">$foo_query</span><span class="o">-&gt;</span><span class="nf">have_posts</span><span class="p">()</span> <span class="p">)</span> <span class="o">:</span>
+    <span class="k">while</span> <span class="p">(</span> <span class="nv">$foo_query</span><span class="o">-&gt;</span><span class="nf">have_posts</span><span class="p">()</span> <span class="p">)</span> <span class="o">:</span>
+        <span class="nv">$foo_query</span><span class="o">-&gt;</span><span class="nf">the_post</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nb">in_array</span><span class="p">(</span> <span class="nf">get_the_ID</span><span class="p">(),</span> <span class="nv">$posts_to_exclude</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="k">continue</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nf">the_title</span><span class="p">();</span>
+    <span class="k">endwhile</span><span class="p">;</span>
+<span class="k">endif</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>    </div>
+
+    <p>Instead of:</p>
+
+    <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$foo_query</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'post_type'</span> <span class="o">=&gt;</span> <span class="s1">'post'</span><span class="p">,</span>
+    <span class="s1">'posts_per_page'</span> <span class="o">=&gt;</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="s1">'post__not_in'</span> <span class="o">=&gt;</span> <span class="nv">$posts_to_exclude</span>
+<span class="p">)</span> <span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>    </div>
+
+    <p>See <a href="https://vip.wordpress.com/documentation/performance-improvements-by-removing-usage-of-post__not_in/">WordPress VIP</a>.</p>
+  </li>
+  <li>
+    <p>A <a href="https://wordpress.org/support/article/taxonomies/">taxonomy</a> is a tool that lets us group or classify posts.</p>
+
+    <p><a href="https://wordpress.org/support/article/custom-fields/">Post meta</a> lets us store unique information about specific posts. As such the way post meta is stored does not facilitate efficient post lookups. Generally, looking up posts by post meta should be avoided (sometimes it can’t). If you have to use one, make sure that it’s not the main query and that it’s cached.</p>
+  </li>
+  <li>
+    <p>Passing <code class="language-plaintext highlighter-rouge">cache_results =&gt; false</code> to <code class="language-plaintext highlighter-rouge">WP_Query</code> is usually not a good idea.</p>
+
+    <p>If <code class="language-plaintext highlighter-rouge">cache_results =&gt; true</code> (which is true by default if you have caching enabled and an object cache setup), <code class="language-plaintext highlighter-rouge">WP_Query</code> will cache the posts found among other things. It makes sense to use <code class="language-plaintext highlighter-rouge">cache_results =&gt; false</code> in rare situations (possibly WP-CLI commands).</p>
+  </li>
+  <li>
+    <p>Multi-dimensional queries should be avoided.</p>
+
+    <p>Examples of multi-dimensional queries include:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Querying for posts based on terms across multiple taxonomies
+* Querying multiple post meta keys
+</code></pre></div>    </div>
+
+    <p>Each extra dimension of a query joins an extra database table. Instead, query by the minimum number of dimensions possible and use PHP to filter out results you don’t need.</p>
+
+    <p>Here is an example of a 2-dimensional query:</p>
+
+    <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// Query for posts with both a particular category and tag.</span>
+<span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span>
+  <span class="s1">'category_name'</span> <span class="o">=&gt;</span> <span class="s1">'cat-slug'</span><span class="p">,</span>
+  <span class="s1">'tag'</span> <span class="o">=&gt;</span> <span class="s1">'tag-slug'</span><span class="p">,</span>
+<span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="wp_query-vs-get_posts-vs-query_posts">WP_Query vs. get_posts() vs. query_posts()</h4>
+<p>As outlined above, <code class="language-plaintext highlighter-rouge">get_posts()</code> and <code class="language-plaintext highlighter-rouge">WP_Query</code>, apart from some slight nuances, are quite similar. Both have the same performance cost (minus the implication of skipping filters): the query performed.</p>
+
+<p><a href="https://developer.wordpress.org/reference/functions/query_posts/"><code class="language-plaintext highlighter-rouge">query_posts()</code></a>, on the other hand, behaves quite differently than the other two and should almost never be used. Specifically:</p>
+
+<ul>
+  <li>It creates a new <code class="language-plaintext highlighter-rouge">WP_Query</code> object with the parameters you specify.</li>
+  <li>It replaces the existing main query loop with a new instance of <code class="language-plaintext highlighter-rouge">WP_Query</code>.</li>
+</ul>
+
+<p>As noted in the <a href="https://developer.wordpress.org/reference/functions/query_posts/#more-information">WordPress Docs (along with a useful query flow chart)</a>, <code class="language-plaintext highlighter-rouge">query_posts()</code> isn’t meant to be used by plugins or themes. Due to replacing and possibly re-running the main query, <code class="language-plaintext highlighter-rouge">query_posts()</code> is not performant and certainly not an acceptable way of changing the main query.</p>
+
+<h4 id="build-arrays-that-encourage-lookup-by-key-instead-of-search-by-value">Build arrays that encourage lookup by key instead of search by value</h4>
+
+<p><a href="https://secure.php.net/manual/en/function.in-array.php"><code class="language-plaintext highlighter-rouge">in_array()</code></a> is not an efficient way to find if a given value is present in an array.
+The worst case scenario is that the whole array needs to be traversed, thus making it a function with <a href="https://en.wikipedia.org/wiki/Big_O_notation#Orders_of_common_functions">O(n)</a> complexity. VIP review reports <code class="language-plaintext highlighter-rouge">in_array()</code> use as an error, as it’s known not to scale.</p>
+
+<p>The best way to check if a value is present in an array is by building arrays that encourage lookup by key and use <a href="https://secure.php.net/manual/en/function.isset.php"><code class="language-plaintext highlighter-rouge">isset()</code></a>.
+<code class="language-plaintext highlighter-rouge">isset()</code> uses an <a href="https://en.wikipedia.org/wiki/Big_O_notation#Orders_of_common_functions">O(1)</a> hash search on the key and will scale.</p>
+
+<p>Here is an example of an array that encourages lookup by key by using the intended values as keys of an associative array</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$array</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+ <span class="s1">'foo'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+ <span class="s1">'bar'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span> <span class="k">isset</span><span class="p">(</span> <span class="nv">$array</span><span class="p">[</span><span class="s1">'bar'</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// value is present in the array</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>In case you don’t have control over the array creation process and are forced to use <code class="language-plaintext highlighter-rouge">in_array()</code>, to improve the performance slightly, you should always set the third parameter to <code class="language-plaintext highlighter-rouge">true</code> to force use of strict comparison.</p>
+
+<h3 id="caching">Caching</h3>
+
+<p>Caching is simply the act of storing computed data somewhere for later use, and is an incredibly important concept in WordPress. There are different ways to employ caching, and often multiple methods will be used.</p>
+
+<h4 id="the-object-cache">The “Object Cache”</h4>
+
+<p>Object caching is the act of caching data or objects for later use. In the context of WordPress, objects are cached in memory so they can be retrieved quickly.</p>
+
+<p>In WordPress, the object cache functionality provided by <a href="https://developer.wordpress.org/reference/classes/wp_object_cache/"><code class="language-plaintext highlighter-rouge">WP_Object_Cache</code></a>, and the <a href="https://developer.wordpress.org/apis/handbook/transients/">Transients API</a> are great solutions for improving performance on long-running queries, complex functions, or similar.</p>
+
+<p>On a regular WordPress install, the difference between transients and the object cache is that transients are persistent and would write to the options table, while the object cache only persists for the particular page load.</p>
+
+<p>It is possible to create a transient that will never expire by omitting the third parameter, this should be avoided as any non-expiring transients are autoloaded on every page and you may actually decrease performance by doing so.</p>
+
+<p>On environments with a persistent caching mechanism (i.e. <a href="https://memcached.org/">Memcache</a>, <a href="https://redis.io/">Redis</a>, or similar) enabled, the transient functions become wrappers for the normal <code class="language-plaintext highlighter-rouge">WP_Object_Cache</code> functions. The objects are identically stored in the object cache and will be available across page loads.</p>
+
+<p>High-traffic environments <em>not</em> using a persistent caching mechanism should be wary of using transients and filling the wp_options table with an excessive amount of data. See the “<a href="#appropriate-data-storage">Appropriate Data Storage</a>” section for details.</p>
+
+<p>Note: as the objects are stored in memory, you need to consider that these objects can be cleared at any time and that your code must be constructed in a way that it would not rely on the objects being in place.</p>
+
+<p>This means you always need to ensure you check for the existence of a cached object and be ready to generate it in case it’s not available. Here is an example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Retrieve top 10 most-commented posts and cache the results.
+ *
+ * @return array|WP_Error Array of WP_Post objects with the highest comment counts,
+ *                        WP_Error object otherwise.
+ */</span>
+<span class="k">function</span> <span class="n">prefix_get_top_commented_posts</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Check for the top_commented_posts key in the 'top_posts' group.</span>
+    <span class="nv">$top_commented_posts</span> <span class="o">=</span> <span class="nf">wp_cache_get</span><span class="p">(</span> <span class="s1">'prefix_top_commented_posts'</span><span class="p">,</span> <span class="s1">'top_posts'</span> <span class="p">);</span>
+
+    <span class="c1">// If nothing is found, build the object.</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="kc">false</span> <span class="o">===</span> <span class="nv">$top_commented_posts</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Grab the top 10 most commented posts.</span>
+        <span class="nv">$top_commented_posts</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="s1">'orderby=comment_count&amp;posts_per_page=10'</span> <span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nf">is_wp_error</span><span class="p">(</span> <span class="nv">$top_commented_posts</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$top_commented_posts</span><span class="o">-&gt;</span><span class="nf">have_posts</span><span class="p">()</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Cache the whole WP_Query object in the cache and store it for 5 minutes (300 secs).</span>
+            <span class="nf">wp_cache_set</span><span class="p">(</span> <span class="s1">'prefix_top_commented_posts'</span><span class="p">,</span> <span class="nv">$top_commented_posts</span><span class="o">-&gt;</span><span class="n">posts</span><span class="p">,</span> <span class="s1">'top_posts'</span><span class="p">,</span> <span class="mi">5</span> <span class="o">*</span> <span class="no">MINUTE_IN_SECONDS</span> <span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nv">$top_commented_posts</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>In the above example, the cache is checked for an object with the 10 most commented posts and would generate the list in case the object is not in the cache yet. Generally, calls to <code class="language-plaintext highlighter-rouge">WP_Query</code> other than the main query should be cached.</p>
+
+<p>As the content is cached for 300 seconds, the query execution is limited to one time every 5 minutes, which is nice.</p>
+
+<p>However, the cache rebuild in this example would always be triggered by a visitor who would hit a stale cache, which will increase the page load time for the visitors and under high-traffic conditions. This can cause race conditions when a lot of people hit a stale cache for a complex query at the same time. In the worst case, this could cause queries at the database server to pile up causing replication, lag, or worse.</p>
+
+<p>That said, a relatively easy solution for this problem is to make sure that your users would ideally always hit a primed cache. To accomplish this, you need to think about the conditions that need to be met to make the cached value invalid. In our case this would be the change of a comment.</p>
+
+<p>The easiest hook we could identify that would be triggered for any of this actions would be <a href="https://developer.wordpress.org/reference/hooks/wp_update_comment_count/"><code class="language-plaintext highlighter-rouge">wp_update_comment_count</code></a> set as <code class="language-plaintext highlighter-rouge">do_action( 'wp_update_comment_count', $post_id, $new, $old )</code>.</p>
+
+<p>With this in mind, the function could be changed so that the cache would always be primed when this action is triggered.</p>
+
+<p>Here is how it’s done:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Prime the cache for the top 10 most-commented posts.
+ *
+ * @param int $post_id Post ID.
+ * @param int $new     The new comment count.
+ * @param int $old     The old comment count.
+ */</span>
+<span class="k">function</span> <span class="n">prefix_refresh_top_commented_posts</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="nv">$new</span><span class="p">,</span> <span class="nv">$old</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Force the cache refresh for top-commented posts.</span>
+    <span class="nf">prefix_get_top_commented_posts</span><span class="p">(</span> <span class="nv">$force_refresh</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">add_action</span><span class="p">(</span> <span class="s1">'wp_update_comment_count'</span><span class="p">,</span> <span class="s1">'prefix_refresh_top_commented_posts'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span> <span class="p">);</span>
+
+<span class="cd">/**
+ * Retrieve top 10 most-commented posts and cache the results.
+ *
+ * @param bool $force_refresh Optional. Whether to force the cache to be refreshed. Default false.
+ * @return array|WP_Error Array of WP_Post objects with the highest comment counts, WP_Error object otherwise.
+ */</span>
+<span class="k">function</span> <span class="n">prefix_get_top_commented_posts</span><span class="p">(</span> <span class="nv">$force_refresh</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Check for the top_commented_posts key in the 'top_posts' group.</span>
+    <span class="nv">$top_commented_posts</span> <span class="o">=</span> <span class="nf">wp_cache_get</span><span class="p">(</span> <span class="s1">'prefix_top_commented_posts'</span><span class="p">,</span> <span class="s1">'top_posts'</span> <span class="p">);</span>
+
+    <span class="c1">// If nothing is found, build the object.</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="kc">true</span> <span class="o">===</span> <span class="nv">$force_refresh</span> <span class="o">||</span> <span class="kc">false</span> <span class="o">===</span> <span class="nv">$top_commented_posts</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Grab the top 10 most commented posts.</span>
+        <span class="nv">$top_commented_posts</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">WP_Query</span><span class="p">(</span> <span class="s1">'orderby=comment_count&amp;posts_per_page=10'</span> <span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nf">is_wp_error</span><span class="p">(</span> <span class="nv">$top_commented_posts</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$top_commented_posts</span><span class="o">-&gt;</span><span class="nf">have_posts</span><span class="p">()</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// In this case we don't need a timed cache expiration.</span>
+            <span class="nf">wp_cache_set</span><span class="p">(</span> <span class="s1">'prefix_top_commented_posts'</span><span class="p">,</span> <span class="nv">$top_commented_posts</span><span class="o">-&gt;</span><span class="n">posts</span><span class="p">,</span> <span class="s1">'top_posts'</span> <span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nv">$top_commented_posts</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>With this implementation, you can keep the cache object forever and don’t need to add an expiration for the object as you would create a new cache entry whenever it is required. Just keep in mind that some external caches (like Memcache) can invalidate cache objects without any input from WordPress.</p>
+
+<p>For that reason, it’s best to make the code that repopulates the cache available for many situations.</p>
+
+<p>In some cases, it might be necessary to create multiple objects depending on the parameters a function is called with. In these cases, it’s usually a good idea to create a cache key which includes a representation of the variable parameters. A simple solution for this would be appending an md5 hash of the serialized parameters to the key name.</p>
+
+<h4 id="page-caching">Page Caching</h4>
+
+<p>Page caching in the context of web development refers to storing a requested location’s entire output to serve in the event of subsequent requests to the same location.</p>
+
+<p><a href="https://wordpress.org/plugins/batcache">Batcache</a> is a WordPress plugin that uses the object cache (often Memcache in the context of WordPress) to store and serve rendered pages. It can also optionally cache redirects. It’s not as fast as some other caching plugins, but it can be used where file-based caching is not practical or desired.</p>
+
+<p>Batcache is aimed at preventing a flood of traffic from breaking your site. It does this by serving old (5 minute max age by default, but adjustable) pages to new users. This reduces the demand on the web server CPU and the database. It also means some people may see a page that is a few minutes old. However, this only applies to people who have not interacted with your website before. Once they have logged-in or left a comment, they will always get fresh pages.</p>
+
+<p>Although this plugin has a lot of benefits, it also has a couple of code design requirements:</p>
+
+<ul>
+  <li>As the rendered HTML of your pages might be cached, you cannot rely on server side logic related to <code class="language-plaintext highlighter-rouge">$_SERVER</code>, <code class="language-plaintext highlighter-rouge">$_COOKIE</code> or other values that are unique to a particular user.</li>
+  <li>You can however implement cookie or other user based logic on the front-end (e.g. with JavaScript)</li>
+</ul>
+
+<p>Batcache does not cache logged in users (based on WordPress login cookies), so keep in mind the performance implications for subscription sites (like BuddyPress). Batcache also treats the query string as part of the URL which means the use of query strings for tracking campaigns (common with Google Analytics) can render page caching ineffective.  Also beware that while WordPress VIP uses batcache, there are specific rules and conditions on VIP that do not apply to the open source version of the plugin.</p>
+
+<p>There are other popular page caching solutions such as the W3 Total Cache plugin, though we generally do not use them for a variety of reasons.</p>
+
+<h5 id="ajax-endpoints">AJAX Endpoints</h5>
+
+<p>AJAX stands for Asynchronous JavaScript and XML. Often, we use JavaScript on the client-side to ping endpoints for things like infinite scroll.</p>
+
+<p>WordPress <a href="https://developer.wordpress.org/plugins/javascript/ajax/">provides an API</a> to register AJAX endpoints on <code class="language-plaintext highlighter-rouge">wp-admin/admin-ajax.php</code>. However, WordPress does not cache queries within the administration panel for obvious reasons. Therefore, if you send requests to an admin-ajax.php endpoint, you are bootstrapping WordPress and running un-cached queries. Used properly, this is totally fine. However, this can take down a website if used on the frontend.</p>
+
+<p>For this reason, front-facing endpoints should be written by using the <a href="https://developer.wordpress.org/apis/handbook/rewrite/">Rewrite Rules API</a> and hooking early into the WordPress request process.</p>
+
+<p>Here is a simple example of how to structure your endpoints:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Register a rewrite endpoint for the API.
+ */</span>
+<span class="k">function</span> <span class="n">prefix_add_api_endpoints</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nf">add_rewrite_tag</span><span class="p">(</span> <span class="s1">'%api_item_id%'</span><span class="p">,</span> <span class="s1">'([0-9]+)'</span> <span class="p">);</span>
+	<span class="nf">add_rewrite_rule</span><span class="p">(</span> <span class="s1">'api/items/([0-9]+)/?'</span><span class="p">,</span> <span class="s1">'index.php?api_item_id=$matches[1]'</span><span class="p">,</span> <span class="s1">'top'</span> <span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">add_action</span><span class="p">(</span> <span class="s1">'init'</span><span class="p">,</span> <span class="s1">'prefix_add_api_endpoints'</span> <span class="p">);</span>
+
+<span class="cd">/**
+ * Handle data (maybe) passed to the API endpoint.
+ */</span>
+<span class="k">function</span> <span class="n">prefix_do_api</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">global</span> <span class="nv">$wp_query</span><span class="p">;</span>
+
+	<span class="nv">$item_id</span> <span class="o">=</span> <span class="nv">$wp_query</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span> <span class="s1">'api_item_id'</span> <span class="p">);</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">empty</span><span class="p">(</span> <span class="nv">$item_id</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+		<span class="nv">$response</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+		<span class="c1">// Do stuff with $item_id</span>
+
+		<span class="nf">wp_send_json</span><span class="p">(</span> <span class="nv">$response</span> <span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+<span class="nf">add_action</span><span class="p">(</span> <span class="s1">'template_redirect'</span><span class="p">,</span> <span class="s1">'prefix_do_api'</span> <span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<h4 id="cache-remote-requests">Cache Remote Requests</h4>
+
+<p>Requests made to third-parties, whether synchronous or asynchronous, should be cached. Not doing so will result in your site’s load time depending on an unreliable third-party!</p>
+
+<p>Here is a quick code example for caching a third-party request:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Retrieve posts from another blog and cache the response body.
+ *
+ * @return string Body of the response. Empty string if no body or incorrect parameter given.
+ */</span>
+<span class="k">function</span> <span class="n">prefix_get_posts_from_other_blog</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="kc">false</span> <span class="o">===</span> <span class="p">(</span> <span class="nv">$posts</span> <span class="o">=</span> <span class="nf">wp_cache_get</span><span class="p">(</span> <span class="s1">'prefix_other_blog_posts'</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+
+        <span class="nv">$request</span> <span class="o">=</span> <span class="nf">wp_remote_get</span><span class="p">(</span> <span class="mf">...</span> <span class="p">);</span>
+        <span class="nv">$posts</span> <span class="o">=</span> <span class="nf">wp_remote_retrieve_body</span><span class="p">(</span> <span class="nv">$request</span> <span class="p">);</span>
+
+        <span class="nf">wp_cache_set</span><span class="p">(</span> <span class="s1">'prefix_other_blog_posts'</span><span class="p">,</span> <span class="nv">$posts</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="no">HOUR_IN_SECONDS</span> <span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nv">$posts</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">prefix_get_posts_from_other_blog()</code> can be called to get posts from a third-party and will handle caching internally.</p>
+
+<h3 id="appropriate-data-storage">Appropriate Data Storage</h3>
+
+<p>Utilizing built-in WordPress APIs we can store data in a number of ways.</p>
+
+<p>We can store data using options, post meta, post types, object cache, and taxonomy terms.</p>
+
+<p>There are a number of performance considerations for each WordPress storage vehicle:</p>
+
+<ul>
+  <li>
+    <p><a href="https://developer.wordpress.org/apis/handbook/options/">Options</a> - The options API is a simple key-value storage system backed by a MySQL table. This API is meant to store things like settings and not variable amounts of data.</p>
+
+    <p>Site performance, especially on large websites, can be negatively affected by a large options table. It’s recommended to regularly monitor and keep this table under 500 rows. The “autoload” field should only be set to ‘yes’ for values that need to be loaded into memory on each page load.</p>
+
+    <p>Caching plugins can also be negatively affected by a large wp_options table. Popular caching plugins such as <a href="https://wordpress.org/plugins/memcached/">Memcached</a> place a 1MB limit on individual values stored in cache. A large options table can easily exceed this limit, severely slowing each page load.</p>
+  </li>
+  <li><a href="https://wordpress.org/support/article/custom-fields/">Post Meta or Custom Fields</a> - Post meta is an API meant for storing information specific to a post. For example, if we had a custom post type, “Product”, “serial number” would be information appropriate for post meta. Because of this, it usually doesn’t make sense to search for groups of posts based on post meta.</li>
+  <li><a href="https://wordpress.org/support/article/taxonomies/">Taxonomies and Terms</a> - Taxonomies are essentially groupings. If we have a classification that spans multiple posts, it is a good fit for a taxonomy term. For example, if we had a custom post type, “Car”, “Nissan” would be a good term since multiple cars are made by Nissan. Taxonomy terms can be efficiently searched across as opposed to post meta.</li>
+  <li><a href="https://wordpress.org/support/article/post-types/">Custom Post Types</a> - WordPress has the notion of “post types”. “Post” is a post type which can be confusing. We can register custom post types to store all sorts of interesting pieces of data. If we have a variable amount of data to store such as a product, a custom post type might be a good fit.</li>
+  <li><a href="https://developer.wordpress.org/reference/classes/wp_object_cache/">Object Cache</a> - See the “<a href="#caching">Caching</a>” section.</li>
+</ul>
+
+<p>While it is possible to use WordPress’ <a href="https://developer.wordpress.org/apis/handbook/filesystem/">Filesystem API</a> to interact with a huge variety of storage endpoints, using the filesystem to store and deliver data outside of regular asset uploads should be avoided as this methods conflict with most modern / secure hosting solutions.</p>
+
+<h3 id="database-writes">Database Writes</h3>
+
+<p>Writing information to the database is at the core of any website you build. Here are some tips:</p>
+
+<ul>
+  <li>
+    <p>Generally, do not write to the database on frontend pages as doing so can result in major performance issues and race conditions.</p>
+  </li>
+  <li>
+    <p>When multiple threads (or page requests) read or write to a shared location in memory and the order of those read or writes is unknown, you have what is known as a <a href="https://en.wikipedia.org/wiki/Race_condition">race condition</a>.</p>
+  </li>
+  <li>
+    <p>Store information in the correct place. See the “<a href="#appropriate-data-storage">Appropriate Data Storage</a>” section.</p>
+  </li>
+  <li>
+    <p>Certain options are “autoloaded” or put into the object cache on each page load. When <a href="https://developer.wordpress.org/apis/handbook/options/">creating or updating options</a>, you can pass an <code class="language-plaintext highlighter-rouge">$autoload</code> argument to <a href="https://developer.wordpress.org/reference/functions/add_option/"><code class="language-plaintext highlighter-rouge">add_option()</code></a>. If your option is not going to get used often, it shouldn’t be autoloaded. As of WordPress 4.2, <a href="https://developer.wordpress.org/reference/functions/update_option/"><code class="language-plaintext highlighter-rouge">update_option()</code></a> supports configuring autoloading directly by passing an optional <code class="language-plaintext highlighter-rouge">$autoload</code> argument. Using this third parameter is preferable to using a combination of <a href="https://developer.wordpress.org/reference/functions/delete_option/"><code class="language-plaintext highlighter-rouge">delete_option()</code></a> and <code class="language-plaintext highlighter-rouge">add_option()</code> to disable autoloading for existing options.</p>
+  </li>
+</ul>
+
+<h2 id="design-patterns" class="anchor-heading">Design Patterns <a class="subhead-anchor" href="#design-patterns"><span>#design-patterns</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Using a common set of design patterns while working with PHP code is the easiest way to ensure the maintainability of a project. This section addresses standard practices that set a low barrier for entry to new developers on the project.</p>
+
+<h3 id="namespacing">Namespacing</h3>
+
+<p>We properly namespace all PHP code outside of theme templates. This means any PHP file that isn’t part of the <a href="https://developer.wordpress.org/themes/basics/template-hierarchy/">WordPress Template Hierarchy</a> should be organized within a namespace or <em>pseudo</em> namespace so its contents don’t conflict with other, similarly-named classes and functions (“namespace collisions”).</p>
+
+<p>Generally, this means including a PHP <code class="language-plaintext highlighter-rouge">namespace</code> identifier at the top of included files:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">TenUp\Buy_N_Large\Wall_E</span><span class="p">;</span>
+
+<span class="k">function</span> <span class="n">do_something</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>A namespace identifier consists of a <em>top-level</em> namespace or “Vendor Name”, which is usually <code class="language-plaintext highlighter-rouge">TenUp</code> for our projects. We follow the top-level name with a project name, usually a client’s name. e.g. <code class="language-plaintext highlighter-rouge">TenUp\Buy_N_Large;</code></p>
+
+<p>Additional levels of the namespace are defined at discretion of the project’s lead engineers. Around the time of a project’s kickoff, they agree on a strategy for namespacing the project’s code. For example, the client’s name may be followed with the name of a particular site or high-level project we’re building (<code class="language-plaintext highlighter-rouge">TenUp\Buy_N_Large\Wall_E;</code>).</p>
+
+<p>When 10up works on more than one project for a client and we build common plugins shared between sites, “Common” might be used in place of the project name to signal this code’s relationship to the rest of the codebase.</p>
+
+<p>The engineering leads document this strategy so it can be shared with engineers brought onto the project throughout its lifecycle.</p>
+
+<p><a href="https://secure.php.net/manual/en/language.namespaces.importing.php"><code class="language-plaintext highlighter-rouge">use</code> declarations</a> should be used for classes outside a file’s namespace. By declaring the full namespace of a class we want to use <em>once</em> at the top of the file, we can refer to it by just its class name, making code easier to read. It also documents a file’s dependencies for future developers.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Example of a 'use' declaration
+ */</span>
+<span class="kn">namespace</span> <span class="nn">TenUp\Buy_N_Large\Wall_E</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nf">TenUp\Buy_N_Large</span><span class="err">\</span><span class="nc">Common\TwitterAPI</span><span class="p">;</span>
+
+<span class="k">function</span> <span class="n">do_something</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Hard to read</span>
+  <span class="nv">$twitter_api</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TenUp\Buy_N_Large\Common\TwitterAPI</span><span class="p">();</span>
+  <span class="c1">// Preferred</span>
+  <span class="nv">$twitter_api</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TwitterAPI</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If the code is for general release to the WordPress.org theme or plugin repositories, the <a href="https://wordpress.org/about/requirements/">minimum PHP compatibility</a> of WordPress itself must be met. Unfortunately, PHP namespaces are not supported in version &lt; 5.3, so instead, a class would be used to wrap static functions to serve as a <em>pseudo</em> namespace:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Namespaced class name example.
+ */</span>
+<span class="kd">class</span> <span class="nc">Tenup_Utilities_API</span> <span class="p">{</span>
+	<span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="n">do_something</span><span class="p">()</span> <span class="p">{</span>
+		<span class="c1">// ...</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The similar structure of the namespace and the static class will allow for simple onboarding to either style of project (and a quick upgrade to PHP namespaces if and when WordPress raises its minimum version requirements).</p>
+
+<p>Anything declared in the global namespace, including a namespace itself, should be written in such a way as to ensure uniqueness. A namespace like <code class="language-plaintext highlighter-rouge">TenUp</code> is (most likely) unique; <code class="language-plaintext highlighter-rouge">theme</code> is not. A simple way to ensure uniqueness is to prefix a declaration with a unique prefix.</p>
+
+<h3 id="object-design">Object Design</h3>
+
+<p>Firstly, if a function is not specific to an object, it should be included in a functional <a href="#namespacing">namespace</a> as referenced above.</p>
+
+<p>Objects should be well-defined, atomic, and fully documented in the leading docblock for the file. Every method and property within the object must themselves be fully documented, and relate to the object itself.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Video.
+ *
+ * This is a video object that wraps both traditional WordPress posts
+ * and various YouTube meta information APIs hidden beneath them.
+ *
+ * @package    ClientTheme
+ * @subpackage Content
+ */</span>
+<span class="kd">class</span> <span class="nc">Prefix_Video</span> <span class="p">{</span>
+
+	<span class="cd">/**
+	 * WordPress post object used for data storage.
+	 *
+	 * @access protected
+	 * @var WP_Post
+	 */</span>
+	<span class="k">protected</span> <span class="nv">$_post</span><span class="p">;</span>
+
+	<span class="cd">/**
+	 * Default video constructor.
+	 *
+	 * @access public
+	 *
+	 * @see get_post()
+	 * @throws Exception Throws an exception if the data passed is not a post or post ID.
+	 *
+	 * @param int|WP_Post $post Post ID or WP_Post object.
+	 */</span>
+	<span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span> <span class="nv">$post</span> <span class="o">=</span> <span class="kc">null</span> <span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span> <span class="kc">null</span> <span class="o">===</span> <span class="nv">$post</span> <span class="p">)</span> <span class="p">{</span>
+			<span class="k">throw</span> <span class="k">new</span> <span class="nc">Exception</span><span class="p">(</span> <span class="s1">'Invalid post supplied'</span> <span class="p">);</span>
+		<span class="p">}</span>
+
+		<span class="nv">$this</span><span class="o">-&gt;</span><span class="n">_post</span> <span class="o">=</span> <span class="nf">get_post</span><span class="p">(</span> <span class="nv">$post</span> <span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="visibility">Visibility</h3>
+
+<p>In terms of <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-Oriented Programming</a> (OOP), public properties and methods should obviously be <code class="language-plaintext highlighter-rouge">public</code>. Anything intended to be private should actually be specified as <code class="language-plaintext highlighter-rouge">protected</code>. There should be no <code class="language-plaintext highlighter-rouge">private</code> fields or properties without well-documented and agreed-upon rationale.</p>
+
+<h3 id="structure-and-patterns">Structure and Patterns</h3>
+
+<ul>
+  <li>Singletons are not advised. There is little justification for this pattern in practice and they cause more maintainability problems than they fix.</li>
+  <li>Class inheritance should be used where possible to produce <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a> code and share previously-developed components throughout the application.</li>
+  <li>Global variables should be avoided. If objects need to be passed throughout the theme or plugin, those objects should either be passed as parameters or referenced through an object factory.</li>
+  <li>Hidden dependencies (API functions, super-globals, etc) should be documented in the docblock of every function/method or property.</li>
+  <li>Avoid registering hooks in the __construct method. Doing so tightly couples the hooks to the instantiation of the class and is less flexible than registering the hooks via a separate method. Unit testing becomes much more difficult as well.</li>
+</ul>
+
+<h3 id="decouple-plugin-and-theme-using-add_theme_support">Decouple Plugin and Theme using add_theme_support</h3>
+
+<p>The implementation of a custom plugin should be decoupled from its use
+in a Theme. Disabling the plugin should not result in any errors in the
+Theme code. Similarly switching the Theme should not result in any
+errors in the Plugin code.</p>
+
+<p>The best way to implement this is with the use of <a href="https://developer.wordpress.org/reference/functions/add_theme_support/">add_theme_support</a> and <a href="https://developer.wordpress.org/reference/functions/current_theme_supports/">current_theme_supports</a>.</p>
+
+<p>Consider a plugin that adds a custom javascript file to the <code class="language-plaintext highlighter-rouge">page</code> post
+type. The Theme should register support for this feature using
+<code class="language-plaintext highlighter-rouge">add_theme_support</code>,</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nf">add_theme_support</span><span class="p">(</span> <span class="s1">'custom-js-feature'</span> <span class="p">);</span>
+</code></pre></div></div>
+
+<p>And the plugin should check that the current theme has indicated support
+for this feature before adding the script to the page, using
+<a href="https://developer.wordpress.org/reference/functions/current_theme_supports/">current_theme_supports</a>,</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span> <span class="nf">current_theme_supports</span><span class="p">(</span> <span class="s1">'custom-js-feature'</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// ok to add custom js</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="asset-versioning">Asset Versioning</h3>
+<p>It’s always a good idea to keep assets versioned, to make cache busting a simpler process when deploying new code. Fortunately, <a href="https://developer.wordpress.org/reference/functions/wp_register_script/">wp_register_script</a> and <a href="https://developer.wordpress.org/reference/functions/wp_register_style/">wp_register_style</a> provide a built-in API that allows engineers to declare an asset version, which is then appended to the file name as a query string when the asset is loaded.</p>
+
+<p>It is recommended that engineers use a constant to define their theme or plugin version, then reference that constant when using registering scripts or styles. For example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nb">define</span><span class="p">(</span> <span class="s1">'THEME_VERSION'</span><span class="p">,</span> <span class="s1">'0.1.0'</span> <span class="p">);</span>
+
+<span class="nf">wp_register_script</span><span class="p">(</span> <span class="s1">'custom-script'</span><span class="p">,</span> <span class="nf">get_template_directory_uri</span><span class="p">()</span> <span class="mf">.</span> <span class="s1">'/js/asset.js'</span><span class="p">,</span> <span class="k">array</span><span class="p">(),</span> <span class="no">THEME_VERSION</span> <span class="p">);</span>
+</code></pre></div></div>
+
+<p>Remember to increment the version in the defined constant prior to deployment.</p>
+
+<h2 id="security" class="anchor-heading">Security <a class="subhead-anchor" href="#security"><span>#security</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Security in the context of web development is a huge topic. This section only addresses some of the things we can do at the server-side code level.</p>
+
+<h3 id="input-validation-and-sanitization">Input Validation and Sanitization</h3>
+
+<p>To validate is to ensure the data you’ve requested of the user matches what they’ve submitted. Sanitization is a broader approach ensuring data conforms to certain standards such as an integer or HTML-less text. The difference between validating and sanitizing data can be subtle at times and context-dependent.</p>
+
+<p>Validation is always preferred to sanitization. Any non-static data that is stored in the database must be validated or sanitized. Not doing so can result in creating potential security vulnerabilities.</p>
+
+<p>WordPress has a number of <a href="https://developer.wordpress.org/plugins/security/data-validation/#core-wordpress-functions">validation</a> and <a href="https://developer.wordpress.org/themes/theme-security/data-sanitization-escaping/#sanitization-securing-input">sanitization</a> functions built-in.</p>
+
+<p>Sometimes it can be confusing as to which is the most appropriate for a given situation. Other times, it’s even appropriate to write our own sanitization and validation methods.</p>
+
+<p>Here’s an example of validating an integer stored in post meta:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">empty</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'user_id'</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="nf">absint</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'user_id'</span><span class="p">]</span> <span class="p">)</span> <span class="o">===</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'user_id'</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nf">update_post_meta</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="s1">'key'</span><span class="p">,</span> <span class="nf">absint</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'user_id'</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">$_POST['user_id']</code> is validated using <a href="https://developer.wordpress.org/reference/functions/absint/"><code class="language-plaintext highlighter-rouge">absint()</code></a> which ensures an integer &gt;= 0. Without validation (or sanitization), <code class="language-plaintext highlighter-rouge">$_POST['user_id']</code> could be used maliciously to inject harmful code or data into the database.</p>
+
+<p>Here is an example of sanitizing a text field value that will be stored in the database:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">empty</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'special_heading'</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nf">update_option</span><span class="p">(</span> <span class="s1">'option_key'</span><span class="p">,</span> <span class="nf">sanitize_text_field</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'special_heading'</span><span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>Since <code class="language-plaintext highlighter-rouge">update_option()</code> is storing in the database, the value must be sanitized (or validated). The example uses the <a href="https://developer.wordpress.org/reference/functions/sanitize_text_field/"><code class="language-plaintext highlighter-rouge">sanitize_text_field()</code></a> function, which is appropriate for sanitizing general text fields.</p>
+
+<h4 id="raw-sql-preparation-and-sanitization">Raw SQL Preparation and Sanitization</h4>
+
+<p>There are times when dealing directly with SQL can’t be avoided. WordPress provides us with <a href="https://developer.wordpress.org/reference/classes/wpdb/"><code class="language-plaintext highlighter-rouge">$wpdb</code></a>.</p>
+
+<p>Special care must be taken to ensure queries are properly prepared and sanitized:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">global</span> <span class="nv">$wpdb</span><span class="p">;</span>
+
+<span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="nf">get_results</span><span class="p">(</span> <span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="nf">prepare</span><span class="p">(</span> <span class="s2">"SELECT id, name FROM </span><span class="nv">$wpdb-&gt;posts</span><span class="s2"> WHERE ID='%d'"</span><span class="p">,</span> <span class="nf">absint</span><span class="p">(</span> <span class="nv">$post_id</span> <span class="p">)</span> <span class="p">)</span> <span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">$wpdb-&gt;prepare()</code> behaves like <code class="language-plaintext highlighter-rouge">sprintf()</code> and essentially calls <code class="language-plaintext highlighter-rouge">mysqli_real_escape_string()</code> on each argument. <code class="language-plaintext highlighter-rouge">mysqli_real_escape_string()</code> escapes characters like <code class="language-plaintext highlighter-rouge">'</code> and <code class="language-plaintext highlighter-rouge">"</code> which prevents many SQL injection attacks.</p>
+
+<p>By using <code class="language-plaintext highlighter-rouge">%d</code> in <code class="language-plaintext highlighter-rouge">sprintf()</code>, we are ensuring the argument is forced to be an integer. You might be wondering why <code class="language-plaintext highlighter-rouge">absint()</code> was used since it seems redundant. It’s better to over sanitize than to miss something accidentally.</p>
+
+<p>Here is another example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">global</span> <span class="nv">$wpdb</span><span class="p">;</span>
+
+<span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="nf">insert</span><span class="p">(</span> <span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="n">posts</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span> <span class="s1">'post_content'</span> <span class="o">=&gt;</span> <span class="nf">wp_kses_post</span><span class="p">(</span> <span class="nv">$post_content</span> <span class="p">),</span> <span class="k">array</span><span class="p">(</span> <span class="s1">'%s'</span> <span class="p">)</span> <span class="p">)</span> <span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">$wpdb-&gt;insert()</code> creates a new row in the database. <code class="language-plaintext highlighter-rouge">$post_content</code> is being passed into the <code class="language-plaintext highlighter-rouge">post_content</code> column. The third argument lets us specify a format for our values <code class="language-plaintext highlighter-rouge">sprintf()</code> style. Forcing the value to be a string using the <code class="language-plaintext highlighter-rouge">%s</code> specifier prevents many SQL injection attacks. However, <code class="language-plaintext highlighter-rouge">wp_kses_post()</code> still needs to be called on <code class="language-plaintext highlighter-rouge">$post_content</code> as someone could inject harmful JavaScript otherwise.</p>
+
+<h3 id="escape-or-validate-output">Escape or Validate Output</h3>
+
+<p>To escape is to ensure data conforms to specific standards before being passed off. Validation, again, ensures that data matches what is to be expected in a much stricter way. Any non-static data outputted to the browser must be escaped or validated.</p>
+
+<p>WordPress has a number of core functions that can be leveraged for escaping. At 10up, we follow the philosophy of <em>late escaping</em>. This means we escape things just before output in order to reduce missed escaping and improve code readability.</p>
+
+<p>Here are some simple examples of <em>late-escaped</em> output:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_html</span><span class="p">(</span> <span class="nf">get_post_meta</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="s1">'key'</span><span class="p">,</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><a href="https://developer.wordpress.org/reference/functions/esc_html/"><code class="language-plaintext highlighter-rouge">esc_html()</code></a> ensures output does not contain any HTML thus preventing JavaScript injection and layout breaks.</p>
+
+<p>Here is another example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">sanitize_email</span><span class="p">(</span> <span class="nf">get_post_meta</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="s1">'key'</span><span class="p">,</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span>Email me<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><a href="https://developer.wordpress.org/reference/functions/sanitize_email/"><code class="language-plaintext highlighter-rouge">sanitize_email()</code></a> ensures output is a valid email address. This is an example of validating our data. A broader escaping function like <a href="https://developer.wordpress.org/reference/functions/esc_attr/"><code class="language-plaintext highlighter-rouge">esc_attr()</code></a> could have been used, but instead <code class="language-plaintext highlighter-rouge">sanitize_email()</code> was used to validate.</p>
+
+<p>Here is another example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">onfocus=</span><span class="s">"if( this.value == '</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_js</span><span class="p">(</span> <span class="nv">$fields</span><span class="p">[</span><span class="s1">'input_text'</span><span class="p">]</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="s">' ) { this.value = ''; }"</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p><a href="https://developer.wordpress.org/reference/functions/esc_js/"><code class="language-plaintext highlighter-rouge">esc_js()</code></a> ensures that whatever is returned is safe to be printed within a JavaScript string. This function is intended to be used for inline JS, inside a tag attribute (onfocus=”…”, for example).</p>
+
+<p>We should not be writing JavaScript inside tag attributes anymore, this means that <code class="language-plaintext highlighter-rouge">esc_js()</code> should never be used. To escape strings for JS another function should be used.</p>
+
+<p>Here is another example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<span class="k">if</span> <span class="p">(</span> <span class="nb">document</span><span class="p">.</span><span class="nx">cookie</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span> <span class="dl">'</span><span class="s1">cookie_key</span><span class="dl">'</span> <span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span> <span class="dl">'</span><span class="s1">test</span><span class="dl">'</span> <span class="p">).</span><span class="nx">getAttribute</span><span class="p">(</span> <span class="dl">'</span><span class="s1">href</span><span class="dl">'</span> <span class="p">)</span> <span class="o">=</span> <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">wp_json_encode</span><span class="p">(</span> <span class="nf">get_post_meta</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="s1">'key'</span><span class="p">,</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p><a href="https://developer.wordpress.org/reference/functions/wp_json_encode/"><code class="language-plaintext highlighter-rouge">wp_json_encode()</code></a> ensures that whatever is returned is safe to be printed in your JavaScript code. It returns a JSON encoded string.</p>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">wp_json_encode()</code> includes the string-delimiting quotes for you.</p>
+
+<p>Sometimes you need to escape data that is meant to serve as an attribute. For that, you can use <code class="language-plaintext highlighter-rouge">esc_attr()</code> to ensure output only contains characters appropriate for an attribute:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_attr</span><span class="p">(</span> <span class="nf">get_post_meta</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="s1">'key'</span><span class="p">,</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>If you need to escape such that HTML is permitted (but not harmful JavaScript), the <code class="language-plaintext highlighter-rouge">wp_kses_*</code> functions can be used:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">wp_kses_post</span><span class="p">(</span> <span class="nf">get_post_meta</span><span class="p">(</span> <span class="nv">$post_id</span><span class="p">,</span> <span class="s1">'meta_key'</span><span class="p">,</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">wp_kses_*</code> functions should be used sparingly as they have bad performance due to a large number of regular expression matching attempts. If you find yourself using <code class="language-plaintext highlighter-rouge">wp_kses_*</code>, it’s worth evaluating what you are doing as a whole.</p>
+
+<p>Are you providing a meta box for users to enter arbitrary HTML? Perhaps you can generate the HTML programmatically and provide the user with a few options to customize.</p>
+
+<p>If you do have to use <code class="language-plaintext highlighter-rouge">wp_kses_*</code> on the frontend, output should be cached for as long as possible.</p>
+
+<p>Translated text also often needs to be escaped on output.</p>
+
+<p>Here’s an example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span> <span class="s1">'An example localized string.'</span><span class="p">,</span> <span class="s1">'my-domain'</span> <span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Instead of using the generic <a href="https://developer.wordpress.org/reference/functions/__/"><code class="language-plaintext highlighter-rouge">__()</code></a> function, something like <a href="https://developer.wordpress.org/reference/functions/esc_html__/"><code class="language-plaintext highlighter-rouge">esc_html__()</code></a> might be more appropriate. Instead of using the generic <a href="https://developer.wordpress.org/reference/functions/_e/"><code class="language-plaintext highlighter-rouge">_e()</code></a> function, <a href="https://developer.wordpress.org/reference/functions/esc_html_e/"><code class="language-plaintext highlighter-rouge">esc_html_e()</code></a> would instead be used.</p>
+
+<p>There are many escaping situations not covered in this section. Everyone should explore the <a href="https://developer.wordpress.org/plugins/security/securing-output/">WordPress Plugin Handbook section</a> on escaping output to learn more.</p>
+
+<h3 id="nonces">Nonces</h3>
+
+<p>In programming, a nonce, or number used only once, is a tool used to prevent <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> or cross-site request forgery.</p>
+
+<p>The purpose of a nonce is to make each request unique so an action cannot be replayed.</p>
+
+<p>WordPress’ <a href="https://developer.wordpress.org/plugins/security/nonces/">implementation</a> of nonces are not strictly numbers used once, though they serve an equal purpose.</p>
+
+<p>The literal WordPress definition of nonces is “A cryptographic token tied to a specific action, user, and window of time.”. This means that while the number is not a true nonce, the resulting number <em>is</em> specifically tied to the action, user, and window of time for which it was generated.</p>
+
+<p>Let’s say you want to trash a post with <code class="language-plaintext highlighter-rouge">ID</code> 1. To do that, you might visit this URL: <code class="language-plaintext highlighter-rouge">https://example.com/wp-admin/post.php?post=1&amp;action=trash</code></p>
+
+<p>Since you are authenticated and authorized, an attacker could trick you into visiting a URL like this: <code class="language-plaintext highlighter-rouge">https://example.com/wp-admin/post.php?post=2&amp;action=trash</code></p>
+
+<p>For this reason, the trash action requires a valid WordPress nonce.</p>
+
+<p>After visiting <code class="language-plaintext highlighter-rouge">https://example.com/wp-admin/post.php?post=1&amp;action=trash&amp;_wpnonce=b192fc4204</code>, the same nonce will not be valid in <code class="language-plaintext highlighter-rouge">https://example.com/wp-admin/post.php?post=2&amp;action=trash&amp;_wpnonce=b192fc4204</code>.</p>
+
+<p>Update and delete actions (like trashing a post) should require a valid nonce.</p>
+
+<p>Here is some example code for creating a nonce:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="nf">wp_nonce_field</span><span class="p">(</span> <span class="s1">'my_action_name'</span> <span class="p">);</span> <span class="cp">?&gt;</span>
+    ...
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<p>When the form request is processed, the nonce must be verified:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// Verify the nonce to continue.</span>
+<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">empty</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'_wpnonce'</span><span class="p">]</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nf">wp_verify_nonce</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'_wpnonce'</span><span class="p">],</span> <span class="s1">'my_action_name'</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Nonce is valid!</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<h3 id="internationalization">Internationalization</h3>
+
+<p>All text strings in a project should be internationalized using core localization functions. Even if the project does not currently dictate a need for translatable strings, this practice ensures translation-readiness should a future need arise.</p>
+
+<p>WordPress provides a myriad of <a href="https://developer.wordpress.org/plugins/internationalization/">localization functionality</a>. Engineers should familiarize themselves with features such as <a href="https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#plurals">pluralization</a> and <a href="https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/#disambiguation-by-context">disambiguation</a> so translations are flexible and translators have the information they need to work accurately.</p>
+
+<p>Samuel Wood (Otto) put together a guide to WordPress internationalization best practices, and engineers should take time to familiarize themselves with its guidance: <a href="http://ottopress.com/2012/internationalization-youre-probably-doing-it-wrong/">Internationalization: You’re probably doing it wrong</a></p>
+
+<p>It’s important to note that the strings passed to translation functions should always be literal strings, never variables or named constants, and code shouldn’t use <a href="https://en.wikipedia.org/wiki/String_interpolation#PHP">string interpolation</a> to inject values into either string. Most tools used to create translations rely on <a href="https://www.gnu.org/software/gettext/">GNU gettext</a> scanning source code for translation functions. PHP code won’t be interpreted, only scanned like it was a block of plain text and stored similarly. If WordPress’s translation APIs can’t find an exact match for a string inside the translation files, it won’t be able to translate the string. Instead, use <a href="https://en.wikipedia.org/wiki/Printf_format_string">printf formatting codes</a> inside the string to be translated and pass the translated version of that string to sprintf() to fill in the values.</p>
+
+<p>For example:</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// This will confuse translation software</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span> <span class="s2">"</span><span class="nv">$number</span><span class="s2"> minutes left"</span><span class="p">,</span> <span class="s1">'plugin-domain'</span> <span class="p">);</span>
+<span class="c1">// So will this</span>
+<span class="nb">define</span><span class="p">(</span> <span class="s1">'MINUTES_LEFT'</span><span class="p">,</span> <span class="s1">'%d minutes left'</span> <span class="p">);</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span> <span class="no">MINUTES_LEFT</span><span class="p">,</span> <span class="s1">'plugin-domain'</span> <span class="p">);</span>
+<span class="c1">// Correct way to do a simple translation</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nb">sprintf</span><span class="p">(</span> <span class="nf">__</span><span class="p">(</span> <span class="s1">'%d minutes left'</span><span class="p">,</span> <span class="s1">'plugin-domain'</span> <span class="p">),</span> <span class="nv">$number</span> <span class="p">);</span>
+<span class="c1">// A more complex translation using _n() for plurals</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nb">sprintf</span><span class="p">(</span> <span class="nf">_n</span><span class="p">(</span> <span class="s1">'%d minute left'</span><span class="p">,</span> <span class="s1">'%d minutes left'</span><span class="p">,</span>  <span class="nv">$number</span><span class="p">,</span> <span class="s1">'plugin-domain'</span> <span class="p">),</span> <span class="nv">$number</span> <span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>Localizing a project differs from the core approach in two distinct ways:</p>
+<ul>
+  <li>A unique text domain should be used with all localization functions</li>
+  <li>Internationalized output should always be escaped</li>
+</ul>
+
+<h4 id="text-domains">Text Domains</h4>
+
+<p>Each project should leverage a unique text domain for its strings. Text domains should be lowercase, alphanumeric, and use hyphens to separate multiple words: <code class="language-plaintext highlighter-rouge">tenup-project-name</code>.</p>
+
+<p>Like the translated strings they accompany, text domains should never be stored in a variable or named constant when used with core localization functions, as this practice can often produce unexpected results. Translation tools won’t interpret PHP code, only scan it like it was plain text. They won’t be able to assign the text domain correctly if it’s not there in plain text.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// Always this</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span> <span class="s1">'Hello World'</span><span class="p">,</span> <span class="s1">'plugin-domain'</span> <span class="p">);</span>
+<span class="c1">// Never this</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span> <span class="s1">'Hello World'</span><span class="p">,</span> <span class="nv">$plugin_domain</span> <span class="p">);</span>
+<span class="c1">// Or this</span>
+<span class="nb">define</span><span class="p">(</span> <span class="s1">'PLUGIN_DOMAIN'</span><span class="p">,</span> <span class="s1">'plugin-domain'</span> <span class="p">);</span>
+<span class="nv">$string</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span> <span class="s1">'Hello World'</span><span class="p">,</span> <span class="no">PLUGIN_DOMAIN</span> <span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>If the code is for release as a plugin or theme in the WordPress.org repositories, the text domain <em>must</em> match the directory slug for the project in order to ensure compatibility with the WordPress language pack delivery system. The text domain should be defined in the “Text Domain” header in the plugin or stylesheet headers, respectively, so the community can use <a href="https://wordpress.org/plugins/glotpress/">GlotPress</a> to provide new translations.</p>
+
+<h4 id="escaping-strings">Escaping Strings</h4>
+
+<p>Most of WordPress’s translation functions don’t escape output by default. So, it’s important to escape the translated strings like any other content.</p>
+
+<p>To make this easier, the WordPress API includes functions that translate and escape in a single step. Engineers are encouraged to use these functions to simplify their code:</p>
+
+<p><strong>For use in HTML</strong></p>
+<ol>
+  <li><a href="https://developer.wordpress.org/reference/functions/esc_html__/">esc_html__</a>: Returns a translated and escaped string</li>
+  <li><a href="https://developer.wordpress.org/reference/functions/esc_html_e/">esc_html_e</a>: Echoes a translated and escaped string</li>
+  <li><a href="https://developer.wordpress.org/reference/functions/esc_html_x/">esc_html_x</a>: Returns a translated and escaped string, <em>passing a context</em> to the translation function</li>
+</ol>
+
+<p><strong>For use in attributes</strong></p>
+<ol>
+  <li><a href="https://developer.wordpress.org/reference/functions/esc_attr__/">esc_attr__</a>: Returns a translated and escaped string</li>
+  <li><a href="https://developer.wordpress.org/reference/functions/esc_attr_e/">esc_attr_e</a>: Echoes a translated and escaped string</li>
+  <li><a href="https://developer.wordpress.org/reference/functions/esc_attr_x/">esc_attr_x</a>: Returns a translated and escaped string, <em>passing a context</em> to the translation function</li>
+</ol>
+
+<h2 id="code-style" class="anchor-heading">Code Style &amp; Documentation <a class="subhead-anchor" href="#code-style"><span>#code-style</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>We follow the official WordPress <a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/">coding</a> and <a href="https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/">documentation</a> standards. The <a href="https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards">WordPress Coding Standards for PHP_CodeSniffer</a> will find many common violations and flag risky code for manual review.</p>
+
+<p>That said, at 10up we highly value verbose commenting/documentation throughout any/all code, with an emphasis on docblock long descriptions which state ‘why’ the code is there and ‘what’ exactly the code does in human-readable prose. As a general rule of thumb; a manager should be able to grok your code by simply reading the docblock and inline comments.</p>
+
+<p>Example:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Hook into WordPress to mark specific post meta keys as protected
+ *
+ * Post meta can be either public or protected. Any post meta which holds
+ * **internal or read only** data should be protected via a prefixed underscore on
+ * the meta key (e.g. _my_post_meta) or by indicating it's protected via the
+ * is_protected_meta filter.
+ *
+ * Note, a meta field that is intended to be a viewable component of the post
+ * (Examples: event date, or employee title) should **not** be protected.
+ */</span>
+<span class="nf">add_filter</span><span class="p">(</span> <span class="s1">'is_protected_meta'</span><span class="p">,</span> <span class="s1">'protect_post_meta'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span> <span class="p">);</span>
+
+<span class="cd">/**
+ * Protect non-public meta keys
+ *
+ * Flag some post meta keys as private so they're not exposed to the public
+ * via the Custom Fields meta box or the JSON REST API.
+ *
+ * @internal                          Called via is_protected_meta filter.
+ * @param    bool   $protected        Whether the key is protected. Default is false.
+ * @param    string $current_meta_key The meta key being referenced.
+ * @return   bool   $protected        The (possibly) modified $protected variable
+ */</span>
+<span class="k">function</span> <span class="n">protect_post_meta</span><span class="p">(</span> <span class="nv">$protected</span><span class="p">,</span> <span class="nv">$current_meta_key</span> <span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Assemble an array of post meta keys to be protected</span>
+    <span class="nv">$meta_keys_to_be_protected</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'my_meta_key'</span><span class="p">,</span>
+        <span class="s1">'my_other_meta_key'</span><span class="p">,</span>
+        <span class="s1">'and_another_meta_key'</span><span class="p">,</span>
+    <span class="p">);</span>
+
+    <span class="c1">// Set the protected var to true when the current meta key matches</span>
+    <span class="c1">// one of the meta keys in our array of keys to be protected</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="nb">in_array</span><span class="p">(</span> <span class="nv">$current_meta_key</span><span class="p">,</span> <span class="nv">$meta_keys_to_be_protected</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$protected</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Return the (possibly modified) $protected variable.</span>
+    <span class="k">return</span> <span class="nv">$protected</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<h2 id="unit-testing" class="anchor-heading">Unit and Integration Testing <a class="subhead-anchor" href="#unit-testing"><span>#unit-testing</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Unit testing is the automated testing of units of source code against certain assertions. The goal of unit testing is to write test cases with assertions that test if a unit of code is truly working as intended. If an assertion fails, a potential issue is exposed, and code needs to be revised.</p>
+
+<p>By definition, unit tests do not have dependencies on outside systems; in other words, only your code (a single unit of code) is being tested. Integration testing works similarly to unit tests but assumptions are tested against systems of code, moving parts, or an entire application. The phrases unit testing and integration testing are often misused to reference one another especially in the context of WordPress.</p>
+
+<p>At 10up, we generally employ unit and integration tests only when building applications that are meant to be distributed. Building tests for client themes doesn’t usually offer a huge amount of value (there are of course exceptions to this). When we do write tests, we use PHPUnit which is the WordPress standard library.</p>
+
+<p>Read more at the <a href="https://phpunit.de/">PHPUnit homepage</a> and <a href="https://make.wordpress.org/core/handbook/testing/automated-testing/">automated testing for WordPress</a>.</p>
+
+<h2 id="libraries" class="anchor-heading">Libraries and Frameworks <a class="subhead-anchor" href="#libraries"><span>#libraries</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Generally, we do not use PHP frameworks or libraries that do not live within WordPress for general theme and plugin development. WordPress APIs provide us with 99 percent of the functionality we need from database management to sending emails. There are frameworks and libraries we use for themes and plugins that are being distributed or open-sourced to the public such as PHPUnit.</p>
+
+<h2 id="avoid-heredoc-and-nowdoc">Avoid <em>Heredoc</em> and <em>Nowdoc</em></h2>
+
+<p>PHP’s <em>doc syntaxes</em> construct large strings of HTML within code, without the hassle of concatenating a bunch of one-liners. They tend to be easier to read, and are easier for inexperienced front-end developers to edit without accidentally breaking PHP code.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$y</span> <span class="o">=</span> <span class="sh">&lt;&lt;&lt;JOKE
+I told my doctor
+"it hurts when I move my arm like this".
+He said, "&lt;em&gt;then stop moving it like that!&lt;/em&gt;"
+JOKE;</span>
+</code></pre></div></div>
+
+<p>However, heredoc/nowdoc make it impossible to practice <em>late escaping</em>:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Early escaping</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="nf">esc_attr</span><span class="p">(</span> <span class="nv">$my_class_name</span> <span class="p">);</span>
+
+<span class="c1">// Something naughty could happen to the string after early escaping</span>
+<span class="nv">$a</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">'something naughty'</span><span class="p">;</span>
+
+<span class="c1">// 10up &amp; VIP prefer to escape right at the point of output, which would be here</span>
+<span class="k">echo</span> <span class="sh">&lt;&lt;&lt;HTML
+&lt;div class="test {$a}"&gt;test&lt;/div&gt;
+HTML;</span>
+</code></pre></div></div>
+
+<p>As convenient as they are, engineers should avoid heredoc/nowdoc syntax and use traditional string concatenation &amp; echoing instead. The HTML isn’t as easy to read. But, we can be sure escaping happens right at the point of output, regardless of what happened to a variable beforehand.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Something naughty could happen to the string...</span>
+<span class="nv">$my_class_name</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">'something naughty'</span><span class="p">;</span>
+
+<span class="c1">// But it doesn't matter if we're late escaping</span>
+<span class="k">echo</span> <span class="s1">'&lt;div class="test '</span> <span class="mf">.</span> <span class="nf">esc_attr</span><span class="p">(</span> <span class="nv">$my_class_name</span> <span class="p">)</span> <span class="mf">.</span> <span class="s1">'"&gt;test&lt;/div&gt;'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Even better, <a href="https://developer.wordpress.org/reference/functions/get_template_part/#comment-2349">use WordPress’ <code class="language-plaintext highlighter-rouge">get_template_part()</code> function as a basic template engine</a>. Make your template file consist mostly of HTML, with <code class="language-plaintext highlighter-rouge">&lt;?php ?&gt;</code> tags just where you need to escape and output. The resulting file will be as readable as a heredoc/nowdoc block, but can still perform late escaping within the template itself.</p>
+
+<h3 id="avoid-sessions">Avoid Sessions</h3>
+
+<p>Sessions add extra complexity to web sites and extra burden on hosting setups. Avoid using sessions to store individual users’ preferences or other data. WordPress VIP <a href="https://vip.wordpress.com/documentation/vip/code-review-what-we-look-for/#session_start-and-other-session-related-functions">explicitly forbids sessions in their code reviews</a>.</p>
+
+<p>Instead of sessions, use cookies or client-side storage APIs if possible. In addition to keeping this data off the web servers, they empower site visitors to view and delete the data tied to their activity. Systems Engineers can configure full-page caches to ignore custom cookies so they don’t interfere with caching.</p>
+
+<p>If sessions must be used, create them conservatively. Don’t create sessions for every visitor. Limit sessions to the smallest group that needs them: logged-in editors and admins, or visitors using a particular feature.</p>
+
+<p>Sessions should never be stored in the database. This introduces extra data into a storage system that’s not meant for that volume. Database session libraries also rely on PHP code which can’t match the performance of PHP’s native session handlers. PHP extensions for Memcache and Redis allow sessions to be stored in these in-memory datastores and are a good solution for sessions when multiple webservers are present.</p>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

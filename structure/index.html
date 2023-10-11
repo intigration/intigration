@@ -1,0 +1,731 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-design">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-design">
+	<div class="grid-inner">
+		<h1>
+			
+				Project Design
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<h2 id="file-organization" class="anchor-heading">Theme and Plugin File Organization <a class="subhead-anchor" href="#file-organization"><span>#file-organization</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>File structure unity across themes and plugins improves engineering efficiency and maintainability. We believe the following structure is segmented enough to keep projects organized—and thus maintainable—but also flexible and open ended enough to enable engineers to comfortably modify as necessary. All themes and plugins should derive from this structure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|- assets/
+|  |- css/ _______________________________ # See below for details
+|  |- fonts/ _____________________________ # Custom/hosted fonts
+|  |- images/ ____________________________ # Theme images
+|  |- js/ ________________________________ # See below for details
+|  |- svg/ _______________________________ # Vector images that will be processed into icons
+|- bin/ __________________________________ # WP-CLI and other scripts
+|- gulp-tasks/ ___________________________ # Individual Gulp tasks
+|- includes/ _____________________________ # PHP classes and files
+|    |- classes/ _________________________ # PHP classes
+|- languages/ ____________________________ # Translations
+|- node_modules/ _________________________ # npm modules
+|- partials/ _____________________________ # Template parts
+|- templates/ ____________________________ # Page templates
+|- tests/
+|  |- php/ _______________________________ # PHP testing suite
+|  |- js/ ________________________________ # JavaScript testing suite
+|- vendor/ _______________________________ # Composer dependencies
+|- .babelrc ______________________________ # Babel config settings
+|- .editorconfig _________________________ # Editor config settings
+|- .eslintrc _____________________________ # ESLint config settings
+|- composer.json _________________________ # Composer package file
+|- gulpfile.babel.js _____________________ # Gulp config settings
+|- package.json __________________________ # npm package file
+|- webpack.config.babel.js _______________ # Webpack config settings
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">CSS</code> folder is described separately, below to improve readability:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|- assets/css/
+|    |- admin/ ___________________________ # CSS for the admin
+|    |- frontend/ ________________________ # CSS for the front end
+|       |- base/ _________________________ # CSS at the top of the cascade
+|       |- components/ ___________________ # Component-level CSS
+|       |- global/ _______________________ # Variables and configs
+|       |- layout/ _______________________ # Layout and helper classes
+|       |- templates/ ____________________ # CSS for specific templates
+|    |- shared/ __________________________ # Shared CSS between the admin and front end
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">JS</code> folder is described separately, below to improve readability:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|- assets/js/
+|    |- admin/ ___________________________ # JS for the admin
+|    |- frontend/ ________________________ # JS for the front end
+|       |- components/ ___________________ # Component-level JS
+|    |- shared/ __________________________ # Shared JS between the admin and front end
+</code></pre></div></div>
+
+<h2 id="dependencies" class="anchor-heading">Dependencies and Package Management <a class="subhead-anchor" href="#dependencies"><span>#dependencies</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Projects generally use two different types of dependency management:</p>
+
+<ul>
+  <li><a href="https://npmjs.org">npm</a> is used to manage relevant dependencies.</li>
+  <li><a href="https://getcomposer.org">Composer</a> is used primarily for back-end (i.e. admin or PHP-based) dependencies</li>
+</ul>
+
+<h2 id="when-and-how-to-use-packages">When and How to Use Packages</h2>
+
+<p>When choosing a third-party library for inclusion in your project, see if it’s available on npm (JavaScript) or Packagist (PHP). Additionally, WordPress plugins and themes are often available on <a href="https://wpackagist.org/">wpackagist.org</a>. Retrieving dependencies from a package repo helps slim down the code in our version control repos, meaning there’s less we need to retrieve when a new engineer starts on a project. It also contributes to easily keeping code up to date with security and performance improvements.</p>
+
+<p>Most package managers differentiate between dependencies and devDependencies:</p>
+
+<ul>
+  <li>devDependencies are code, often build tools like Webpack or Gulp, needed to get a site to a production-ready state.</li>
+  <li>Dependencies are code actually used in the functioning of the site, like Lodash or Normalize.css.</li>
+</ul>
+
+<p>Existing projects that weren’t built with package managers in mind offer an opportunity for engineering teams to implement them for all new development. Teams should also estimate and plan around the time needed to retrofit the existing codebase.</p>
+
+<p>With some projects, using an automated dependency manager won’t make sense. In server environments like VIP, running dependency software on the server is impossible. If required repositories are private (i.e. invisible to the clients’ in-house developers), expecting the entire team to use a dependency manager is unreasonable. In these cases, the dependency, its version, and the reason for its inclusion in the project outside of a dependency manager should be documented.</p>
+
+<p>If you are using a package where the naming and usage isn’t obvious to the average engineer, be sure to document its purpose in the README, style guide, or project documentation.</p>
+
+<h2 id="selecting-packages">Selecting Packages</h2>
+
+<p>Packages are often a Matryoshka of their own dependencies. Though this code is almost certainly all open source, it’s not practical to apply the same scrutiny to packages’ code as is expected before selecting WordPress themes and plugins. Effective package selection, therefore, relies on other factors that engineers can quickly evaluate:</p>
+
+<ul>
+  <li>Is the package actively developed and supported?</li>
+  <li>Does the package have a solid reputation in the community?</li>
+  <li>How frequently have security issues been reported, and how quickly have they historically been addressed?</li>
+  <li>Does the package require a small number of dependencies?</li>
+  <li>How easily could the packages’ code be forked in case it’s abandoned or a critical issue needs to be addressed right away? When evaluating this, consider the package’s open source license along with the ease of modifying the code.</li>
+</ul>
+
+<h2 id="package-versions-and-lock">Package Versions and Lock</h2>
+
+<p>When installing a package, engineers can specify a version string the package manager uses to select an appropriate package version. Never specify an exact x.y.z version or else security, performance, and functionality upgrades won’t be available.	
+Most third-party packages follow the Semantic Versioning (semver.org) system, where packages’ version numbers are defined in terms of major, minor, and patch levels. Changes to semver-compliant packages are expected to trigger a new major version when breaking backward compatibility.</p>
+
+<p>Instead of a full x.y.z version, Specify major &amp; minor versions x.y to minimize the risk of breaking changes being introduced into your project. Start version number strings with a caret (^) for most dependencies, for example ^1.2</p>
+
+<p>For dependencies that don’t use semver, like many WordPress themes and plugins, engineers should still specify major and minor versions x.y. Start version numbers with a tilde (~) for most dependencies.</p>
+
+<p>Modern package managers create lock files, such as npm’s “package-lock.json” and Composer’s “composer.lock”. These files record the package versions each package manager chose to satisfy the version number constraints on the current version of the platform. Lock files should be committed to project version control repos so all engineers can be on the same page.</p>
+
+<h2 id="composer-based-project-structure">Composer Based Project Structure</h2>
+
+<p>Here’s how we might structure a project with Composer:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|- composer.json ____________________________ # Define third party dependencies
+|- wp-config.php ____________________________ # WordPress configuration
+|- wp/ ______________________________________ # Composer install WordPress here
+|- wp-content/ ______________________________ # Composer dependencies
+|  |- themes/ _______________________________ # Themes directory
+|    |- custom-theme/ _______________________ # Custom theme
+|  |- plugins/ ______________________________ # Plugins directory
+|    |- custom-plugin/ ______________________ # Custom plugin
+</code></pre></div></div>
+
+<p>Here’s what <code class="language-plaintext highlighter-rouge">composer.json</code> might look like with some example plugins:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10up/project-slug"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Project description"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"repositories"</span><span class="p">:[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"composer"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://wpackagist.org"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extra"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"wordpress-install-dir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wp"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"johnpbloch/wordpress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.9"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"wpackagist-plugin/wordpress-importer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev-trunk"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"wpackagist-plugin/debug-bar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev-trunk"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"wpackagist-plugin/debug-bar-extender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev-trunk"</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="integrations" class="anchor-heading">Third-Party Integrations <a class="subhead-anchor" href="#integrations"><span>#integrations</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+
+<p>Any and all third-party integrations need to be documented in an <code class="language-plaintext highlighter-rouge">INTEGRATIONS.md</code> file at the root of the project repository. This file includes a list of third-party services, which components of the project those services power, how the project interacts with the remote APIs, and when the interaction is triggered. An integration that could result in unexpected consequences during something like a migration (such as sending out a tweet) should be clearly documented (see <a href="/migrations/">Migrations</a> section).</p>
+
+<p>For example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## CrunchBase
+Remote service for fetching funding and other investment data related to tech startups.
+
+### Scheduling
+- The CrunchBase API is used via JS in a dynamic product/company search on post edit pages
+- Funding data is pulled every 6 hours by WP Cron to update cached data
+
+### Integration Points
+- /assets/js/src/crunchbase-autocomplete.js
+- /includes/classes/crunchbase.php
+- /includes/classes/cron.php
+
+### Development API
+- See https://somesitethatrequireslogin.com/credentials-for-project
+</code></pre></div></div>
+
+<h3 id="api-keys-and-credentials">API Keys and Credentials</h3>
+
+<p>Authentication credentials and API keys should <em>never</em> be hard-coded into a project. Hard-coding production credentials leads to embarrassing eventualities like posting development content to Twitter or emailing such content to clients’ mail lists.</p>
+
+<p>Where possible, the project should expose a UI for entering and managing third party credentials.</p>
+
+<p>If a management UI is impossible due to the nature of the project, credentials should be loaded via either PHP constants or WordPress filters. These options can - and should - default to developer credentials in the absence of production data.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// Production API keys should ideally be defined in wp-config.php</span>
+<span class="c1">// This section should default to a development or noop key instead.</span>
+<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nb">defined</span><span class="p">(</span> <span class="s1">'CLIENT_MANDRILL_API_KEY'</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span> <span class="no">ENV_DEVELOPMENT</span> <span class="p">)</span> <span class="p">{</span>
+	<span class="nb">define</span><span class="p">(</span> <span class="s1">'CLIENT_MANDRILL_API_KEY'</span><span class="p">,</span> <span class="s1">'1234567890'</span> <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">ENV_DEVELOPMENT</code> constant should always be set to <code class="language-plaintext highlighter-rouge">true</code> for local development and should be used whenever and wherever possible to prevent production-only functionality from triggering in a local environment.</p>
+
+<p>The location where other engineers can retrieve developer API keys (i.e. project management tool) can and should be logged in the <code class="language-plaintext highlighter-rouge">INTEGRATIONS.md</code> file to aid in local testing. Production API keys must <em>never</em> be stored in the repository, neither in text files or hard-coded into the project itself.</p>
+
+<h2 id="modular-code" class="anchor-heading">Modular Code <a class="subhead-anchor" href="#modular-code"><span>#modular-code</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+
+<p>Every project, whether a plugin a theme or a standalone library, should be coded to be reusable and modular.</p>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>If the code for a project is split off into a functionality plugin, it should be done in such a way that the theme can function when the functionality plugin is disabled, broken, or missing. Each plugin should operate within its own namespace, both in terms of code isolation and in terms of internationalization.</p>
+
+<p>Any functions the plugin exposes for use in a theme should be done so through actions and filters - the plugin should contain multiple calls to <code class="language-plaintext highlighter-rouge">add_filter()</code> and <code class="language-plaintext highlighter-rouge">add_action()</code> as the hooks themselves will be defined in the theme.</p>
+
+<h3 id="themes">Themes</h3>
+
+<p>Any theme dependencies on functionality plugins should be built with the use of <code class="language-plaintext highlighter-rouge">do_action()</code> or <code class="language-plaintext highlighter-rouge">apply_filters()</code>.</p>
+
+<p><strong>In short,</strong> changing to the default theme should not trigger errors on a site. Nor should disabling a functionality plugin - every piece of code should be decoupled and use standard WordPress paradigms (hooks) for interacting with one another.</p>
+
+<h3 id="general-notes">General Notes</h3>
+
+<p>Every project, whether it includes Composer-managed dependencies or not, <em>must</em> contain a <code class="language-plaintext highlighter-rouge">composer.json</code> file defining the project so it can in turn be pulled in to <em>other</em> projects via Composer.</p>
+
+<h3 id="editor-config">Editor Config</h3>
+
+<p>Every project should include an Editor Config file, <code class="language-plaintext highlighter-rouge">.editorconfig</code> in the root directory.
+This file will define and maintain consistent coding styles between the different IDEs and Code Editors used on the project.</p>
+
+<p>All developers should install the corresponding Editor Config plugin for their
+preferred development editor from <a href="http://editorconfig.org/#download">EditorConfig.org</a>.</p>
+
+<p>The editor config file with standard settings for commonly used files is shown below.</p>
+
+<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="py">root</span> <span class="p">=</span> <span class="s">true</span>
+
+<span class="nn">[*]</span>
+<span class="py">indent_style</span> <span class="p">=</span> <span class="s">space</span>
+<span class="py">indent_size</span> <span class="p">=</span> <span class="s">2</span>
+<span class="py">trim_trailing_whitespace</span> <span class="p">=</span> <span class="s">true</span>
+
+<span class="nn">[*.{php,js,css,scss}]</span>
+<span class="py">end_of_line</span> <span class="p">=</span> <span class="s">lf</span>
+<span class="py">insert_final_newline</span> <span class="p">=</span> <span class="s">true</span>
+<span class="py">indent_style</span> <span class="p">=</span> <span class="s">tab</span>
+<span class="py">indent_size</span> <span class="p">=</span> <span class="s">4</span>
+</code></pre></div></div>
+
+<p>Developers may extend and/or customize these rules as new file formats are added to the project.</p>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

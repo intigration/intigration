@@ -1,0 +1,547 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-site-security">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-site-security">
+	<div class="grid-inner">
+		<h1>
+			
+				Security
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<p>The following are recommendations for better site security. This list will grow and change over time and is not meant to be comprehensive.</p>
+
+<h2 id="always-enforce-strong-passwords">Always Enforce Strong Passwords.</h2>
+
+<p>Always enforce strong passwords. By default WordPress does not enforce strong passwords. Make sure to use a plugin or custom solution to enforce a strong password policy. 10up recommends using randomly generated passwords from a password manager application.</p>
+
+<h2 id="use-multi-factor-authentication-for-administrator-accounts">Use multi-factor authentication for administrator accounts.</h2>
+
+<p>Use multi-factor (MFA) or Two factor (2FA) for admin level accounts. Multi-factor can prevent an attacker when a password is exposed. We do not recommend SMS based authentication methods due to increased risk from sim hijacking and social engineering.</p>
+
+<h2 id="always-disallow-plugintheme-edits-from-the-admin">Always disallow plugin/theme edits from the admin.</h2>
+
+<p>Always <code class="language-plaintext highlighter-rouge">define( 'DISALLOW_FILE_MODS', true );</code>. Code changes such as plugin updates should be done from the repository for easier code maintenance and constancy. This also prevents an attacker that might have gained admin access from making a code change by uploading a plugin.</p>
+
+<h2 id="always-remove-unused-code">Always remove unused code.</h2>
+
+<p>Always remove unused code. Unused plugins and themes can provide a vector for attack. Also remove as much unused code as possible and regularly audit the code base for unused plugins.</p>
+
+<h2 id="regularly-scan-your-codebase-for-vulnerable-packages">Regularly scan your codebase for vulnerable packages.</h2>
+
+<p>Build a process to regularly scan your codebase against known vulnerabilities. You can use tools like https://wpvulndb.com/ to scan for plugins or themes that could be an issue.</p>
+
+<h2 id="x-frame-options-set-to-sameorigin">X-Frame-Options set to SAMEORIGIN</h2>
+
+<p>By default, always set the <code class="language-plaintext highlighter-rouge">X-Frame-Options</code> header to <code class="language-plaintext highlighter-rouge">SAMEORIGIN</code>. This can help protect against clickjacking attacks.</p>
+
+<h2 id="disable-xml-rpc">Disable XML-RPC</h2>
+
+<p>Always disable XML-RPC since it can be used for brute force or DDoS attacks. XML_RPC is an older and mostly unused feature. Perfer the JSON API when available.</p>
+
+<h2 id="wordpress-updates">WordPress updates</h2>
+
+<p>Always keep WordPress up to date. WordPress core minor versions should be installed as soon as possible. WordPress Core offers security updates and “minor” updates to older versions of WordPress. Often bad actors will scan the web for these vulnerabilities given the WP’s popularity. This means it’s very important to update as soon as possible.</p>
+
+<h2 id="dont-use-admin-as-the-default-admin-username">Don’t use ‘admin’ as the default admin username.</h2>
+
+<p>Don’t use usernames like <code class="language-plaintext highlighter-rouge">admin</code> since it is easily guessable. Usernames like this make brute forcing much easier.</p>
+
+<h2 id="disable-user-enumeration">Disable User Enumeration</h2>
+
+<p>Always consider the information available on the JSON API about the users of the site. WordPress users data can be accessed via WordPress JSON API. This could expose something like usernames that could then be used in a brute force attempt or email addresses to be used to try to phish an user.</p>
+
+<h2 id="managing-api-keys">Managing API Keys</h2>
+
+<p>Where possible, keys should be stored either in the <code class="language-plaintext highlighter-rouge">wp_options</code> table, or as a constant defined in the <code class="language-plaintext highlighter-rouge">wp-config.php</code>, never within the application source code. Storing keys in these locations reduce the chance of accidentally pushing these keys into an upstream version control repository.  Additionally, these locations increase discoverability during routine security audits or when rotating keys.</p>
+
+<h2 id="10up-experience-plugin">10up Experience Plugin</h2>
+
+<p>For improved security, 10up recommends our <a href="https://github.com/10up/10up-experience">10up experience plugin</a>. 10up experience configures WordPress to better protect and inform our clients. <a href="https://github.com/10up/10up-experience#functionality">Please read the plugin readme for a description of the functionality.</a></p>
+
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,640 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-version-control">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-version-control">
+	<div class="grid-inner">
+		<h1>
+			
+				Version Control
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<p>We version control all projects at 10up using <a href="https://git-scm.com/">Git</a>. Version control allows us to track codebase history, maintain parallel tracks of development, and collaborate without stomping out each other’s changes.</p>
+
+<h2 id="structure-package-management" class="anchor-heading">Structure and Package Management <a class="subhead-anchor" href="#structure-package-management"><span>#structure-package-management</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>We structure our projects in such a way that we are not version controlling third party code, rather, they are included via a package manager. For PHP, we use <a href="https://getcomposer.org/">Composer</a> to manage PHP dependencies (also see <a href="/tools/#package-managers">package managers</a>) e.g. WordPress core itself, plugins, and themes. Dependency management structuring is explained more in the <a href="https://10up.github.io/structure/#composer-based-project-structure">Structure</a> section.</p>
+
+<p>We also do not commit compiled files (JS/CSS). This saves us from having to deal with people forgetting to compile files and large merge conflicts. Instead, we generate compile files during deployment.</p>
+
+<h2 id="workflows" class="anchor-heading">Workflows <a class="subhead-anchor" href="#workflows"><span>#workflows</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>At 10up we consider standardizing a workflow to be a very important part of the development process. Utilizing an effective workflow ensures efficient collaboration and quicker project onboarding. For this reason, we use the following workflows company-wide both for internal and client projects.</p>
+
+<h3 id="commits">Commits</h3>
+
+<p>Commits should be small and independent items of work, containing changes limited to a distinct idea. Distinct commits are essential in keeping features separate, pushing specific features forward, or reversing or rolling back code if necessary.</p>
+
+<h4 id="commit-messages">Commit Messages</h4>
+
+<p>The first line of a commit message is a brief summary of the changeset, describing the expected result of the change or what is done to affect change.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--oneline</span> <span class="nt">-5</span>
+
+<span class="c"># fca8925 Update commit message best practices</span>
+<span class="c"># 19188a0 Add a note about autoloading transients</span>
+<span class="c"># 9630552 Fix a typo in PHP.md</span>
+<span class="c"># 2309e04 Remove extra markdown header hash</span>
+<span class="c"># 5cd2604 Add h3 and h4 styling</span>
+</code></pre></div></div>
+
+<p>This brief summary is always required. It is around 50 characters or less, always stopping at 70. The high visibility of the first line makes it critical to craft something that is as descriptive as possible within space limits.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"Add an #Element.matches polyfill to support old IE"</span>
+</code></pre></div></div>
+
+<p>Separated from the summary by a blank line is the longer description. It is optional and includes more details about the commit and its repercussions for developers. It may include links to the related issue, side effects, other solutions that were considered, or backstory. A longer description may be useful during the merge of a feature branch, for example.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit
+
+<span class="c"># Merge 'feature/polyfill' into gh-pages</span>
+<span class="c">#</span>
+<span class="c"># matches and closest are used to simplify event delegation:</span>
+<span class="c"># http://caniuse.com/#feat=matchesselector</span>
+<span class="c"># http://caniuse.com/#feat=element-closest</span>
+<span class="c"># Promise and fetch are used to simplify async/ajax functionality:</span>
+<span class="c"># http://caniuse.com/#feat=promises</span>
+<span class="c"># http://caniuse.com/#feat=fetch</span>
+</code></pre></div></div>
+
+<h3 id="merges">Merges</h3>
+
+<p>In order to avoid large merge conflicts, merges should occur early and often. Do not wait until a feature is complete to merge <code class="language-plaintext highlighter-rouge">trunk</code> into it. Merging should be done as non-fast-forwards (<code class="language-plaintext highlighter-rouge">--no-ff</code>) to ensure a record of the merge exists.</p>
+
+<h3 id="protecting-the-trunk-branch">Protecting the <code class="language-plaintext highlighter-rouge">trunk</code> Branch</h3>
+
+<p>We recommend for all repositories to be configured so the <code class="language-plaintext highlighter-rouge">trunk</code> branch is protected to prevent direct pushes. All merges should be made through a pull request, which ensures all code changes are peer reviewed before merging to prevent unintentional code reversions. Additionally, protecting branches provides the following benefits:</p>
+
+<ul>
+  <li>Prevents the trunk branch from being accidentally deleted by other engineers</li>
+  <li>Prevents force-pushes to the branch, overwriting the history</li>
+</ul>
+
+<h3 id="themes">Themes</h3>
+
+<p>All new development should take place on feature branches that branch off <code class="language-plaintext highlighter-rouge">trunk</code>. When a new feature or bugfix is complete, we will do a non-fast-forward merge from that branch to <code class="language-plaintext highlighter-rouge">staging</code> to verify the feature or fix on the stage environment.</p>
+
+<p>When things are absolutely ready to go, we’ll deploy the feature or fix by performing a non-fast-forward merge from that branch to <code class="language-plaintext highlighter-rouge">trunk</code></p>
+
+<h4 id="branching">Branching</h4>
+
+<p>All theme projects will treat the <code class="language-plaintext highlighter-rouge">trunk</code> branch as the canonical source for live, production code. Feature branches will branch off <code class="language-plaintext highlighter-rouge">trunk</code> and should always have <code class="language-plaintext highlighter-rouge">trunk</code> merged back into them before requesting peer code review and before deploying to any staging environments.</p>
+
+<p>All staging branches will branch off <code class="language-plaintext highlighter-rouge">trunk</code> as well, and should be named <code class="language-plaintext highlighter-rouge">staging</code> or <code class="language-plaintext highlighter-rouge">stage-{environment}</code> for consistency and clarity. Staging branches will never be merged into any other branches. The <code class="language-plaintext highlighter-rouge">trunk</code> branch can be merged into both staging and feature branches to keep them up-to-date.</p>
+
+<h4 id="complex-feature-branches">Complex Feature Branches</h4>
+
+<p>In some cases, a feature will be large enough to warrant multiple developers working on it at the same time. In order to enable testing the feature as a cohesive unit and avoid merge conflicts when pushing to <code class="language-plaintext highlighter-rouge">staging</code> and <code class="language-plaintext highlighter-rouge">trunk</code> it is recommended to create a feature branch to act as a staging area. We do this by branching from <code class="language-plaintext highlighter-rouge">trunk</code> to create the primary feature branch, and then as necessary, create additional branches from the feature branch for distinct items of work. When individual items are complete, merge back to the feature branch. To pull work from <code class="language-plaintext highlighter-rouge">trunk</code>, merge <code class="language-plaintext highlighter-rouge">trunk</code> into the feature branch and then merge the feature branch into the individual branches. When all work has been merged back into the feature branch, the feature branch can then be merged into <code class="language-plaintext highlighter-rouge">staging</code> and <code class="language-plaintext highlighter-rouge">trunk</code> as an entire unit of work.</p>
+
+<h4 id="deleting-or-archiving-and-deleting-branches">Deleting or Archiving and Deleting Branches</h4>
+
+<p>This workflow will inevitably build up a large list of branches in the repository. To prevent a large number of unused branches living in the repository, we’ll delete or archive and delete them after feature development is complete.</p>
+
+<h3 id="deleting-branches">Deleting branches</h3>
+<p>When projects use non-ff merges to trunk, we can safely delete feature branches because all commits are preserved and can be located from the merge commit.</p>
+
+<ul>
+  <li>Move to another branch (doesn’t matter which): eg. <code class="language-plaintext highlighter-rouge">git checkout trunk</code></li>
+  <li>Delete the branch (both on local and remote): <code class="language-plaintext highlighter-rouge">git branch -D branch-name; git push :branch-name</code></li>
+</ul>
+
+<h3 id="archiving-and-deleting-branches">Archiving and Deleting branches</h3>
+<p>When projects use squash merges to create a more streamlined history in trunk, we should archive branches before deleting them to preserve the commit history. Branch tag archives also prove a useful history of branches, in case a specific branch is needed later.</p>
+
+<ul>
+  <li>Move to another branch (doesn’t matter which): eg. <code class="language-plaintext highlighter-rouge">git checkout trunk</code></li>
+  <li>Archive the branch: <code class="language-plaintext highlighter-rouge">git tag archive/branch-name branch-name</code></li>
+  <li>Delete the branch (both on local and remote): <code class="language-plaintext highlighter-rouge">git branch -D branch-name; git push :branch-name</code></li>
+  <li>Push the archive tag: <code class="language-plaintext highlighter-rouge">git push origin archive/branch-name</code></li>
+</ul>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>Unlike theme development, the <code class="language-plaintext highlighter-rouge">trunk</code> branch represents a stable, released, versioned product. Ongoing development will happen in feature branches branched off a <code class="language-plaintext highlighter-rouge">develop</code> branch, which is itself branched off <code class="language-plaintext highlighter-rouge">trunk</code>. This pattern is commonly referred to as <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow">the Gitflow workflow</a>.</p>
+
+<h4 id="branching-1">Branching</h4>
+
+<p>New features should be branched off <code class="language-plaintext highlighter-rouge">develop</code> and, once complete, merged back into <code class="language-plaintext highlighter-rouge">develop</code> using a non-fast-forward merge.</p>
+
+<h4 id="deploying">Deploying</h4>
+
+<p>When <code class="language-plaintext highlighter-rouge">develop</code> is at a state where it’s ready to form a new release, create a new <code class="language-plaintext highlighter-rouge">release/&lt;version&gt;</code> branch off of <code class="language-plaintext highlighter-rouge">develop</code>. In this branch, you’ll bump version numbers, update documentation, and generally prepare your release. Once ready, merge your release branch (using a non-fast-forward merge) into <code class="language-plaintext highlighter-rouge">trunk</code> and tag the release:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag <span class="nt">-a</span> &lt;version&gt; <span class="nt">-m</span> <span class="s2">"Tagging &lt;version&gt;"</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note:</strong> Once a version is tagged and released, the tag must never be removed. If there is a problem with the project requiring a re-deployment, create a new version and tag to reflect the change.</p>
+</blockquote>
+
+<p>Finally, merge <code class="language-plaintext highlighter-rouge">trunk</code> into <code class="language-plaintext highlighter-rouge">develop</code> so that <code class="language-plaintext highlighter-rouge">develop</code> includes all of the work that was done in your release branch and is aware of the current state of <code class="language-plaintext highlighter-rouge">trunk</code>.</p>
+
+<h5 id="semantic-versioning">Semantic Versioning</h5>
+
+<p>As we assign version numbers to our software, we follow <a href="http://semver.org/">the Semantic Versioning pattern</a>, wherein each version follows a MAJOR.MINOR.PATCH scheme:</p>
+
+<ul>
+  <li><strong>MAJOR</strong> versions are incremented when breaking changes are introduced, such as functionality being removed or otherwise major changes to the codebase.</li>
+  <li><strong>MINOR</strong> versions are incremented when new functionality is added in a backwards-compatible manner.</li>
+  <li><strong>PATCH</strong> versions are incremented for backwards-compatible bugfixes.</li>
+</ul>
+
+<p>Imagine Jake has written a new plugin: 10upalooza. He might give his first public release version <strong>1.0.0.</strong> After releasing the plugin, Jake decides to add some new (backwards-compatible) features, and subsequently releases version <strong>1.1.0</strong>. Later, Taylor finds a bug and reports it to Jake via GitHub; no functionality is added or removed, but Jake fixes the bug and releases version <strong>1.1.1</strong>.</p>
+
+<p>Down the road, Jake decides to remove some functionality or change the way some functions are used. Since this would change how others interact with his code, he would declare this new release to be version <strong>2.0.0</strong>, hinting to consumers that there are breaking changes in the new version of his plugin.</p>
+
+<h5 id="change-logs">Change Logs</h5>
+
+<p>If your plugin  is being distributed, it’s strongly recommended that your repository contains a <code class="language-plaintext highlighter-rouge">CHANGELOG.md</code> file, written around <a href="http://keepachangelog.com/">the Keep A Changelog standard</a>.</p>
+
+<p>Maintaining an accurate, up-to-date change log makes it easy to see – in human-friendly terms – what has changed between releases without having to read through the entire Git history. As a general rule, every merge into the <code class="language-plaintext highlighter-rouge">develop</code> branch should contain at least one line in the change log, describing the feature or fix.</p>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,580 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-tools">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-tools">
+	<div class="grid-inner">
+		<h1>
+			
+				Tools
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<p>The following are tools we use at 10up. This list will grow and change over time and is not meant to be comprehensive. Generally, we encourage or require these tools to be used in favor of other ones. Rules governing tools to be used and packaged with a client site will be much stricter than those used on internal projects.</p>
+
+<h2 id="local-development" class="anchor-heading">Local Development Environments <a class="subhead-anchor" href="#local-development"><span>#local-development</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>At 10up, we use <a href="https://www.docker.com/">Docker</a> to build and interact with virtual environments that match production as closely as possible. There are many setups and configurations available, but the following setup is supported internally:</p>
+
+<ul>
+  <li><a href="https://10up.github.io/wp-local-docker-docs/">WP Local Docker</a> - An easy-to-use Docker-based local development environment for WordPress development that works on Mac, Windows, and Linux. Each environment within WP Local Docker is powered by Nginx, PHP-FPM, Memcached, and if desired, ElasticSearch.</li>
+</ul>
+
+<h2 id="scaffolding" class="anchor-heading">Scaffolding <a class="subhead-anchor" href="#scaffolding"><span>#scaffolding</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p><a href="https://github.com/10up/project-scaffold">10up Project Scaffold</a> - Developers can use 10up Project Scaffold to quickly create themes and plugins with our recommended tools and many of our best practices already in place.</p>
+
+<h2 id="task-runners" class="anchor-heading">Task Runners <a class="subhead-anchor" href="#task-runners"><span>#task-runners</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p><a href="http://gruntjs.com/">Grunt</a> - Grunt is a task runner built on Node that lets you automate tasks like Sass preprocessing and JS minification. Grunt is our default task runner and has a great community of plugins and solutions we use for on company and client projects.</p>
+
+<p><a href="http://gulpjs.com/">Gulp</a> - Gulp is also a task runner build on Node that offers a similar suite of plugins and solutions to Grunt. The biggest difference is Gulp allows you direct access to the <a href="https://nodejs.org/api/stream.html">stream</a> of information from your source files and allows you to modify this data directly.</p>
+
+<p><a href="https://webpack.github.io/">Webpack</a> - Webpack is a bundler for JS/CSS. It’s extremely useful when building larger JavaScript applications (i.e. React.js).</p>
+
+<h2 id="package-managers" class="anchor-heading">Package/Dependency Managers <a class="subhead-anchor" href="#package-managers"><span>#package-managers</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p><a href="https://getcomposer.org">Composer</a> - We use Composer for managing PHP dependencies. Usually everything we need is bundled with WordPress, but sometimes we need external PHP libraries like “Patchwork”. Composer is a great way to manage those external libraries.</p>
+
+<p>When a WordPress install is managed and maintained by an engineering team, and when the infrastructure supports it, plugins in a WordPress project can be easily managed using Composer. <a href="https://wpackagist.org/">WordPress Packagist</a> provides a Composer repository that mirrors all public WordPress plugins and themes.</p>
+
+<h2 id="version-control" class="anchor-heading">Version Control <a class="subhead-anchor" href="#version-control"><span>#version-control</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p><a href="https://git-scm.com">Git</a> - At 10up we use Git for version control. We encourage people to use the command line for interacting with Git. GUIs are permitted but will not be supported internally.</p>
+
+<p><a href="https://subversion.apache.org/">SVN</a> - We use SVN, but only in the context of WordPress.com VIP. Again, we encourage people to use the command line as we do not support GUIs internally.</p>
+
+<h2 id="command-line" class="anchor-heading">Command Line Tools <a class="subhead-anchor" href="#command-line"><span>#command-line</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p><a href="https://wp-cli.org">WP-CLI</a> - A command line interface for WordPress. This is an extremely powerful tool that allows us to do imports, exports, run custom scripts, and more via the command line. Often this is the only way we can affect a large database (WordPress.com VIP or WP Engine). This tool is installed by default on <a href="https://10up.github.io/wp-local-docker-docs/">WP Local Docker</a>.</p>
+
+<h2 id="a11y-testing" class="anchor-heading">Accessibility Testing <a class="subhead-anchor" href="#a11y-testing"><span>#a11y-testing</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>We use a variety of tools to test our sites for accessibility issues. WebAim has some great resources on <a href="http://webaim.org/articles/screenreader_testing/">how to evaluate sites</a> with a screen reader.</p>
+
+<ul>
+  <li><a href="http://webaim.org/articles/voiceover/">Using VoiceOver</a></li>
+  <li><a href="http://webaim.org/articles/nvda/">Using NVDA</a></li>
+  <li><a href="http://webaim.org/articles/jaws/">Using JAWS</a></li>
+</ul>
+
+<p>We’re also a fan of a few browser tools that lend us a hand when it comes to testing areas like color contrast, heading hierarchy, and ARIA application.</p>
+
+<ul>
+  <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=es">Headings Map for Chrome</a> or <a href="https://addons.mozilla.org/en-us/firefox/addon/headingsmap/">Headings Map for Firefox</a> - A browser extension that allows you to see the heading structure of a webpage.</li>
+  <li><a href="http://whatsock.com/training/matrices/visual-aria.htm">The Visual ARIA Bookmarklet</a> - A bookmarklet that can be run on a webpage and color codes ARIA roles.</li>
+  <li><a href="http://wave.webaim.org/">WAVE</a> - A toolkit from WebAIM, that also has an extension for Chrome/Firefox. It evaluates a webpage and returns accessibility errors.</li>
+  <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb">Accessibility Developer Tools</a> - A Chrome extension that adds an “Audit” tab in Chrome’s developer tools that can scan a webpage for accessibility issues.</li>
+  <li><a href="https://khan.github.io/tota11y/">Tota11y</a> - A visualization toolkit that can be used as a bookmarklet, and reveals accessibility errors on a webpage.</li>
+  <li><a href="https://leaverou.github.io/contrast-ratio/">Contrast Ratio</a> - A color contrast tool to compare two colors against <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html">levels of conformance</a> and see if they pass.</li>
+  <li><a href="http://contrast-finder.tanaguru.com/?lang=en">Tanagaru Contrast Finder</a> - Another color contrast tool that tests colors against the levels of conformance, but also provides you with alternatives should your provided colors fail.</li>
+</ul>
+
+<h2 id="vrt" class="anchor-heading">Visual Regression Testing <a class="subhead-anchor" href="#vrt"><span>#vrt</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>We use visual regression testing to ensure code changes don’t have unforeseen repercussions. This provides a helpful visual aid to check against CSS changes, plugin updates, and third-party script updates.</p>
+
+<ul>
+  <li><a href="https://github.com/garris/BackstopJS">BackstopJS</a> - A tool used to run visual regression tests that compares known reference states against updates.</li>
+</ul>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

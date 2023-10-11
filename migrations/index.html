@@ -1,0 +1,706 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-migrations">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-migrations">
+	<div class="grid-inner">
+		<h1>
+			
+				Migrations
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+	
+	<p>Data migrations are a necessary but often feared part of building applications on the web. Migrations can, and typically are, difficult, but if planned properly, they can be fairly painless. The following are some general guidelines to keep in mind when dealing with a migration. Note that this is not a how-to guide on doing a migration, since all migrations are unique, but these are some general guidelines to follow.</p>
+
+<h2 id="migration-plan">Migration Plan</h2>
+
+<p>The first step in any migration project is to document a detailed plan. A typical migration plan is expected to outline:</p>
+
+<ul>
+  <li>How the content and data will be “pulled” out of the originating site (direct database connection, XML or WXR export, flat files such as SQL scripts, scraper, etc.). For many migrations, a SQL dump is used to move the data to a migration server where we can more easily handle it;</li>
+  <li>Scripting requirements. Many migrations need <a href="https://wp-cli.org/">WP-CLI</a> scripts for mapping data;</li>
+  <li>How long the migration is expected to run;</li>
+  <li>How the data and content will be mapped to the new site’s information architecture;</li>
+  <li>The impact of the migration on any production editorial processes (i.e. content freezes, differential migration requirements);</li>
+  <li>Potential “gotchas” - or risks - to watch out for;</li>
+  <li>Staffing implications. What parties need to be available during the migration;</li>
+  <li>How will migrated content be reviewed for accuracy;</li>
+  <li>Making changes to data structure can influence site SEO. Proper redirects mitigate most of this, but this should be thoroughly accounted for in the plan;</li>
+  <li>How will backups be restored. How will a failed migration be handled.</li>
+</ul>
+
+<p>Make sure to have the plan peer reviewed by <em>at least</em> one other engineer.</p>
+
+<h2 id="writing-migration-scripts">Writing Migration Scripts</h2>
+
+<p>Now that we have a solid migration plan in place, we are ready to actually write the scripts that will handle the migration. All migrations will vary heavily at this step. Sometimes we can get WXR files and just use the WordPress importer (typically using <a href="https://wp-cli.org/commands/import/">WP CLI</a>) to handle everything we need. Other times we’ll use the WordPress Importer then write a script to modify data once it’s in WordPress. Other times we’ll write scripts that handle the entire migration process for us.</p>
+
+<p>All of these decisions should be part of the migration plan we put together, so at this point, we know exactly what we are going to do, and we can start work accordingly. 10up will generally use <a href="https://wp-cli.org/">WP CLI</a> to power these scripts, which gives us great flexibility on what we can do, what output we can show, and typically you’ll have a lot less issues with performance, like memory limits and timeouts.</p>
+
+<h2 id="thou-shalt-not-forget">Thou Shalt Not Forget</h2>
+
+<p>The following are some general things to keep in mind when doing these migrations. Note that not all will apply in every scenario and there are items missing from this list, but this gives a good general overview of things to keep in mind.</p>
+
+<ul>
+  <li>
+    <p><em>Test all migration scripts</em></p>
+
+    <p>This probably goes without saying but migrations should be run multiple times: locally, staging, preproduction (if available), before it’s ever run on production. There will inevitably be issues that need to be fixed, so the more the migration process is tested, the more likely these issues are found and fixed before it’s run on production. It’s always better to write and test iteratively, so any potential issues can be found and fixed sooner.</p>
+
+    <ul>
+      <li>In the same vein as this, make sure all scripts are code reviewed before running on stage/preprod/prod.</li>
+    </ul>
+  </li>
+  <li>
+    <p><em>Review data</em></p>
+
+    <p>Once data has been migrated to an accessible server (typically stage), all data should be heavily reviewed to make sure it was migrated correctly. This means checking to make sure posts have correct titles, correct content, correct authors, correct dates, etc. Normally the client will be helping significantly with this step, as they are the ones most familiar with the content.</p>
+  </li>
+  <li>
+    <p><em>Schedule with host</em></p>
+
+    <p>When running a migration on a hosted server, make sure the host is aware when these are going to be run. Most migrations take up quite a few resources, so planning this in advance, and making sure the host is okay with it, is always a good idea. It’s good to work with a host weeks in advance to plan a migration.</p>
+  </li>
+  <li>
+    <p><em>Images (and other media)</em></p>
+
+    <p>Media, usually images but also videos or audio, should be considered when putting together your migration plan. These types of items typically take longer to migrate, as they have to be downloaded to the new site. Having a plan in place to handle this is important.</p>
+
+    <p>Sometimes media can be left as-is, meaning, for instance, any image that’s referenced somewhere can stay as-is and doesn’t need to be moved over. But often we’ll want all media brought over to the new site. In this case, if the amount of total media items is small, this can be done using core WordPress functions. If the amount of media is great, this can significantly slow down the migration process and sometimes crash it all together. In this scenario, looking into options to offload this processing is usually the way to go (something like using <a href="http://gearman.org/">Gearman</a> to process multiple media items at once).</p>
+  </li>
+  <li>
+    <p><em>Redirects</em></p>
+
+    <p>In some cases, the data structure from the old site to the new changes in such a way that new URLs are needed. Sometimes this is on purpose, sometimes it’s necessary because of some data changes. In any case, these need to be accounted for and the client consulted so we can add proper redirects, so any links to the old content will redirect to the new content. Failure to properly handle redirects can have disastrous search engine indexing consequences. Always work with the client closely on redirect plans.</p>
+
+    <p>There are multiple ways to handle redirects, whether these are set on the server level, whether they are set using a <a href="https://wordpress.org/plugins/safe-redirect-manager/">plugin</a> or sometimes a custom approach is needed. Generally it’s good practice to keep track of all needed redirects as the migration runs, so by the time the migration is done, we have a list of all needed redirects. This can be achieved in multiple ways but one way would be a custom mapping table, that maps old content to new content. However these are saved though, they can then be implemented with our chosen approach.</p>
+  </li>
+  <li>
+    <p><em>Authors</em></p>
+
+    <p>We always need to make sure authors are brought over and assigned correctly. When creating authors, only create them once, so we don’t end up with duplicate authors. Once an author has been brought over the first time, check for and re-use that author each time we need it in the future. Some platforms have the ability to set multiple authors on a post, so make sure there’s a solution figured out for that if needed.</p>
+  </li>
+</ul>
+
+<h2 id="potential-side-effects">Potential Side Effects</h2>
+
+<p>Even the most carefully planned migration can have issues. The following are some things that might occur if they’re not planned for and tested.</p>
+
+<ul>
+  <li>
+    <p><em>Missing data</em></p>
+
+    <p>There will be occasions when some data can’t be found when trying to migrate it. Typically this will be media items, like images. Having a plan in place to deal with any content that can’t be found will ensure your scripts don’t fail.</p>
+  </li>
+  <li>
+    <p><em>SEO</em></p>
+
+    <p>When making changes to data structure, there’s always a possibility to negatively impact SEO. If proper thought is put into redirects, as mentioned above, that should help mitigate most of this. But definitely something that should be thought through and accounted for.</p>
+  </li>
+  <li>
+    <p><em>Social</em></p>
+
+    <p>One thing to make sure of when running migrations is to not trigger any social services that might be set up. This includes sending posts to Facebook, Twitter or email. We don’t want to spam subscribers with hundreds, if not thousands of items all in a row, as those items are migrated in. There are multiple ways to prevent this from happening and will depend heavily on how the site is set up (i.e. how these social services are powered). Make sure as part of the migration plan you account for this.</p>
+  </li>
+  <li>
+    <p><em>Test Users on Production</em></p>
+
+    <p>If you are importing a SQL dump, remember users come with it as well. If you created the dump from a local environment that had test users, those will be imported. Make sure to verify users after completing a migration.</p>
+  </li>
+  <li>
+    <p><em>Time</em></p>
+
+    <p>Migrations tend to take a lot of time, from putting together a good migration plan, writing the migration scripts, testing those scripts, fixing issues found and then finally running the migration on production. Always make sure there’s enough time estimated for this in a project and enough time set aside to get all this done within the required time frame.</p>
+  </li>
+  <li>
+    <p><em>Backups</em></p>
+
+    <p>As has been hinted at a few times in this guide, migrations tend to never work right the very first time, and they end up needing to be run over and over, with tweaks in between to get to the end goal. Always keep a backup of the original data, so at any point we can re-run a migration with a fresh data set. Also, usually it’s a good idea to save a piece of meta with any content that gets migrated. This allows us at any point to find all migrated content and do something with that data (a typical use-case would be deleting all migrated content to be able to re-run the migration).</p>
+
+    <p>Also, inevitably there will come a time when after a successful production migration has been done, some other piece of data is found that wasn’t originally thought of and now needs to be brought over. As long as an original data source was kept (typically a database backup), new migration scripts can be written and run to get the missing content.</p>
+  </li>
+</ul>
+
+<h2 id="tips-to-speed-up-migrations">Tips to speed up migrations</h2>
+
+<ul>
+  <li>
+    <p><strong>Separate tasks.</strong></p>
+
+    <p>Prioritize faster tasks. This doesn’t necessarily speed up the total execution time, but will get some data in place sooner, meaning it can be reviewed more quickly to ensure the migration is on track. Importing media files, and fetching assets from a remote site tend to be the slowest tasks.</p>
+  </li>
+  <li>
+    <p><strong>Use a dedicated migration server.</strong></p>
+
+    <p>A separate server dedicated solely to migration provides system resources for a faster migration that isn’t influenced by other applications.</p>
+  </li>
+  <li>
+    <p><strong>Free up memory.</strong></p>
+
+    <p>During migration script execution, make sure to periodically free up memory. A typical function used at 10up is:</p>
+  </li>
+</ul>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">function</span> <span class="n">stop_the_insanity</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">global</span> <span class="nv">$wpdb</span><span class="p">,</span> <span class="nv">$wp_object_cache</span><span class="p">;</span>
+
+	<span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="n">queries</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="nb">is_object</span><span class="p">(</span> <span class="nv">$wp_object_cache</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+		<span class="nv">$wp_object_cache</span><span class="o">-&gt;</span><span class="n">group_ops</span>      <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+		<span class="nv">$wp_object_cache</span><span class="o">-&gt;</span><span class="n">stats</span>          <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+		<span class="nv">$wp_object_cache</span><span class="o">-&gt;</span><span class="n">memcache_debug</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+		<span class="nv">$wp_object_cache</span><span class="o">-&gt;</span><span class="n">cache</span>          <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+		<span class="k">if</span> <span class="p">(</span> <span class="nb">method_exists</span><span class="p">(</span> <span class="nv">$wp_object_cache</span><span class="p">,</span> <span class="s1">'__remoteset'</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+			<span class="nv">$wp_object_cache</span><span class="o">-&gt;</span><span class="nf">__remoteset</span><span class="p">();</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>Defer counting.</strong></p>
+
+    <p>When migrating taxonomies, call <code class="language-plaintext highlighter-rouge">wp_defer_term_counting( true )</code> before, and then <code class="language-plaintext highlighter-rouge">wp_defer_term_counting( false )</code> afterwards. This technique also applies to comments, by using <code class="language-plaintext highlighter-rouge">wp_defer_comment_counting( true )</code>.</p>
+  </li>
+  <li>
+    <p><strong>Use helpful constants that eliminate unneeded processing.</strong></p>
+
+    <p>Setting <code class="language-plaintext highlighter-rouge">define( 'WP_POST_REVISIONS', 0 )</code> can cut down significantly on memory usage.</p>
+  </li>
+  <li>
+    <p><strong>Use PHP7</strong></p>
+
+    <p>If PHP 7 is an option, use it.</p>
+  </li>
+</ul>
+
+<h3 id="requirements-for-a-successful-migration">Requirements for a successful migration</h3>
+
+<ul>
+  <li>
+    <p><strong>Test all migration scripts.</strong></p>
+
+    <p>Migration scripts must be tested repeatedly on a local development environment, staging, and pre-production (if available) before being run on production, so that issues can be safely corrected. It’s always better to write and test scripts iteratively, to minimize the complexity involved in troubleshooting and fix bad assumptions or dependencies early in the process. As with the migration plan, have another engineer review all script code before running.</p>
+  </li>
+  <li>
+    <p><strong>Be mindful of external integrations.</strong></p>
+
+    <p>It’s <em>critically important</em> to make sure migration scripts don’t trigger unintended external integrations. It’s common in WordPress development to tie functionality to hooks that fire when content is created and/or saved, which is part of almost every data migration. A migration script that triggers these hooks might trigger a variety of unintended actions, like publishing content to Facebook or Twitter, or firing off emails to site subscribers. In this latter case, hundreds, if not thousands, of emails could flood subscribers’ inboxes as content is migrated, possibly even during a test migration to a development site. <em>At best, this can be extremely embarrassing; at worst, this could do harm to a customer and even be considered negligent.</em></p>
+
+    <p>One way to prevent some unintended triggers is by checking the <code class="language-plaintext highlighter-rouge">WP_IMPORTING</code> constant. A migration script <em>must</em> set this constant, <code class="language-plaintext highlighter-rouge">define( 'WP_IMPORTING', true )</code>, as well engineered integrations will check for that before executing.</p>
+  </li>
+  <li>
+    <p><strong>Editorial data review.</strong></p>
+
+    <p>As engineers, it’s easy to look at data and say “this looks right”. However, editors and those deeply involved with site management have a much closer relationship to the content. Have a member of the site editorial team check posts to make sure they have correct titles, content, authors, dates, and other related metadata.</p>
+  </li>
+  <li>
+    <p><strong>Coordinate with the host.</strong></p>
+
+    <p>When running a migration on an externally hosted server, make sure the host is aware. Most migrations require significant server resources, and could impact other hosted applications or trigger flags.</p>
+  </li>
+  <li>
+    <p><strong>Make specific plans for content stored in the file system (i.e. site media).</strong></p>
+
+    <p>Media, like images, videos, or audio files typically take longer to migrate, as they have to be downloaded to the new site, and sometimes require more carefully considered content transformation (e.g. changing URLs in the content). If there is an unusually large volume of attached media to move, consider offloading processing using tools like <a href="https://github.com/10up/WP-Gears">Gearman</a> to process multiple files at once.</p>
+  </li>
+  <li>
+    <p><strong>Doublecheck author metadata.</strong></p>
+
+    <p>Always make sure that authors are fully migrated and assigned to the correct content. Ensure only a single account is made per author. Be careful to consider whether the site supports assigning multiple authors to a single post.</p>
+  </li>
+  <li>
+    <p><strong>Save a piece of meta with each migrated piece of content referring back to the original content.</strong></p>
+
+    <p>This allows all migrated content to be found easily (a typical use case is deleting all migrated content in preparation for re-running the migration scripts). If, after a successful production migration is completed, a piece of data is found that wasn’t originally included in the planning and now needs to be brought over, new migration scripts can be written to interact with the saved meta.</p>
+  </li>
+</ul>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,855 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-javascript">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-javascript">
+	<div class="grid-inner">
+		<h1>
+			
+				React
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<p>The purpose of this document is to help guide you through working with a potential project using the JavaScript library, <a href="https://reactjs.org/">React</a>. Outside of the official React documentation, you should find here personalized recommendations for using the library based on the types of projects we typically  see at 10up. We have broken these recommendations out into common elements we tend to interact with often in client work. If something you’re looking for isn’t represented you can either submit a pull request to this repository or refer to the <a href="https://reactjs.org/">official React documentation</a>.</p>
+
+<h2 id="figuring-out-if-react-is-right-for-your-project">Figuring Out If React Is Right For Your Project</h2>
+
+<p>Using the right tool for the job is critical in navigating a successful project. Will React always be the answer? Of course not. But there are some instances where you may want to use this library over something like (for example) a collection of plugins, custom JavaScript, or another framework.</p>
+
+<p>When deciding whether React is the right tool for your project, it might help to ask the following questions:</p>
+
+<ul>
+  <li>Will this project involve building a user interface that requires statefulness? In other words, will your user interface need to…react…in real time to user actions or changeable data coming from an API?</li>
+  <li>Does your project need enough reusable components to make it worth using React? React is a fairly heavy library compared with the similar Vue.</li>
+  <li>Will your project need to render large amounts of data in real time while remaining performant for the browser?</li>
+  <li>Are you building a native mobile app for iOS and/or Android? The React team also maintains React Native, a subset of React which makes it possible to write applications in JavaScript using React components that compile to native Swift and Java.</li>
+</ul>
+
+<p>React is easily integrated into specific parts of the front-end or admin of an existing site, but it can also be used to render entire sites, effectively replacing traditional WordPress templates—although doing so requires a lot more planning and scaffolding of features (such as routing) that would normally be handled by the CMS out of the box.</p>
+
+<h2 id="components">Components</h2>
+<p>When building out components, it’s beneficial to understand how to construct them in the most appropriate way possible. Certain “types” of components can be written differently which can have big performance benefits on larger scale applications.</p>
+
+<h3 id="class-components">Class Components</h3>
+<p>Class Components are written in the ES6 Class syntax. When building a component using a <a href="https://reactjs.org/docs/react-api.html#reactcomponent">JS Class</a>, you are generally inferring that the component manages it’s own <code class="language-plaintext highlighter-rouge">state</code> or needs access to specific lifecycles hooks.</p>
+
+<p>Example of a Class Component:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">SearchInput</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+	<span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+		<span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+			<span class="na">searchTerm</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+		<span class="p">};</span>
+		<span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="nx">handleClick</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span> <span class="na">searchTerm</span><span class="p">:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span> <span class="p">});</span>
+	<span class="p">}</span>
+
+	<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+		<span class="kd">const</span> <span class="p">{</span> <span class="nx">searchTerm</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">;</span>
+		<span class="k">return</span> <span class="p">(</span>
+			<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">search-input</span><span class="dl">"</span><span class="o">&gt;</span>
+				<span class="o">&lt;</span><span class="nx">input</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">searchTerm</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
+</span>			<span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>		<span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">SearchInput</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Using class components are mostly discouraged since the introduction of <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a>. There are however some situations where you might still need a class component:</p>
+
+<ul>
+  <li>When you need access to a very specific lifecycle hook such as <code class="language-plaintext highlighter-rouge">componentDidCatch</code> for creating <a href="https://reactjs.org/docs/error-boundaries.html#introducing-error-boundaries">ErrorBoundaries</a>.</li>
+  <li>Some components are naturally better suited for using class components. As an example consider the following component that consumes a stream of frames:</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">Camera</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+	<span class="nx">handleCameraStream</span> <span class="o">=</span> <span class="p">(</span><span class="nx">frames</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="c1">// this method has proper access to props and state. Even if Camera re-renders.</span>
+		<span class="nx">cancelAnimationFrame</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">rafID</span><span class="p">);</span>
+		<span class="kd">const</span> <span class="nx">loop</span> <span class="o">=</span> <span class="k">async</span> <span class="p">(</span><span class="nx">now</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+			<span class="kd">const</span> <span class="nx">frame</span> <span class="o">=</span> <span class="nx">frames</span><span class="p">.</span><span class="nx">next</span><span class="p">().</span><span class="nx">value</span><span class="p">;</span>
+			<span class="c1">// process frame</span>
+			<span class="k">this</span><span class="p">.</span><span class="nx">rafID</span> <span class="o">=</span> <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">loop</span><span class="p">);</span>
+		<span class="p">};</span>
+		<span class="k">this</span><span class="p">.</span><span class="nx">rafID</span> <span class="o">=</span> <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">loop</span><span class="p">);</span>
+	<span class="p">};</span>
+
+	<span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="o">&lt;</span><span class="nx">CameraStream</span> <span class="nx">width</span><span class="o">=</span><span class="p">{</span><span class="nx">width</span><span class="p">}</span> <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="nx">height</span><span class="p">}</span> <span class="nx">onReady</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleCameraStream</span><span class="p">}</span> <span class="sr">/&gt;</span><span class="err">;
+</span>	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Camera</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">onReady</code> is only called when the camera stream is ready and the <code class="language-plaintext highlighter-rouge">handleCameraStream</code> method sets up a loop, if <code class="language-plaintext highlighter-rouge">Camera</code> re-renders, <code class="language-plaintext highlighter-rouge">onReady</code> is not called again. If <code class="language-plaintext highlighter-rouge">Camera</code> was a functional component, everytime it re-rendered and its props/state changed, the <code class="language-plaintext highlighter-rouge">handleCameraStream</code> callback would not have the right scope to have access to the most up-to-date state/props as the function was bound to the first render. The alternative for using functional components is storing each frame in state through <code class="language-plaintext highlighter-rouge">useState</code> and process frames in a separate function but that adds complexity and unecessary re-renders every time a new frame is received.</p>
+
+<h3 id="functional-components">Functional Components</h3>
+
+<p>A Functional Component can take the form of a <a href="https://reactjs.org/docs/components-and-props.html#function-and-class-components">plain function</a> in JavaScript, or a fat arrow function stored in a variable. In the past, the biggest difference between a Class Component and a Functional Component was that Functional Components were not aware of <code class="language-plaintext highlighter-rouge">state</code>. With the introduction of <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a> functional components are now able to handle most of the React APIs such as state, contexts, refs and lifecycle.</p>
+
+<p>Functional components are the <strong>recommended</strong> way to write React components as they come with less boilerplate code, allows you to reuse stateful logic without changing component hierarchy and complex components become easier to understand by avoiding a myriad of complex logic spread between <code class="language-plaintext highlighter-rouge">componentDidUpdate</code>, <code class="language-plaintext highlighter-rouge">componentDidMount</code> and other lifecycle class methods.</p>
+
+<p>The following example is the previous <code class="language-plaintext highlighter-rouge">SearchInput</code> component converted to a functional component using hooks.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">SearchInput</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="p">[</span><span class="nx">searchTerm</span><span class="p">,</span> <span class="nx">setSearchTerm</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+
+	<span class="kd">const</span> <span class="nx">handleClick</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nx">setSearchTerm</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+	<span class="p">};</span>
+
+	<span class="k">return</span> <span class="p">(</span>
+		<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">search-input</span><span class="dl">"</span><span class="o">&gt;</span>
+			<span class="o">&lt;</span><span class="nx">input</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">searchTerm</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
+</span>		<span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>	<span class="p">);</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">SearchInput</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="purecomponents">PureComponents</h3>
+
+<p>PureComponents allow for a potential performance benefit. A <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent">Pure Component</a> implements the <code class="language-plaintext highlighter-rouge">shouldComponentUpdate</code> lifecycle method to perform a shallow comparison of what changed in <code class="language-plaintext highlighter-rouge">props</code> and <code class="language-plaintext highlighter-rouge">state</code> since the last render.</p>
+
+<p>Considering PureComponents perform shallow comparisons of previous <code class="language-plaintext highlighter-rouge">state</code> and new <code class="language-plaintext highlighter-rouge">state</code>, a component should become “pure” when theres no need to re-render the entire component (or its children) every time data changes.</p>
+
+<p>Typically, you <strong>won’t need</strong> to create PureComponents as functional components and react hooks are better tools for the job. Do not use PureComponent if you are building stateless functional component and need lifecycle methods, use the <code class="language-plaintext highlighter-rouge">useEffect</code> hook instead.</p>
+
+<p><em>NOTE:</em> The performance benefits are realized when the data passed to the component is simple. Large nested objects, and complex arrays passed to PureComponents may end up degrading the performance benefits. It’s important to be very deliberate about your use of this type of component.</p>
+
+<h2 id="routing">Routing</h2>
+
+<p>In most cases, you will only need routing if your React application needs to navigate between multiple layout components, render different data based on the current app location, and provide browser history. Make sure your app needs routing functionality before you consider adding a routing library.</p>
+
+<h3 id="react-router">React Router</h3>
+
+<p>The most popular routing library for React is <a href="https://github.com/ReactTraining/react-router">React Router</a>. React Router provides a core library plus APIs for both DOM (web) and React Native (native iOS and Android) platforms. To use the library, install the package for one or the other API according to your application’s platform needs—the core library is included in both.</p>
+
+<p>To read more about the concept of dynamic routing, with plenty of code examples to follow along with, refer to the <a href="https://reacttraining.com/react-router/web/guides/philosophy">React Router documentation</a>.</p>
+
+<h3 id="routing-accessibility">Routing Accessibility</h3>
+
+<p>In general, routing is little more than an Ajax call to load content with a URL update. This pattern poses some accessibility problems since there is no true page reload. To overcome this and make sure our React implementations pass accessibility compliance we need to ensure a few things happen:</p>
+
+<ol>
+  <li>Update the page title.</li>
+  <li>Programmatically <a href="https://reactjs.org/docs/refs-and-the-dom.html">reassign focus with a ref</a> to the new loaded content.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">Alert the user of any changes</a> (like a new page loading).</li>
+</ol>
+
+<p>Following these steps will make sure your content and routing is readable by assistive technology.</p>
+
+<h2 id="props-and-state">Props and State</h2>
+
+<p>State in React is the lifeblood of the component. State determines how, and with what data, a component will be rendered on the page. State gives components reactivity and dynamic rendering abilities.</p>
+
+<p>Props serve as a means to pass data between components. At its most basic level, props are passed to <em>each individual component</em> that needs to consume and utilize that data. Basic applications will likely be able to pass data using this default behavior.</p>
+
+<h3 id="state-management">State Management</h3>
+
+<p>As an application becomes more complex, it may become more of a hassle to pass data down to many child components. This is where frameworks like <a href="https://redux.js.org/">Redux</a> will come in. However before you reach for these third party frameworks, consider the <a href="https://reactjs.org/docs/context.html">React Context API</a></p>
+
+<h4 id="context-api">Context API</h4>
+
+<p>The React Context API is the first line of defense when your application becomes sufficiently complex, and we are faced with <a href="https://kentcdodds.com/blog/prop-drilling">prop drilling</a> concerns.</p>
+
+<p>Context provides a way to pass data through the component tree without having to pass props down manually at every level. This is immensely helpful for applications that are highly componentized, and need to share data with those components, regardless of where they exist within the application structure. It is crucial that you think critically about how the data in your application is to be utilized and passed around. If data simply needs to be shared, Context may be for you.</p>
+
+<p>Context does not however provide the further sophisticated features of libraries like Redux. Stepping through application history, alternate UIs that reuse business logic, state changes based on actions etc. If those are things that you need in your application, the Context API may not be quite robust enough for you.</p>
+
+<p>You also need to be careful with the fact that any component “connected” to a given React Context will re-render automatically when the data the context holds changes. There’s no built-in mechanism to <strong>mapStateToProps</strong> within the Context API. One way to solve this problem is to create multiple specialized contexts for you application that only stores a specific portion of you shared global state. For example, a “User” context that holds user data and a “Posts” context that holds a list of posts to be rendered on the application.</p>
+
+<p>For example, consider the following <code class="language-plaintext highlighter-rouge">UserProvider</code> component that is responsible for fetching an user if it’s logged in and storing the user object in a React Context.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useContext</span><span class="p">,</span> <span class="nx">createContext</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">PropTypes</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">prop-types</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">fetchUser</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../util</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">UserContext</span> <span class="o">=</span> <span class="nx">createContext</span><span class="p">();</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">useUser</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">useContext</span><span class="p">(</span><span class="nx">UserContext</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">user</span> <span class="p">?</span> <span class="nx">data</span><span class="p">.</span><span class="nx">user</span> <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">UserProvider</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="p">[</span><span class="nx">user</span><span class="p">,</span> <span class="nx">setUser</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+	<span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nx">fetchUser</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">setUser</span><span class="p">);</span>
+	<span class="p">},</span> <span class="p">[]);</span>
+
+	<span class="k">return</span> <span class="o">&lt;</span><span class="nx">UserContext</span><span class="p">.</span><span class="nx">Provider</span> <span class="nx">value</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">children</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/UserContext.Provider&gt;</span><span class="err">;
+</span><span class="p">};</span>
+
+<span class="nx">UserProvider</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">children</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">oneOfType</span><span class="p">([</span><span class="nx">PropTypes</span><span class="p">.</span><span class="nx">element</span><span class="p">,</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">arrayOf</span><span class="p">(</span><span class="nx">PropTypes</span><span class="p">.</span><span class="nx">element</span><span class="p">)])</span>
+		<span class="p">.</span><span class="nx">isRequired</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">UserProvider</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>This component can then wrap the application tree exposing the <code class="language-plaintext highlighter-rouge">UserContext</code> to any child component.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">UserProvider</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useUser</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./UserProvider</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">UserMenu</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">useUser</span><span class="p">();</span>
+
+	<span class="k">return</span> <span class="nx">user</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">user is logged in</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">user is not logged in</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
+	<span class="o">&lt;</span><span class="nx">UserProvider</span><span class="o">&gt;</span>
+		<span class="o">&lt;</span><span class="nx">UserMenu</span> <span class="o">/&gt;</span>
+	<span class="o">&lt;</span><span class="sr">/UserProvider</span><span class="err">&gt;
+</span><span class="p">);</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h4 id="redux">Redux</h4>
+
+<p>As an application grows larger, it may be the case where the state becomes difficult to handle, every new feature introduces a new layer of complexity that may in some cases result in unexpected, and unpredictable behavior.</p>
+
+<p>Redux is a state container that stops the ever-changing nature of the state itself. It acts as a protector of the state, allowing only certain defined actions to trigger a state update. Thus making it predictable.</p>
+
+<p><strong>Principles of Redux</strong></p>
+
+<p>Redux is based almost completely on 3 main principles:</p>
+
+<ol>
+  <li>Single Source of Truth: This is a main tree object which holds the entire state of your application. It’s meant to help your application to be seen as a whole.</li>
+  <li>State is Read Only: The state of the application stops being mutable, the only way to change the state is by triggering an action, which itself will work as a log of what, when, and why changed in the state.</li>
+  <li>Changes are made with pure functions: This means that only an action (or an event) can trigger a Reducer which will take the previous state and return a new one.</li>
+</ol>
+
+<p>The third bullet point is really important but some times underestimated. Introducing application side-effects inside reducers can trigger several issues that become difficult to debug. As a general rule, action creators and reducers should never trigger application side-effects such as mutating the DOM, attaching event callbacks, triggering event callbacks etc. If you need something like that consider either creating a Redux Middleware or using existing solutions such as <a href="https://redux-saga.js.org/">Redux Saga</a> alongside with Redux.</p>
+
+<p><strong>When to use Redux</strong></p>
+
+<p>As appealing as it might be. Redux is not a tool for everyday use. By design, Redux will put constraints in your application that may not actually be needed. A good starting point to make this choice is the article by its creator, <a href="https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367">Dan Abramov: You might not need Redux</a>. The usual recommendation is, think in React. And if along the way you discover the need of Redux, implement it.</p>
+
+<h2 id="resilient-components">Resilient Components</h2>
+
+<p>The idea of resilient components was first introduced by Dan Abramov, his blog post <a href="https://overreacted.io/writing-resilient-components/">writing resiliting components</a> does a great job explaining this concept.</p>
+
+<p>The principes are the following:</p>
+
+<ol>
+  <li><a href="https://overreacted.io/writing-resilient-components/#principle-1-dont-stop-the-data-flow">Don’t stop the data flow</a></li>
+  <li><a href="https://overreacted.io/writing-resilient-components/#principle-2-always-be-ready-to-render">Always be ready to render</a></li>
+  <li><a href="https://overreacted.io/writing-resilient-components/#principle-3-no-component-is-a-singleton">No component is a singleton</a></li>
+  <li><a href="https://overreacted.io/writing-resilient-components/#principle-4-keep-the-local-state-isolated">Keep the local state isolated</a></li>
+</ol>
+
+<p>Writing resilient components makes components more robust and has the potential to avoid many bugs. It’s highly recommended to review the principles above.</p>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<p>React accessibility is not so different than standard accessibility support. It mainly centers around making sure semantic HTML and proper attributes are used with the correct elements. Managing focus flow and repairing when necessary. Be sure to also use the <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">jsx-a11y eslint plugin</a> to ensure your code maintains a solid accessible foundation.</p>
+
+<h3 id="semantic-html-and-fragments">Semantic HTML and Fragments</h3>
+
+<p>Using the the most relevant HTML elements is always preferred, and doesn’t change when using React. Sometimes we can break HTML semantics when we add div elements to our JSX to make our React code work, especially with a set of elements such as lists. In these cases we should use Fragments.</p>
+
+<p><a href="https://reactjs.org/docs/accessibility.html/#semantic-html">Fragments</a> are a pattern used in React which allow a component to return multiple elements, without an encompassing div component. Using div elements in certain contexts may break HTML semantics.
+Use fragment when a key prop is required
+Use <code class="language-plaintext highlighter-rouge">&lt;elem&gt;&lt;/elem&gt;</code> syntax everywhere else</p>
+
+<h3 id="accessible-forms">Accessible Forms</h3>
+<p>Standard HTML practices should be used for forms. One caveat though is making sure all inputs have proper labeling. In React the <code class="language-plaintext highlighter-rouge">“for”</code> attribute is written as <code class="language-plaintext highlighter-rouge">“htmlFor”</code> in JSX.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;label htmlFor="namedInput"&gt;Name:&lt;/label&gt;
+&lt;input id="namedInput" type="text" name="name"/&gt;
+</code></pre></div></div>
+
+<h3 id="programmatically-managing-focus">Programmatically managing focus</h3>
+
+<p>React applications continuously modify the HTML DOM during runtime, sometimes leading to keyboard focus being lost or set to an unexpected element. React provides “Refs” in order to modify child components or elements outside of the standard flow. These can help us specifically manage keyboard focus.</p>
+
+<p>The ref attribute can be placed on any React component, with a function value. This function will be executed as soon as the component is mounted or unmounted. The first parameter of the function will be a reference to the element or the component the ref is on.</p>
+
+<p><a href="https://reactjs.org/docs/accessibility.html#focus-control">Read more about creating refs and focus control in React</a></p>
+
+<h2 id="server-side-rendering">Server Side Rendering</h2>
+
+<p>With server side rendering (SSR), the initial content is generated on the server, so your browser can download a page with HTML content already in place. Updates to the content are still handled in the browser.</p>
+
+<p>Here are three topics to consider when looking at server-side rendering:</p>
+<ul>
+  <li><a href="https://www.javascriptstuff.com/server-side-render/#seo">SEO</a>: Rendering server-side helps search engine crawlers find your content, but sometimes Google can find your content without SSR.</li>
+  <li><a href="https://www.javascriptstuff.com/server-side-render/#performance">Performance</a>: SSR will usually increase performance for your app, but not always.</li>
+  <li><a href="https://www.javascriptstuff.com/server-side-render/#complexity">Complexity</a>: Using SSR will increase the complexity of your application, which means less time working on other features and improvements.</li>
+</ul>
+
+<h3 id="when-to-use-server-side-rendering">When to Use Server-side Rendering</h3>
+
+<ul>
+  <li>You need SEO on Google, DuckDuckGo, Bing, Yahoo, or Baidu and performing consistently across all of them. Note that as of now, Google and Bing can index synchronous JavaScript applications—synchronous being the key word. If your app starts with a loading spinner, then fetches content via Ajax, the crawler will only wait a few seconds for loading to complete. This means if you have content fetched asynchronously on pages where SEO is important, SSR might be necessary.</li>
+  <li>If you are looking for an alternative to improve user experience and performance. Server-rendered markup doesn’t need to wait until all JavaScript has been downloaded and executed to be displayed, so your user will see a fully-rendered page sooner. This generally results in better user experience, and can be critical for applications where time-to-content is directly associated with conversion rate.</li>
+</ul>
+
+<h3 id="other-things-to-consider-when-using-ssr">Other things to consider when using SSR:</h3>
+
+<ul>
+  <li>Issues might arise when using SSR with third-party libraries, which to render the components need to access certain variables that are only available in the browser (for e.g window, document…).</li>
+  <li>Rendering a full app in Node.js is obviously going to be more CPU-intensive than just serving static files, so if you expect high traffic, be prepared for corresponding server load and wisely employ caching strategies.</li>
+</ul>
+
+<h3 id="prerendering">Prerendering</h3>
+<p>If you’re only investigating SSR to improve the SEO of a handful of marketing pages, you probably want <a href="https://github.com/geelen/react-snapshot">prerendering</a> instead. Rather than using a web server to compile HTML on-the-fly, prerendering simply generates static HTML files for specific routes at build time. The advantage is setting up prerendering is much simpler and allows you to keep your frontend as a fully static site.</p>
+
+<h3 id="dynamic-rendering">Dynamic Rendering</h3>
+
+<p>Another alternative for improving SEO on react websites without SSR is to use <a href="https://developers.google.com/search/docs/guides/dynamic-rendering">Dynamic Rendering</a>. This requires a more complex set up but the benefit is that this technique does not require any changes to the SPA codebase.</p>
+
+<p>The idea here is to set up a server or service that will be responsible for prerendering the SPA through a headless browser before serving the markup to search engines.</p>
+
+<h2 id="debugging">Debugging</h2>
+<p>React provides a Chrome &amp; Firefox extension to facilitate debugging. It is an extremely useful debugging tool, providing quick transparent access into the data within your React instance. Whenever you encounter a new concept in React, it’s generally a good idea to open up the dev tool, and observe your application state.</p>
+
+<h2 id="gutenberg">Gutenberg</h2>
+<p>Before we dive into some of the specifics of Gutenberg, it’s important to understand React’s role within Gutenberg itself.</p>
+
+<p>Very simply, Gutenberg is built with React. The underlying code that makes Gutenberg work, is React code. Much like “WordPress PHP” Gutenberg blocks employ a similar code style as React, but it’s not React. In any case, the most effective way for us to frame React’s role in Gutenberg is that React is simply the technology used to make Gutenberg work the way it does.</p>
+
+<h3 id="framing-gutenberg">Framing Gutenberg</h3>
+<p>When discussing Gutenberg and its capabilities, we must examine its role in any given project. Primarily, Gutenberg should be framed as a tool for publishers to manage their content in a more dynamic and flexible way. It should not be framed as a “page builder”, which implies a 1:1 relationship between the front end and the back end. Gutenberg most certainly has tools to help us achieve a 1:1 relationship, however creating this relationship for every custom block should not be an implied expectation.</p>
+
+<h3 id="gutenberg-components">Gutenberg Components</h3>
+<p>When creating Gutenberg components in the WordPress editor, mostly you’ll find yourself adhering to the standard best practices of React, but there are a few Gutenberg-specific design patterns you should be aware of before starting a new build.</p>
+
+<h4 id="wordpresselement">@wordpress/element</h4>
+<p>Element is an abstraction layer atop React created just for WordPress and used within Gutenberg components. It was created to allow engineers an API entry point into Gutenberg with deliberate features, omissions, and protections from core-library updates (React updates, in this case) that could cause breaking changes in an interface.</p>
+
+<p>The presence of Element is why you don’t see React directly imported into Gutenberg components. <a href="https://wordpress.org/gutenberg/handbook/designers-developers/developers/packages/packages-element/">Read more about using Element in Gutenberg</a>.</p>
+
+<h4 id="higher-order-components">Higher-order Components</h4>
+<p>Gutenberg offers a library of higher-order components (HOC) you can use to build out a robust editor experience. The features of these components range from focus management to auditory messaging. It is best to familiarize yourself with these components so you don’t end up rebuilding a utility functionality that already exists within Gutenberg. You can view <a href="https://github.com/WordPress/gutenberg/tree/master/packages/components/src/higher-order">Gutenberg’s library of generic Higher Order React Components</a> to learn more or view the official <a href="https://reactjs.org/docs/higher-order-components.html">React documentation for general information about using HOC</a>.</p>
+
+<p>As with any evolving feature, it is important to frequently check the documentation for new additions and updates.</p>
+
+<h3 id="including--excluding-blocks">Including / Excluding Blocks</h3>
+
+<p>Gutenberg has the ability to allow only certain blocks to be used. This can be found under the <a href="https://developer.wordpress.org/block-editor/developers/filters/block-filters/">Block Filters</a> page of the official Gutenberg documentation. Specifically, under the heading <a href="https://developer.wordpress.org/block-editor/developers/filters/block-filters/#removing-blocks">Removing Blocks</a>. Details of how to filter via JavaScript or PHP can be found there.</p>
+
+<p>Also note that this method is different than the <code class="language-plaintext highlighter-rouge">allowedBlocks</code> prop on <code class="language-plaintext highlighter-rouge">&lt;InnerBlocks&gt;</code> when used in a custom block. The filtering described here applies to all blocks on a higher level within the editor.</p>
+
+<h4 id="possible-scenarios">Possible scenarios</h4>
+
+<p>There may be a need to remove or restrict access to blocks. This could be for a variety of reasons, but typical scenarios could be:</p>
+<ul>
+  <li>Improve admin UX by reducing block options for editors</li>
+  <li>Prevent editors from using unsupported blocks</li>
+  <li>Multiphase / retainer project where a subset of blocks are added / supported over time</li>
+  <li>Restricting blocks to a particular user group, post type, or page template</li>
+  <li>Using a custom block which replaces functionality of an existing block</li>
+</ul>
+
+<p>Each project is different. Carefully consider removing blocks from the admin with your project team.</p>
+
+<h4 id="choosing-to-allow-or-deny-access-to-blocks">Choosing to allow or deny access to blocks</h4>
+
+<p>Typically, you should exclude all blocks by default and add a list of which blocks to include versus including all blocks by default with a list of which to exclude. This helps guard against changes or blocks which are added at a later date, which could break functionality or have other unintented side effects. Blocks would have to be specifically allowed and tested before being used. Additionally, typical patterns for how we develop favor this in other locations (such as escaping, <code class="language-plaintext highlighter-rouge">&lt;InnerBlocks&gt;</code>, etc.) This helps keep a consistent pattern in the codebase.</p>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

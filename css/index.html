@@ -1,0 +1,887 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-css">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-css">
+	<div class="grid-inner">
+		<h1>
+			
+				CSS
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<h2 id="philosophy" class="anchor-heading">Philosophy <a class="subhead-anchor" href="#philosophy"><span>#philosophy</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+
+<p>At 10up, we value content and the experience users will have reading it. We write CSS with this in mind and don’t sacrifice our clients’ most important assets over the latest, shiniest, half-supported CSS features just for the sake of using them. CSS should help enhance content, not bury it under “cool” distractions.</p>
+
+<p>Our websites are built mobile first, using performant CSS. Well-structured CSS yields maintainability and better collaboration which ultimately yields better client experiences.</p>
+
+<h2 id="accessibility" class="anchor-heading">Accessibility <a class="back-to-top" href="#top">back to top</a></h2>
+
+<h3 id="animation">Animation</h3>
+
+<p>Not every animation brings pleasure to the end user. In some cases motion can trigger harmful reactions from users with vestibular disorders, epilepsy or even migraines.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">prefer-reduced-motion</code> CSS media feature does not currently have the widest support, but is active in <a href="https://caniuse.com/#feat=prefers-reduced-motion">Safari and Firefox</a>). However, we still recommend applying it, as it is simple to implement and affords a better experience for those using supported browsers.</p>
+
+<p>Here is an example:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.animation</span> <span class="p">{</span>
+    <span class="nl">animation</span><span class="p">:</span> <span class="n">vibrate</span> <span class="m">0.3s</span> <span class="n">linear</span> <span class="n">infinite</span> <span class="nb">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="p">:</span> <span class="n">reduce</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nc">.animation</span> <span class="p">{</span>
+        <span class="nl">animation</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Read more about <a href="https://alistapart.com/blog/post/more-resources-for-accessible-animations">creating accessible animations</a>.</p>
+
+<h2 id="performance" class="anchor-heading">Performance <a class="subhead-anchor" href="#performance"><span>#performance</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Let’s be honest, CSS “speed” and performance is not as important as PHP or JavaScript performance. However, this doesn’t mean we should ignore it. A sum of small improvements equals better experience for the user.</p>
+
+<p>Three areas of concern are <a href="#network-requests">network requests</a>, <a href="#css-specificity">CSS specificity</a> and <a href="#animations">animation</a> performance.</p>
+
+<p>Performance best practices are not only for the browser experience, but for code maintenance as well.</p>
+
+<h2 id="responsive-design" class="anchor-heading">Responsive Design <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>We build our websites mobile first. We do not rely on JavaScript libraries such as <code class="language-plaintext highlighter-rouge">respond.js</code> as it does not work well in certain environments. Instead, we leverage a natural, mobile-first build process and allow sites gracefully degrade.</p>
+
+<h3 id="min-width-media-queries">Min-width media queries</h3>
+
+<p>A responsive website should be built with min-width media queries. This approach means that our media queries are consistent, readable and minimize selector overrides.</p>
+
+<ul>
+  <li>For most selectors, properties will be added at later breakpoints. This way we can reduce the usage of overrides and resets.</li>
+  <li>It targets the least capable browsers first which is philosophically in line with mobile first — a concept we often embrace for our sites</li>
+  <li>When media queries consistently “point” in the same direction, it makes it easier to understand and maintain stylesheets.</li>
+</ul>
+
+<p>Avoid mixing min-width and max-width media queries.</p>
+
+<h3 id="breakpoints">Breakpoints</h3>
+
+<p>Working with build tools that utilize Sass or PostCSS processing, we can take advantages of reusability and avoid having an unmaintainable number of breakpoints. Using variables and reusable code blocks we can lighten the CSS load and ease maintainability.</p>
+
+<h3 id="media-queries-placement">Media queries placement</h3>
+
+<p>In your stylesheet files, nest the media query within the component it modifies. <strong>Do not</strong> create size-based partials (e.g. <code class="language-plaintext highlighter-rouge">_1024px.(s)css</code>, <code class="language-plaintext highlighter-rouge">_480px.(s)css</code>): it will be frustrating to hunt for a specific selector through all the files when we have to maintain the project. Putting the media query inside the component will allow developers to immediately see all the different styles applied to an element.</p>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">@import</span> <span class="s1">"responsive/1024up"</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.some-class</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.some-other-class</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nc">.some-class</span> <span class="p">{</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.some-class</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+	<span class="err">@media</span> <span class="err">only</span> <span class="err">screen</span> <span class="err">and</span> <span class="err">(</span><span class="nl">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="err">{</span>
+		<span class="n">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="err">}</span>
+<span class="nc">.some-other-class</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="ie8-and-older-browser-support">IE8 and older browser support</h3>
+
+<p>We prefer showing a fixed-width non-responsive desktop version to older IE users rather than showing a mobile version.</p>
+
+<ul>
+  <li>Use a feature detection to target older browsers.</li>
+  <li>Load a different stylesheet for older browsers.</li>
+</ul>
+
+<h2 id="syntax-formatting" class="anchor-heading">Syntax and Formatting <a class="subhead-anchor" href="#syntax-formatting"><span>#syntax-formatting</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Syntax and formatting are keys to a maintainable project. By keeping our code style consistent, we not only help ourselves debug faster but we’re also lessening the burden on those who will have to maintain our code (maybe ourselves too!).</p>
+
+<h3 id="css-syntax">CSS Syntax</h3>
+
+<p>CSS syntax is not strict and will accept a lot of variations, but for the sake of legibility and fast debugging, we follow basic code styles:</p>
+
+<ul>
+  <li>Write one selector per line</li>
+  <li>Write one declaration per line</li>
+  <li>Closing braces should be on a new line</li>
+</ul>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.class-1</span><span class="o">,</span> <span class="nc">.class-2</span><span class="o">,</span>
+<span class="nc">.class-3</span> <span class="p">{</span>
+<span class="nl">width</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="nl">height</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.class-1</span><span class="o">,</span>
+<span class="nc">.class-2</span><span class="o">,</span>
+<span class="nc">.class-3</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Include one space before the opening brace</li>
+  <li>Include one space before the value</li>
+  <li>Include one space after each comma-separated values</li>
+</ul>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.class-1</span><span class="o">,</span><span class="nc">.class-2</span><span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span><span class="m">0</span> <span class="m">1px</span> <span class="m">5px</span> <span class="m">#000</span><span class="p">,</span><span class="m">1px</span> <span class="m">2px</span> <span class="m">5px</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.class-1</span><span class="o">,</span>
+<span class="nc">.class-2</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">5px</span> <span class="m">#000</span><span class="p">,</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">5px</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Try to use lowercase for all values, except for font names</li>
+  <li>Zero values don’t need units</li>
+  <li>End all declarations with a semi-colon, even the last one, to avoid errors</li>
+  <li>Use double quotes instead of single quotes</li>
+</ul>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">section</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#FFFFFF</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Times New Roman'</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0px</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">section</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If you don’t need to set all the values, don’t use shorthand notation.</p>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.header-background</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.header-background</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="declaration-ordering">Declaration ordering</h3>
+
+<p>Declarations should be ordered alphabetically or by type (Positioning, Box model, Typography, Visual). Whichever order is chosen, it should be consistent across all files in the project.</p>
+
+<p>If you’re using Sass, use this ordering:</p>
+
+<ol>
+  <li>@extend</li>
+  <li>Regular styles (allows overriding extended styles)</li>
+  <li>@include (to visually separate mixins and placeholders) and media queries</li>
+  <li>Nested selectors</li>
+</ol>
+
+<h3 id="nesting">Nesting</h3>
+
+<p>Nesting has changed the lives of many, but like everything in life, abusing good things will ultimately be bad. Nesting makes the code more difficult to read and can create confusion. Too much nesting also adds unnecessary specificity, forcing us to add the same or greater specificity in overrides. We want to avoid selector nesting and over-specificity as much as possible.</p>
+
+<p>If you’re using PostCSS or Sass <strong>nesting is required</strong> in the following cases, because it will make the code easier to read:</p>
+
+<ul>
+  <li>pseudo-classes</li>
+  <li>pseudo-elements</li>
+  <li>component states</li>
+  <li>media queries</li>
+</ul>
+
+<h3 id="selector-naming">Selector Naming</h3>
+
+<p>Selectors should be lowercase, and words should be separated with hyphens. Please avoid camelcase, but underscores are acceptable if they’re being used for <a href="https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> or another syntax pattern that requires them. The naming of selectors should be consistent and describe the functional purpose of the styles they’re applying.</p>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.btnRed</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.btn-warning</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>For components that could possibly conflict with plugins or third-party libraries, use vendor prefixes. Don’t use names that can be blocked by adblockers (e.g. “advertisement”). When in doubt, you can check a class name against <a href="https://easylist-downloads.adblockplus.org/easylist.txt">this list</a> to see if it’s likely to be blocked.</p>
+
+<h2 id="documentation" class="anchor-heading">Documentation <a class="subhead-anchor" href="#documentation"><span>#documentation</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p>Code documentation serves two purposes: it makes maintenance easier and it makes us stop and think about our code. If the explanation is too complex, maybe the code is overly complex too. Documenting helps keep our code simple and maintainable.</p>
+
+<h3 id="commenting">Commenting</h3>
+
+<p>We follow WordPress official commenting standards. Do not hesitate to be very verbose with your comments, especially when documenting a tricky part of your CSS. Use comment blocks to separate the different sections of a partial, and/or to describe what styles the partial covers:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/**
+ * Section title
+ *
+ * Description of section
+ */</span>
+</code></pre></div></div>
+
+<p>For single selectors or inline comments, use this syntax:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Inline comment */</span>
+</code></pre></div></div>
+
+<p>Make sure to comment any complex selector or rule you write. For example:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Select list item 4 to 8, included */</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">n</span><span class="o">+</span><span class="err">4</span><span class="o">)</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">-n</span><span class="o">+</span><span class="err">8</span><span class="o">)</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="network-requests">Network Requests</h3>
+
+<ul>
+  <li>Limit the number of requests by concatenating CSS files and encoding sprites and font files to the CSS file.</li>
+  <li>Minify stylesheets</li>
+  <li>Use GZIP compression when possible
+Automate these tasks with a PHP or/and JavaScript build process.</li>
+</ul>
+
+<h3 id="css-specificity">CSS Specificity</h3>
+
+<p>Stylesheets should go from less specific rules to highly specific rules. We want our selectors specific enough so that we don’t rely on code order, but not too specific so that they can be easily overridden.</p>
+
+<p>For that purpose, <strong>classes</strong> are our preferred selectors: pretty low specificity but high reusability.</p>
+
+<p>Avoid using <code class="language-plaintext highlighter-rouge">!important</code> whenever you can.</p>
+
+<p>Use <a href="https://csswizardry.com/2011/09/writing-efficient-css-selectors/">efficient selectors</a>.</p>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">div</span> <span class="nt">div</span> <span class="nt">header</span><span class="nf">#header</span> <span class="nt">div</span> <span class="nt">ul</span><span class="nc">.nav-menu</span> <span class="nt">li</span> <span class="nt">a</span><span class="nc">.black-background</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">radial-gradient</span><span class="p">(</span><span class="n">ellipse</span> <span class="n">at</span> <span class="nb">center</span><span class="p">,</span>  <span class="m">#a90329</span> <span class="m">0%</span><span class="p">,</span><span class="m">#8f0222</span> <span class="m">44%</span><span class="p">,</span><span class="m">#6d0019</span> <span class="m">100%</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="inheritance">Inheritance</h3>
+
+<p>Fortunately, many CSS properties can be inherited from the parent. Take advantage of inheritance to avoid bloating your stylesheet but keep <a href="#css-specificity">specificity</a> in mind.</p>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.sibling-1</span> <span class="p">{</span>
+	<span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.sibling-2</span> <span class="p">{</span>
+	<span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Prefer:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.parent</span> <span class="p">{</span>
+	<span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="reusable-code">Reusable code</h3>
+
+<p>Styles that can be shared, should be shared (aka DRY, Don’t Repeat Yourself). This will make our stylesheets less bloated and prevent the browser from doing the same calculations several times. Make good use of Sass placeholders. (also see <a href="#inheritance">Inheritance</a>)</p>
+
+<h3 id="css-over-assets">CSS over assets</h3>
+
+<p>Don’t add an extra asset if a design element can be translated in the browser using CSS only. We value graceful degradation over additional HTTP requests.</p>
+
+<p>Very common examples include gradients and triangles.</p>
+
+<h3 id="animations">Animations</h3>
+
+<p>It’s a common belief that CSS animations are more performant than JavaScript animations. A few articles aimed to set the record straight (linked below).</p>
+
+<ul>
+  <li>If you’re only animating simple state changes and need good mobile support, go for CSS (most cases).</li>
+  <li>If you need more complex animations, use a JavaScript animation framework or requestAnimationFrame.</li>
+</ul>
+
+<p>Limit your CSS animations to 3D transforms (translate, rotate, scale) and opacity, as those are aided by the GPU and thus smoother. Note that too much reliance on the GPU can also overload it.</p>
+
+<p>Avoid:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#menu</span> <span class="nt">li</span><span class="p">{</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span> <span class="n">ease-in-out</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#menu</span> <span class="nt">li</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">10px</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Always test animations on a real mobile device loading real assets, to ensure the limited memory environment doesn’t tank the site. <strong>Note:</strong> <a href="https://www.w3.org/WAI/WCAG21/quickref/#animation-from-interactions">WCAG 2.1, Guideline 2.3.2 Motion from Animation</a> dictates that, “Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.”</p>
+
+<p>Articles worth reading:</p>
+<ul>
+  <li><a href="https://greensock.com/css-performance">CSS animations performance: the untold story</a></li>
+  <li><a href="https://css-tricks.com/myth-busting-css-animations-vs-javascript/">Myth Busting: CSS Animations vs. JavaScript</a></li>
+  <li><a href="https://davidwalsh.name/css-js-animation">CSS vs. JS Animation: Which is Faster?</a></li>
+  <li><a href="https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/">Why Moving Elements With Translate() Is Better Than Pos:abs Top/left</a></li>
+  <li><a href="https://developers.google.com/web/fundamentals/look-and-feel/animations/css-vs-javascript?hl=en">CSS vs JavaScript Animations</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">requestAnimationFrame</a></li>
+</ul>
+
+<h2 id="frameworks" class="anchor-heading">Frameworks <a class="subhead-anchor" href="#frameworks"><span>#frameworks</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<h3 id="grids">Grids</h3>
+
+<p>Our preference is not to use a 3rd party grid system, use your best judgement and keep them simple! All too often we are faced with a design that isn’t built on a grid or purposefully breaks a loosely defined grid. Even if the designer had a grid in mind, there are often needs that require more creative solutions. For example: fixed-width content areas to accommodate advertising.</p>
+
+<p>Sometimes a more complex grid system is warranted and leveraging a 3rd party library will gain some efficiency. However, keep in mind that by adopting a grid system you are forcing all future collaborators on the project to learn this system.</p>
+
+<h3 id="resets">Resets</h3>
+
+<p><a href="https://necolas.github.io/normalize.css/">Normalize.css</a> is our primary tool for CSS resets.</p>
+
+<h2 id="further-reading-back-to-top">Further reading <a class="back-to-top" href="#top">back to top</a></h2>
+
+<p><a href="https://css-tricks.com/just-try-and-do-a-good-job/">CSS: Just Try and Do a Good Job</a></p>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>

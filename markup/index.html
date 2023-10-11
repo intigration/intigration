@@ -1,0 +1,776 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        var host = "10up.github.io";
+        if ( window.location.host === host && window.location.protocol !== "https:" ) {
+            window.location.protocol = "https:";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.ico" type="image/x-icon">
+
+    <title>
+      10up Engineering Best Practices
+    </title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Mono&subset=latin,cyrillic">
+
+    <script type='text/javascript' src='//use.typekit.net/dtp2teh.js?ver=4.0'></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Google Analytics to go here -->
+  </head>
+  <body class="page-markup">
+    <header id="page-header" role="banner">
+	<div class="page-header-content">
+		<a href="/Engineering-Best-Practices" class="logo-link">10up</a>
+		<nav class="page-nav top-nav" role="navigation" aria-label="Main navigation.">
+			<ul class="header-nav nav-dropdowns js-mobile-expandable">
+				
+				
+				
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/">Home</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/#audience">Audience</a></li>
+            
+          
+            
+              <li><a href="/#goal">Goal</a></li>
+            
+          
+            
+              <li><a href="/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/#contributing">Contributing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/css/">CSS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/css/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/css/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/css/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/css/#responsive-design">Responsive Design</a></li>
+            
+          
+            
+              <li><a href="/css/#syntax-formatting">Syntax and Formatting</a></li>
+            
+          
+            
+              <li><a href="/css/#documentation">Documentation</a></li>
+            
+          
+            
+              <li><a href="/css/#frameworks">Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/javascript/">JS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/javascript/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/javascript/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/javascript/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/javascript/#client-side-data">Client-Side Data</a></li>
+            
+          
+            
+              <li><a href="/javascript/#unit-and-integration-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/javascript/#libraries">Libraries and Frameworks</a></li>
+            
+          
+            
+              <li><a href="/react">React</a></li>
+            
+          
+            
+              <li><a href="/nodejs">Node.js</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li class="current-menu-item">
+      
+      	<a href="/markup/">Markup</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/markup/#philosophy">Philosophy</a></li>
+            
+          
+            
+              <li><a href="/markup/#accessibility">Accessibility</a></li>
+            
+          
+            
+              <li><a href="/markup/#structure">Structure</a></li>
+            
+          
+            
+              <li><a href="/markup/#media">Media</a></li>
+            
+          
+            
+              <li><a href="/markup/#svg">SVG</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/tools/">Tools</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/tools/#local-development">Local Development Environments</a></li>
+            
+          
+            
+              <li><a href="/tools/#scaffolding">Scaffolding</a></li>
+            
+          
+            
+              <li><a href="/tools/#task-runners">Task Runners</a></li>
+            
+          
+            
+              <li><a href="/tools/#package-managers">Package/Dependency Managers</a></li>
+            
+          
+            
+              <li><a href="/tools/#version-control">Version Control</a></li>
+            
+          
+            
+              <li><a href="/tools/#command-line">Command Line Tools</a></li>
+            
+          
+            
+              <li><a href="/tools/#a11y-testing">Accessibility Testing</a></li>
+            
+          
+            
+              <li><a href="/tools/#vrt">Visual Regression Testing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/php/">PHP</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/php/#performance">Performance</a></li>
+            
+          
+            
+              <li><a href="/php/#design-patterns">Design Patterns</a></li>
+            
+          
+            
+              <li><a href="/php/#security">Security</a></li>
+            
+          
+            
+              <li><a href="/php/#code-style">Code Style & Documentation</a></li>
+            
+          
+            
+              <li><a href="/php/#unit-testing">Unit and Integration Testing</a></li>
+            
+          
+            
+              <li><a href="/php/#libraries">Libraries and Frameworks</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/structure/">Design</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/structure/#file-organization">File Organization</a></li>
+            
+          
+            
+              <li><a href="/structure/#dependencies">Dependencies</a></li>
+            
+          
+            
+              <li><a href="/structure/#integrations">Third-Party Integrations</a></li>
+            
+          
+            
+              <li><a href="/structure/#modular-code">Modular Code</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/migrations/">Migrations</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/version-control/">VCS</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/version-control/#structure-package-management">Structure</a></li>
+            
+          
+            
+              <li><a href="/version-control/#workflows">Workflows</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/site-security/">Security</a>
+      	
+      </li>
+    
+  
+
+  
+    
+      
+      <li>
+      
+      	<a href="/systems/">Systems</a>
+      	
+      	
+      	<ul class="subnav">
+      	  
+            
+              <li><a href="/systems/#nginx">Nginx</a></li>
+            
+          
+            
+              <li><a href="/systems/#php-fpm">PHP-FPM</a></li>
+            
+          
+            
+              <li><a href="/systems/#mysql">MySQL</a></li>
+            
+          
+            
+              <li><a href="/systems/#memcached-and-redis">Memcached and Redis</a></li>
+            
+          
+            
+              <li><a href="/systems/#load-balancing">Load Balancing</a></li>
+            
+          
+      	</ul>
+      	
+      	
+      </li>
+    
+  
+
+
+
+
+			</ul>
+		</nav>
+
+		<a href="https://github.com/10up/" class="main-nav-supplemental-icon">
+			<span class="screen-reader-text">View on Github</span>
+		</a>
+		<a class="toggle-menu-icon js-mobile-expandable-toggle">
+			<span class="screen-reader-text">Toggle Main Navigation</span>
+		</a>
+
+	</div>
+</header>
+
+<header id="top" class="template-header header-markup">
+	<div class="grid-inner">
+		<h1>
+			
+				Markup
+			
+		</h1>
+	</div>
+</header>
+
+
+    <div class="docs-section">
+		
+		<h2 id="philosophy" class="anchor-heading">Philosophy <a class="subhead-anchor" href="#philosophy"><span>#philosophy</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+<p>At 10up, we aim to create the best possible experience for both our clients and their customers; not for the sake of using cool, bleeding edge technologies that may not have widespread browser support. Our markup embodies this approach.</p>
+
+<p>Markup is intended to define the structure and outline of a document and to offer semantic structure for the document’s contents. Markup should not define the look and feel of the content on the page beyond the most basic structural concepts such as headers, paragraphs, and lists.</p>
+
+<p>At 10up, we employ progressive enhancement to ensure that the sites we build for our clients are accessible to as many users as possible.</p>
+
+<p>Progressive enhancement means building a website that is robust, fault tolerant, and accessible. Progressive enhancement begins with a baseline experience and builds out from there, adding features for browsers that support them. It does not require us to select supported browsers or revert to table-based layouts. Baselines for browser and device support are set on a project-by-project basis.</p>
+
+<h2 id="accessibility" class="anchor-heading">Accessibility <a class="subhead-anchor" href="#accessibility"><span>#accessibility</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+<p>It’s important that our clients and their customers are able to use the products that we create for them. Accessibility means creating a web that is accessible to all people: those with disabilities and those without. We must think about people with visual, auditory, physical, speech, cognitive and neurological disabilities and ensure that we deliver the best experience we possibly can to everyone. Accessibility best practices also make content more easily digestible by search engines. Increasingly, basic accessibility can even be a legal requirement. In all cases, an accessible web benefits everyone.</p>
+
+<h3 id="accessibility-standards">Accessibility Standards</h3>
+<p>At a minimum, all 10up projects should pass <a href="https://www.w3.org/WAI/intro/wcag">WCAG 2.1 Level A Standards</a>. A baseline compliance goal of Level A is due to <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">WCAG guideline 1.4.3</a> which requires a minimum contrast ratio on text and images, as 10up does not always control the design of a project.</p>
+
+<p>For design projects and projects with a global marketplace (companies with entities outside the US), Level AA should be the baseline goal. The accessibility level is elevated for global markets to properly comply with <a href="http://mandate376.standards.eu/standard/technical-requirements/#9">EU Functional Accessibility Requirements</a>, which aligns closely with WCAG 2.0 Level AA. Having direct access to the designer also allows for greater accessibility standards to be achieved.</p>
+
+<p>While <a href="https://www.section508.gov/">Section 508</a> is the US standard, following the guidance of WCAG 2.0 will help a project pass Section 508 and also maintain a consistent internal standard. If a project specifically requires Section 508, additional confirmation testing can be done.</p>
+
+<h3 id="states-and-properties">States and Properties</h3>
+<p>ARIA also allows us to describe certain inherent properties of elements, as well as their various states. Imagine you’ve designed a site where the main content area is split into three tabs. When the user first visits the site, the first tab will be the primary one, but how does a screen reader get to the second tab? How does it know which tab is active? How does it know which element is a tab in the first place?</p>
+
+<p>ARIA attributes can be added dynamically with JavaScript to help add context to your content. Thinking about the tabbed content example, it might look something like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#first-tab"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-selected=</span><span class="s">"true"</span> <span class="na">id=</span><span class="s">"tab-panel-1"</span><span class="nt">&gt;</span>Panel 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#second-tab"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-selected=</span><span class="s">"false"</span> <span class="na">id=</span><span class="s">"tab-panel-2"</span><span class="nt">&gt;</span>Panel 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span> <span class="na">aria-labelledby=</span><span class="s">"tab-panel-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"first-tab"</span><span class="nt">&gt;</span>Tab Panel Heading<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">aria-labelledby=</span><span class="s">"tab-panel-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"second-tab"</span><span class="nt">&gt;</span>Second Tab Panel Heading<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>You can see how effortless it is to make our tabbed interface accessible to screen readers. Be sure to add visibility attributes like <code class="language-plaintext highlighter-rouge">aria-hidden</code> with JavaScript. If it is added manually in HTML and JavaScript doesn’t load, the content will be completely removed from screen readers.</p>
+
+<h3 id="accessible-forms">Accessible Forms</h3>
+<p>Forms are one of the biggest challenges when it comes to accessibility. Fortunately, there are a few key things that we can do to ensure they meet accessibility standards:</p>
+
+<p>Each form field should have its own <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>. The label element, along with the <code class="language-plaintext highlighter-rouge">for</code> attribute, can help explicitly associate a label to a form element adding readability for screen readers and assistive technology.</p>
+
+<p>Form elements should also be logically grouped using the <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code> element. Grouped form elements can be helpful for users who depend on screen readers or those with cognitive disabilities.</p>
+
+<p>Finally, we should ensure that all interactive elements are keyboard navigable, providing easy use for people with vision or mobility disabilities (or those not able to use a mouse). In general, the tab order should be dictated by a logical source order of elements. If you feel the need to change the tab order of certain elements, it likely indicates that you should rework the markup to flow in a logical order or have a conversation with the designer about updates that can be made to the layout to improve accessibility.</p>
+
+<h3 id="bypass-blocks">Bypass Blocks</h3>
+
+<p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">Bypass blocks</a> are HTML flags within a document that allow users that rely on screen readers, keyboard navigation or other assistive technologies to <em>bypass</em> certain page elements or <em>skip</em> to a specific section of a page with ease. They most often manifest themselves in the form of <a href="https://webaim.org/techniques/skipnav/">skip links</a> and <a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page">ARIA landmark roles</a></p>
+
+<h4 id="skip-links">Skip Links</h4>
+<p>Skip links are ideally placed immediately inside of the <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> tag so that they are discovered and announced as early as possible.</p>
+
+<p>While these links are often used to skip to a page’s main content section they can link to different sections of the page if necessary and several links can be added if multiple areas of interest are in the page.</p>
+
+<p>An example of what a skip link might look like in a template file:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"skip-link screen-reader-text"</span> <span class="na">href=</span><span class="s">"#main"</span><span class="nt">&gt;</span>
+  <span class="cp">&lt;?php esc_html_e( 'Skip to content', 'my-domain' ); ?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>Skip links make use of CSS to hide them from sighted users while keeping them accessible for screen readers. Usually the styles are attached to a <code class="language-plaintext highlighter-rouge">screen-reader-text</code> class of some kind. This CSS is used to position the links off the screen then use <code class="language-plaintext highlighter-rouge">:focus</code> styles to make the link visible for sighted keyboard users.</p>
+
+<p>Due to some browsers <a href="https://axesslab.com/skip-links/">not moving keyboard focus when they move visual focus</a>, it is essential to also enhance this feature with JavaScript. The popular Underscores starter theme <a href="https://github.com/Automattic/_s/blob/master/js/skip-link-focus-fix.js">comes bundled with a good option</a> that can be used as a starting point.</p>
+
+<h4 id="aria-landmark-roles">ARIA Landmark Roles</h4>
+
+<p>ARIA is a descriptive layer on top of HTML to be used by screen readers. It has no effect on how elements are displayed or behave in browsers. We use these ARIA Landmark Roles (banner, navigation, main, etc.) to provide a better experience to users with disabilities. Landmark role are another type of bypass block. Screen readers can see these as major document regions and navigate to them directly without having to parse through all the content in between.</p>
+
+<p>Landmark roles should be used with skip links (not instead of), so we can be sure and offer support for older assistive technology platforms that may not yet support the specification.</p>
+
+<p>Example:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  { Site Banner }
+  <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>{ Main Navigation }<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;main</span> <span class="na">role=</span><span class="s">"main"</span><span class="nt">&gt;</span>{ Main content }<span class="nt">&lt;/main&gt;</span>
+<span class="nt">&lt;footer</span> <span class="na">role=</span><span class="s">"contentinfo"</span><span class="nt">&gt;</span>{ Site Footer }<span class="nt">&lt;/footer&gt;</span>
+</code></pre></div></div>
+
+<h3 id="automated-testing">Automated Testing</h3>
+<p>In most cases, maintaining baseline accessibility requirements for a project can be an automated process. While we can’t test everything, and we still need some manual testing, there are certain tools that allow us to keep our finger on the pulse of a project’s accessibility compliance.</p>
+
+<p>Automating accessibility tests is easy with a tool like <a href="https://github.com/pa11y/pa11y">pa11y</a>, which is a command line tool that runs <a href="http://squizlabs.github.io/HTML_CodeSniffer/">HTML Code Sniffer</a> over a URL.</p>
+
+<p>It is easily installed through npm: <code class="language-plaintext highlighter-rouge">npm install pa11y --save-dev</code> and can be added into a <code class="language-plaintext highlighter-rouge">package.json</code> file as a separate npm script as to not collide with other build processes that may be running on a project:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">scripts</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">pa11y</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pa11y --ignore notice https://projectname.test</span><span class="dl">"</span>
+<span class="p">},</span>
+</code></pre></div></div>
+
+<p>Running this process allows the engineer to be alerted if a code-level or design change violates the project’s accessibility standards.</p>
+
+<h3 id="manual-testing">Manual Testing</h3>
+<p>Automated testing will often only get you so far; that is why we also recommend getting a human’s eye on the accessibility in a project and executing manual tests alongside any automation. This process is largely done by an engineer reviewing the interface in a browser or screen reader and involves running your project through all of the WCAG guidelines at the compliance level that is applicable to your specific project (A, AA, or AAA). The <a href="https://www.w3.org/WAI/WCAG20/quickref/">WCAG Quickref</a> is a great place to see all these guidelines in one place. Internally, we also have a spreadsheet template to help manage this process.</p>
+
+<p>Manual accessibility testing should be run in conjunction with automated testing to help identify all the potential areas of improvement on a project as well as resolve false-positives that may appear during the automated testing process. Tests should be run on a reasonable sample size of templates to help produce the most comprehensive analysis possible - preferably the same templates used in the automated testing process.</p>
+
+<p>Combining automated and manual testing practices allows 10up to maintain a high level of compliance on all projects and it is critical to the work we do.</p>
+
+<h2 id="structure" class="anchor-heading">Structure <a class="subhead-anchor" href="#structure"><span>#structure</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+
+<p>At 10up, we pride ourselves in writing clean, semantic markup. Semantic markup can be defined as: “the use of HTML markup to reinforce the semantics, or meaning, of the information in web pages rather than merely to define it’s presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to human users” (definition from Wikipedia -<a href="https://en.wikipedia.org/wiki/Semantic_HTML">https://en.wikipedia.org/wiki/Semantic_HTML</a>).</p>
+
+<p>Semantic elements are elements with clearly defined meaning to both the browser and the developer. Elements like <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code>, or <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code> do a much better job of explaining the content that is contained within the element than <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>. This does not mean that we do not use <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>s in our markup, only that we prefer the right tool (or in this case semantic element) for the job.</p>
+
+<h3 id="minimal--valid">Minimal &amp; Valid</h3>
+<p>Websites should be written using the least amount of markup that accomplishes the goal. In the interest of engineering maintainable projects, it’s imperative that two completely different types of readers are accounted for: humans and browsers. Writing minimal markup makes it easier for developers to read and understand in a code editor. Valid markup is easier for browsers to process.</p>
+
+<p>We test our markup against the <a href="https://validator.w3.org/">W3C validator</a> to ensure that it is well formed and provides a fairly consistent experience across browsers.</p>
+
+<h3 id="optimize-readability">Optimize Readability</h3>
+<p>At 10up, we often work with large codebases. As such, it’s important to optimize markup for human readability. This allows developers to quickly rotate in and out of projects, eases onboarding processes, and improves code maintainability.</p>
+
+<p>Always use tabs for indentation. Doing this allows developers to set their editor preferences for tab width.</p>
+
+<p>When mixing PHP and HTML together, indent PHP blocks to match the surrounding HTML code. Closing PHP blocks should match the same indentation level as the opening block. Similarly, keep PHP blocks to a minimum inside markup. Doing this turns the PHP blocks into a type of tag themselves. Use colon syntax for PHP loops and conditionals so that it’s easier to see when a certain loop ends within the block of markup.</p>
+
+<h4 id="examples">Examples</h4>
+
+<p>Bad:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+<span class="cp">&lt;?php</span>
+<span class="k">foreach</span><span class="p">(</span> <span class="nv">$things</span> <span class="k">as</span> <span class="nv">$thing</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="k">echo</span> <span class="s1">'&lt;li&gt;'</span> <span class="mf">.</span> <span class="nf">esc_html</span><span class="p">(</span> <span class="nv">$thing</span> <span class="p">)</span> <span class="mf">.</span> <span class="s1">'&lt;/li&gt;'</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Good:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="k">foreach</span><span class="p">(</span> <span class="nv">$things</span> <span class="k">as</span> <span class="nv">$thing</span> <span class="p">)</span> <span class="o">:</span> <span class="cp">?&gt;</span>
+        <span class="nt">&lt;li&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_html</span><span class="p">(</span> <span class="nv">$thing</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/li&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<h3 id="avoid-unnecessary-presentational-markup">Avoid Unnecessary Presentational Markup</h3>
+<p>As part of our mission to write clean, semantic markup, avoid writing unnecessary presentational markup. Markup should always dictate what the content is, and CSS should dictate how the content looks. Mixing these two concerns makes maintaining code more difficult.</p>
+
+<p>This is not to say that multiple classes on an element are unacceptable. Contextual modifier classes are certainly acceptable and encouraged.</p>
+
+<h3 id="schemaorg-markup">Schema.org Markup</h3>
+<p><a href="https://schema.org">Schema.org</a> is the result of collaboration between Google, Bing, Yandex, and Yahoo! to provide the information their search engines need to understand content and provide the best search results possible. Adding Schema.org data to your HTML provides search engines with structured data they can use to improve the way pages display in search results.</p>
+
+<p>For example, if you’ve ever searched for a restaurant and found that it had star reviews in its search results, this is a product of Schema.org and rich snippets.</p>
+
+<p>Schema.org data is intended to tell the search engines what your data <em>means</em>, not just what it says.</p>
+
+<p>To this end, we use Schema.org data where relevant and reasonable to ensure that our clients have the best search visibility that we can provide.</p>
+
+<p>Schema.org data can be provided in two forms: “microdata” markup added to a page’s structure or a JSON-LD format. Google prefers developers adopt JSON-LD, which isolates the data provided for search engines from the markup meant for user agents. Even though the JSON-LD spec allows linking to data in an external file, search engines currently only parse JSON-LD data when it appears within a <code class="language-plaintext highlighter-rouge">&lt;script type="application/ld+json"&gt;</code> tag, as shown below.</p>
+
+<p>Schema.org markup should be validated against the <a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Structured Data Testing Tool</a>.</p>
+
+<p>For examples of Schema markup on components, check out the <a href="https://10up.github.io/wp-component-library/">10up WordPress Component Library</a></p>
+
+<h3 id="classes--ids">Classes &amp; IDs</h3>
+<p>In order to create more maintainable projects, developers should use classes for CSS and IDs for JavaScript. Separating concerns allows markup to be more flexible without risking breaking both styles and any JavaScript that may be attached to the element on which someone is working.</p>
+
+<p>When using JavaScript to target specific elements in your markup, prefix the ID of the element that is being targeted with <code class="language-plaintext highlighter-rouge">js-</code>. This indicates the element is being targeted by JavaScript for your future self as well as other developers that may work on the project.</p>
+
+<h2 id="polyfills" class="anchor-heading">Feature Detection and Polyfills <a class="subhead-anchor" href="#polyfills"><span>#polyfills</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+ <a class="back-to-top" href="#top">back to top</a></h2>
+
+<h3 id="polyfills">Polyfills</h3>
+<p>When writing markup that does not have wide browser support, using polyfills can help bring that functionality to those older browsers. Providing support for older browsers is incredibly important to the business objectives of our clients. In an effort to prevent code bloat, we only provide polyfills for features that are functionally critical to a site.</p>
+
+<h3 id="feature-detection">Feature Detection</h3>
+<p>At 10up, the concept of feature detection is used to test browser support for new features that do not yet have full support across the board. The concept of feature detection is to test if a feature is supported by the browser and if not supported, conditionality run code to provide a similar experience with browsers that do support the feature. While popular <a href="https://modernizr.com/">feature detection libraries</a> exist, there are <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection#JavaScript">feature detection techniques</a> for JavaScript and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports">@supports</a> at-rule for CSS that can be utilized.</p>
+
+<h2 id="media" class="anchor-heading">Media <a class="subhead-anchor" href="#media"><span>#media</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+<p>If accessibility starts with HTML, media is how we make it come alive. Creating accessible media is not only the responsibility of an editorial team, but it is our responsibility as engineers to ensure the systems we put in place promote and support the creation of accessible media. It can generally be put into three buckets: images, audio, and video. When looking for direction in these areas we turn to the rules laid out by the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a>.</p>
+
+<p>To read more about any of the guidelines outlined in this section, please visit the <a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG quickref document</a>. Some of the more aggressive guidelines in Level AAA are not mentioned here. Be sure to check with your project lead about the accessibility compliance level you need to follow.</p>
+
+<h3 id="images">Images</h3>
+<p>Images are the most common for of media we encounter in our day to day work. WCAG guidelines pertaining to images are: <a href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content">1.1.1 Non-text content</a> and <a href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text">1.4.4 Images of text</a>. Following these two rules will ensure that our images always have alternative text and any time text is represented in an image there is always a purely text-based version of it available for users of assistive technology.</p>
+
+<h3 id="audio--video">Audio &amp; Video</h3>
+<p>Between audio and video, we certainly deal with video more often, but there are some WCAG guidelines that encompass both, such as: <a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded">1.2.2 Audio/Video-only</a> and <a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded">1.2.3 Audio Descriptions or Media Alternative</a>. Both these guidelines address the creation of text-based versions of the media being presented to a user. This typically comes in the form of an audio track on a video, or a transcript outputted on the page somewhere. As an aside, outputting a transcript will help the content get indexed by search engines, rather than just having the content inside a media element (audio/video)</p>
+
+<h3 id="audio">Audio</h3>
+<p>Audio is an important part of the work we do; making that content accessible to all users is extremely valuable. Guideline <a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control">1.4.1 Audio Control</a> is related to autoplaying audio. The general rule is: don’t autoplay audio. However, if you do,  and that audio is playing for more than three seconds 1.4.1 states that either a mechanism must be available to pause or stop the audio, or a mechanism must be available to control audio volume independently from the overall system volume level. This is important for any user with and auditory disorder.</p>
+
+<h3 id="video">Video</h3>
+<p>When putting video on the Web (that contains dialog), <a href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded">guideline 1.2.2</a> states that captions must be present, without exception. While we can’t always control the content that’s placed on a site, we can be sure to guide clients towards a situation for compliance but suggesting transcription services. Other than alternative text, dealing with captions is the most common media accessibility issue you’ll likely have to deal with.</p>
+
+<h2 id="svg" class="anchor-heading">SVG <a class="subhead-anchor" href="#svg"><span>#svg</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-link" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M13.757 19.868a1.62 1.62 0 0 1-1.149-.476c-2.973-2.973-2.973-7.81 0-10.783l6-6C20.048 1.169 21.963.376 24 .376s3.951.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743a1.624 1.624 0 1 1-2.298-2.298l2.743-2.743a4.38 4.38 0 0 0 0-6.187c-.826-.826-1.925-1.281-3.094-1.281s-2.267.455-3.094 1.281l-6 6a4.38 4.38 0 0 0 0 6.187 1.624 1.624 0 0 1-1.149 2.774z" /><path d="M8 31.625a7.575 7.575 0 0 1-5.392-2.233c-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743a1.624 1.624 0 1 1 2.298 2.298l-2.743 2.743a4.38 4.38 0 0 0 0 6.187c.826.826 1.925 1.281 3.094 1.281s2.267-.455 3.094-1.281l6-6a4.38 4.38 0 0 0 0-6.187 1.624 1.624 0 1 1 2.298-2.298c2.973 2.973 2.973 7.81 0 10.783l-6 6A7.575 7.575 0 0 1 8 31.625z" /></svg>
+</a>
+</h2>
+<p><abbr title="Scaleable Vector Graphic">SVG</abbr> has become a prevalent means for displaying rich vector graphics. <abbr>SVG</abbr> images are great for graphics with well-defined lines and simple color palettes that can be defined algorithmically, e.g. logos, iconography, and illustrations. Here are a few known benefits of SVG:</p>
+
+<ul>
+  <li><strong>Scalability</strong> - They look great on retina displays and at any size, i.e. they’re resolution independent.</li>
+  <li><strong>File Size</strong> - Small file size and compresses well.</li>
+  <li><strong>Styling</strong> - Manipulate fill, stroke, and even animate.</li>
+</ul>
+
+<p>Be mindful that SVGs have potential limitations as well:</p>
+
+<ul>
+  <li>Adding unvetted <abbr>SVG</abbr> graphics to a page has the potential to introduce a security vulnerability. This is why WordPress does not allow uploading of <abbr>SVG</abbr> by default. Read: <a href="https://bjornjohansen.no/svg-in-wordpress"><abbr>SVG</abbr> uploads in WordPress (the Inconvenient Truth)</a> for more information.</li>
+  <li>SVG is <strong>not</strong> ideal for photographic images or images with complex visual data. In this case, raster formats (JPG, PNG, GIF) will be a better choice.</li>
+  <li>Raster images should <em>not</em> be converted to <abbr>SVG</abbr>. It will likely result in a raster image being embedded within the SVG document, which will not provide the same affordances (i.e. <abbr>CSS</abbr> manipulation) as a genuine <abbr>SVG</abbr>. For further reading on vector vs. raster formats, and when to use each: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">Adding vector graphics to the Web</a>.</li>
+</ul>
+
+<h3 id="svg-sprites"><abbr>SVG</abbr> Sprites</h3>
+
+<p>Combining <abbr>SVG</abbr> images in a single file (usually called <code class="language-plaintext highlighter-rouge">svg-defs.svg</code>) has the benefit of helping limit <abbr title="HyperText Transfer Protocol">HTTP</abbr> requests within a document that contains multiple icons. An <abbr>SVG</abbr> sprite file can be embedded  within a document and referenced within the template source with a <code class="language-plaintext highlighter-rouge">&lt;use&gt;</code> element. The creation of this icon system should be automated through your build process. Read <a href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon Systems with SVG Sprites</a> for more information.</p>
+
+<h3 id="svg-embedded-in-html">SVG embedded in HTML</h3>
+
+<p>When placing an <abbr>SVG</abbr> in markup (i.e. inline) be sure to use the following guidelines:</p>
+
+<ul>
+  <li>If the <abbr>SVG</abbr> is purely <strong>decorative</strong>:
+    <ul>
+      <li>An empty <code class="language-plaintext highlighter-rouge">alt=""</code> can be used: <code class="language-plaintext highlighter-rouge">&lt;img alt=""&gt;</code>, or</li>
+      <li>Use <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes to hide the element from assistive technologies: <code class="language-plaintext highlighter-rouge">&lt;svg aria-hidden="true"&gt;</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>If the <abbr>SVG</abbr> is <strong>meaningful</strong> then use <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> and possibly even <code class="language-plaintext highlighter-rouge">&lt;desc&gt;</code> or <code class="language-plaintext highlighter-rouge">aria-label</code> to describe the graphic. Also, be sure to add an <code class="language-plaintext highlighter-rouge">id</code> to each element, and appropriate <abbr>ARIA</abbr> to overcome a known bug in <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=231654&amp;q=SVG%20%20title%20attribute&amp;colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified">Chrome</a> and <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1151648">Firefox</a>.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c">&lt;!-- role="img" to exclude image from being traversed by certain browsers w/ group role --&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">aria-labelledby=</span><span class="s">"uniqueTitleID uniqueDescID"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;title</span> <span class="na">id=</span><span class="s">"uniqueTitleID"</span><span class="nt">&gt;</span>The Title<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;desc</span> <span class="na">id=</span><span class="s">"uniqueDescID"</span><span class="nt">&gt;</span>Description goes here...<span class="nt">&lt;/desc&gt;</span>
+  <span class="nt">&lt;/svg&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use <code class="language-plaintext highlighter-rouge">aria-label</code> if the SVG is linked and has no supporting text.</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://twitter.com/10up"</span> <span class="na">aria-label=</span><span class="s">"Follow 10up on Twitter"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;svg&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#icon-twitter"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Use <a href="https://css-tricks.com/accessible-svgs/#article-header-id-20">media queries to provide fallbacks for Windows and High Contrast Mode</a>.</li>
+</ul>
+
+<h3 id="optimization">Optimization</h3>
+
+<p>Many tools for creating SVG are notorious for including unnecessary markup. We recommend running all <abbr>SVG</abbr> through <a href="https://jakearchibald.github.io/svgomg/">SVGO(MG)</a> or using tooling, like <a href="https://github.com/ben-eb/gulp-svgmin">gulp-svgmin</a></p>
+
+<h3 id="further-reading">Further reading:</h3>
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial"><abbr>SVG</abbr> Tutorial</a> - MDN web docs</li>
+  <li><a href="https://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/">An Overview of SVG Sprite Creation Techniques</a></li>
+  <li><a href="https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/">Using ARIA to enhance <abbr>SVG</abbr> accessibility</a> - The Paciello Group</li>
+  <li><a href="https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/">Accessible <abbr>SVG</abbr> Icons with Inline Sprites</a> 24 Accessibility</li>
+  <li><a href="https://weboverhauls.github.io/demos/svg/">Accessible <abbr>SVG</abbr> test page</a></li>
+  <li><a href="https://www.deque.com/blog/creating-accessible-svgs/">Creating Accessible SVGs</a> Deque.com</li>
+  <li><a href="https://css-tricks.com/accessible-svgs/">Accessible SVGs</a> - CSSTricks.com</li>
+</ul>
+
+</div>
+
+
+    <div class="footer-about">
+	<div class="footer-about-inner">
+
+		<div class="cta-careers">
+			Already doing all this?<br>
+			<a href="https://10up.com/careers" class="button party-blue">Careers at 10up</a>
+
+		</div>
+
+		<div class="license">
+			<p>
+				Open source, MIT licensed.<br>
+				Copyright 2021
+				<a href="https://twitter.com/10up">@10up</a> | <a href="https://10up.com/blog/2018/engineering-practices-accessibility-standards/">Accessibility Statement</a></p>
+		</div>
+	</div>
+</div>
+<footer role="contentinfo">
+	<div class="page-footer-content">
+		<a href="https://10up.com" class="logo-link">10up</a>
+		<nav class="page-nav expanded" role="navigation" aria-label="footer-navigation">
+			<ul>
+				<li><a href="https://10up.com">10up.com</a></li>
+			</ul>
+			<div class="footer-social social-networks">
+				<a href="https://twitter.com/10up" class="twitter"><span class="screen-reader-text">Twitter: @10up</span></a>
+				<a href="https://github.com/10up" class="github"><span class="screen-reader-text">Github</span></a>
+			</div>
+		</nav>
+	</div>
+</footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+  </body>
+</html>
