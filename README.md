@@ -1,5 +1,5 @@
 ## 👋 Hi, I’m Muhammad Farhan   *An 🗣️enthusiastic ,  🧠curious, 🚀innovative  & 🧗🏾‍♀️passionate about making technology purposeful and sellable*.   
-- To give you a bit of perspective of my expertise for realtime mission critical systems & processes that cover all of the design, implementation, verification & deployment. Over a decade, I have spent thousands of man hours in managing operarions & developing & industrial graded systems & realtime solution for large scale procecessing
+- - To give you a bit of perspective of my expertise for Realtime mission critical systems & processes that cover all of the design, implementation, verification & deployment. Over a decade, I have spent thousands of man hours in managing operations & developing & industrial graded systems & Realtime solution for large scale processing
 ###  AI & Data Intelligence Systems 
     - Industrial IoT Systems
     - Data intelligence & AI workflows
