@@ -1,5 +1,44 @@
 ## 👋 Hi, I’m Muhammad Farhan   *An 🗣️enthusiastic ,  🧠curious, 🚀innovative  & 🧗🏾‍♀️passionate about making technology purposeful and sellable*.   
 - - To give you a bit of perspective of my expertise for Realtime mission critical systems & processes that cover all of the design, implementation, verification & deployment. Over a decade, I have spent thousands of man hours in managing operations & developing & industrial graded systems & Realtime solution for large scale processing
+ 
+## AI Architect (Quality Assurance) Highly responsible & naturally curious SQA professional with over 15 years of demonstrated success, 
+- - supported by strong credentials of releasing commercially viable products and solutions to customers in timely and cost effectively manner.
+
+  I spent more than 10,000 hours in software industry leading teams, meeting challenging timelines, delivering complex feature-sets within hybrid team delivery models, over last 5 years I have brought my focus to add contextual intelligence, autonomous control and design modularity in current QA landscape by leveraging AI ↗, Automation and Machine Learning capabilities. Please see newsletter “AI accelerated quality”↗ newsletter on LinkedIn.
+⦁ NLP application for Generative AI based LLM Model to scale up test development, coverage and overall execution speed
+⦁ RAG and file embedding to serve⦁  specialized⦁  ⦁ engineering ⦁ copilot cases↗, intended to add test effectiveness and reusability aspects.
+⦁ Better recovery and Less failovers with autonomous healing agents 
+⦁ Enhancing observability and monitoring capability for application analytics
+⦁ Self-Healing & supervised services
+⦁ Anomaly detection and event reporting
+⦁ Access to real-time and history data
+⦁ External data connectors for pulling data.
+⦁ By utilizing Machine Learning, acoustic and vision monitoring 
+⦁ Recommendation Systems
+⦁ Predictive Analytics
+⦁ Inference engine / Anomaly Detection
+  Comprehensive, team player 
+I understand all of technical and domain-specific details, and able to 
+Collaborate and build mutual agreements across the board
+⦁ Speedy resolutions to common SDLC challenges 
+⦁ Risk assessment, mitigation & management reporting
+  Key technology expert and team leadership roles at Siemens, 
+Mentor Graphics and Intech Process Automation 
+  Practical, usable and repeatable automation  
+Apply continuous automation techniques and verification checkpoints 
+Within release workflows, testing pipelines and external source dependencies 
+to assure that deliverable meet timelines, and adhere to the highest standards
+of quality, availability and maintainability.
+ 
+Vulnerability management, Supply chain assurance & Cybersecurity 2.0
+Extensive knowledge & working experience in secured by design format, I have performed detailed assessments, security goals, targets definition, mitigation plan and continuous automated compliance checks with NIST and OSWAP provided criteria / checklists.
+⦁ Identity and Access Right Management (Zero Trust and TLS)
+⦁ Technical risk assessment and Project Risk classification (TRA, PSS)
+⦁ Devices and application penetration score  (Pen testing)
+⦁ Data privacy and confidentiality.(GDPR)
+⦁ Export & Custom control (ECC) 
+⦁ compliant health & safety auxiliaries, 
+⦁ Known providers’ checklists and best practices
 ###  AI & Data Intelligence Systems 
     - Industrial IoT Systems
     - Data intelligence & AI workflows
