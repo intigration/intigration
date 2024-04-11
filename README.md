@@ -46,6 +46,8 @@ Extensive knowledge & working experience in secured by design format, I have per
        - Model training & deployment
     -Industrial AI & 🤖Robotics
 ---
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/vrFekps3ETJcT9?startSlide=1" width="670" height="715" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/technologies-ai-machine-learning-predictive-analytics-iiot-cloudwebframeworks-data-simulation-and-virtualization/267217262" title="(Technologies) AI, Machine Learning, Predictive Analytics, IIOT, Cloud,Web-frameworks, Data Simulation and Virtualization" target="_blank">(Technologies) AI, Machine Learning, Predictive Analytics, IIOT, Cloud,Web-frameworks, Data Simulation and Virtualization</a></strong> from <strong><a href="https://www.slideshare.net/FarhanTariq1" target="_blank">Muhammad Farhan</a></strong></div>
+
 [![Muhammad Farhan's GitHub Stats](https://awesome-github-stats.azurewebsites.net/user-stats/intigration?cardType=level&?theme=graywhite&preferLogin=true&Background=DD6F2C41&Title=FFFCFC&Text=DDDDDD)](https://github.com/intigration)
 
 <h3 align="left">Languages and Tools:</h3>
