@@ -3,8 +3,6 @@
  
 ## AI Architect (Quality Assurance) Highly responsible & naturally curious SQA professional with over 15 years of demonstrated success, 
 - - supported by strong credentials of releasing commercially viable products and solutions to customers in timely and cost effectively manner.
-
-  I spent more than 10,000 hours in software industry leading teams, meeting challenging timelines, delivering complex feature-sets within hybrid team delivery models, over last 5 years I have brought my focus to add contextual intelligence, autonomous control and design modularity in current QA landscape by leveraging AI ↗, Automation and Machine Learning capabilities. Please see newsletter “AI accelerated quality”↗ newsletter on LinkedIn.
 ⦁ NLP application for Generative AI based LLM Model to scale up test development, coverage and overall execution speed
 ⦁ RAG and file embedding to serve⦁  specialized⦁  ⦁ engineering ⦁ copilot cases↗, intended to add test effectiveness and reusability aspects.
 ⦁ Better recovery and Less failovers with autonomous healing agents 
