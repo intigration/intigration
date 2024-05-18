@@ -54,8 +54,6 @@ Extensive knowledge & working experience in secured by design format, I have per
 ---
 
 👀 I’m interested in collaboration, learning and technology, I work for SIEMENS as key technology expert. Please see some of the highlights & 
-![collective-suucess](https://github.com/intigration/intigration/assets/25178774/e5aaf20b-1204-4619-8086-5cf8b2b2c93f)
 ---
 
-
-🤝[Let's get connect at linkedIn](https://www.linkedin.com/in/engr-farhan/)
+🤝[linkedIn](https://www.linkedin.com/in/engr-farhan/)
