@@ -38,7 +38,8 @@ Extensive knowledge & working experience in secured by design format, I have per
 ⦁ compliant health & safety auxiliaries, 
 ⦁ Known providers’ checklists and best practices
 
-## Frontend Technologies & Frameworks
+### Built With
+
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
@@ -47,6 +48,8 @@ Extensive knowledge & working experience in secured by design format, I have per
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ###  AI & Data Intelligence Systems 
