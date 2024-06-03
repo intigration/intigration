@@ -37,6 +37,18 @@ Extensive knowledge & working experience in secured by design format, I have per
 ⦁ Export & Custom control (ECC) 
 ⦁ compliant health & safety auxiliaries, 
 ⦁ Known providers’ checklists and best practices
+
+## Frontend Technologies & Frameworks
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+
+
 ###  AI & Data Intelligence Systems 
     - Industrial IoT Systems
     - Data intelligence & AI workflows
