@@ -1,8 +1,30 @@
 ## 👋 Hi, I’m Muhammad Farhan   *An 🗣️enthusiastic ,  🧠curious, 🚀innovative  & 🧗🏾‍♀️passionate about making technology purposeful and sellable*.   
 - - To give you a bit of perspective of my expertise for Realtime mission critical systems & processes that cover all of the design, implementation, verification & deployment. Over a decade, I have spent thousands of man hours in managing operations & developing & industrial graded systems & Realtime solution for large scale processing
  
-## AI Architect (Quality Assurance) Highly responsible & naturally curious SQA professional with over 15 years of demonstrated success, 
-- - supported by strong credentials of releasing commercially viable products and solutions to customers in timely and cost effectively manner.
+<!-- ## AI Architect (Quality Assurance) Highly responsible & naturally curious SQA professional with over 15 years of demonstrated success, 
+
+- - supported by strong credentials of releasing commercially viable products and solutions to customers in timely and cost effectively manner. -->
+▶ As a seasoned Full Stack Development Engineer with over 10 years of practical development experience, with strong analytical skills and expertise in broad range of technologies.
+
+▶ Demonstrated ability to create innovative AI solutions for diverse applications such as natural language processing, computer vision, and autonomous systems.
+
+▶ Having hands on product development experience in IoT domain, specifically covered back-end development using Java, Python and related open source technologies.
+
+▶ Experience in Agile software development using SCRUM.
+
+▶ Expertise in Python, JavaScript, TypeScript, ReactJS, VueJS, Selenium, Postman, Playwright, Electron, Angular, Spring, ReadyAPI, Hibernate, MongoDB, MySQL and Cassandra.
+
+▶ Proficient in design and development of software applications especially in software as a service (SaaS) layer and micro-services.
+
+▶ Exposed to designing system level database, restful services.
+
+▶ Having hands on experience in build automation using Jenkins, Gitlab CI, Circle CI
+
+Throughout my career, I have successfully led and contributed to numerous projects, from inception through deployment, consistently ensuring optimal performance, security, and user experience. My proficiency in agile methodologies and collaborative environments enables me to work effectively within diverse teams, driving innovation and continuous improvement.
+
+"Self-reflection is key to purposeful testing."
+
+In spare time, I would like to go on long drive with family or friends.
 ⦁ NLP application for Generative AI based LLM Model to scale up test development, coverage and overall execution speed
 ⦁ RAG and file embedding to serve⦁  specialized⦁  ⦁ engineering ⦁ copilot cases↗, intended to add test effectiveness and reusability aspects.
 ⦁ Better recovery and Less failovers with autonomous healing agents 
