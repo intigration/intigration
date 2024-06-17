@@ -19,7 +19,7 @@
 ▶ Exposed to designing system level database, restful services.
 
 ▶ Having hands on experience in build automation using Jenkins, Gitlab CI, Circle CI
-
+<img src="13.06.2024_02.02.48_REC.png" alt="MarineGEO circle logo" style="height: 600px; width:700px;"/>
 Throughout my career, I have successfully led and contributed to numerous projects, from inception through deployment, consistently ensuring optimal performance, security, and user experience. My proficiency in agile methodologies and collaborative environments enables me to work effectively within diverse teams, driving innovation and continuous improvement.
 
 "Self-reflection is key to purposeful testing."
