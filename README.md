@@ -7,6 +7,7 @@
 ▶ As a seasoned Full Stack Development Engineer with over 10 years of practical development experience, with strong analytical skills and expertise in broad range of technologies.
 
 ▶ Demonstrated ability to create innovative AI solutions for diverse applications such as natural language processing, computer vision, and autonomous systems.
+<img src="play.png" alt="MarineGEO circle logo" style="height: 600px; width:1200px;"/>
 
 ▶ Having hands on product development experience in IoT domain, specifically covered back-end development using Java, Python and related open source technologies.
 
