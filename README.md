@@ -23,33 +23,66 @@
 <img src="13.06.2024_02.02.48_REC.png" alt="MarineGEO circle logo" style="height: 600px; width:1200px;"/>
 Throughout my career, I have successfully led and contributed to numerous projects, from inception through deployment, consistently ensuring optimal performance, security, and user experience. My proficiency in agile methodologies and collaborative environments enables me to work effectively within diverse teams, driving innovation and continuous improvement.
 
+Sure, here is your content converted into a markdown list:
+
+- **NLP application for Generative AI based LLM Model**
+  - Scale up test development
+  - Increase coverage
+  - Improve overall execution speed
+
+- **RAG and file embedding**
+  - Serve specialized engineering copilot cases
+  - Add test effectiveness and reusability aspects
+
+- **Better recovery and less failovers**
+  - Autonomous healing agents
+
+- **Enhancing observability and monitoring capability**
+  - Application analytics
+
+- **Self-Healing & supervised services**
+
+- **Anomaly detection and event reporting**
+
+- **Access to real-time and historical data**
+
+- **External data connectors**
+  - Pulling data
+
+- **Utilizing Machine Learning**
+  - Acoustic monitoring
+  - Vision monitoring
+
+- **Recommendation Systems**
+
+- **Predictive Analytics**
+
+- **Inference engine / Anomaly Detection**
+
+- **Skills and Collaboration**
+  - Comprehensive, team player
+  - Understanding of technical and domain-specific details
+  - Ability to collaborate and build mutual agreements across the board
+
+- **Speedy resolutions to common SDLC challenges**
+
+- **Risk assessment, mitigation & management reporting**
+
+- **Key technology expert and team leadership roles**
+  - Siemens
+  - Mentor Graphics
+  - Intech Process Automation
+
+- **Practical, usable and repeatable automation**
+  - Apply continuous automation techniques and verification checkpoints
+  - Within release workflows, testing pipelines, and external source dependencies
+  - Assure deliverables meet timelines
+  - Adhere to the highest standards of quality, availability, and maintainabilit
+
 "Self-reflection is key to purposeful testing."
 
 In spare time, I would like to go on long drive with family or friends.
-⦁ NLP application for Generative AI based LLM Model to scale up test development, coverage and overall execution speed
-⦁ RAG and file embedding to serve⦁  specialized⦁  ⦁ engineering ⦁ copilot cases↗, intended to add test effectiveness and reusability aspects.
-⦁ Better recovery and Less failovers with autonomous healing agents 
-⦁ Enhancing observability and monitoring capability for application analytics
-⦁ Self-Healing & supervised services
-⦁ Anomaly detection and event reporting
-⦁ Access to real-time and history data
-⦁ External data connectors for pulling data.
-⦁ By utilizing Machine Learning, acoustic and vision monitoring 
-⦁ Recommendation Systems
-⦁ Predictive Analytics
-⦁ Inference engine / Anomaly Detection
-  Comprehensive, team player 
-I understand all of technical and domain-specific details, and able to 
-Collaborate and build mutual agreements across the board
-⦁ Speedy resolutions to common SDLC challenges 
-⦁ Risk assessment, mitigation & management reporting
-  Key technology expert and team leadership roles at Siemens, 
-Mentor Graphics and Intech Process Automation 
-  Practical, usable and repeatable automation  
-Apply continuous automation techniques and verification checkpoints 
-Within release workflows, testing pipelines and external source dependencies 
-to assure that deliverable meet timelines, and adhere to the highest standards
-of quality, availability and maintainability.
+
  
 Vulnerability management, Supply chain assurance & Cybersecurity 2.0
 Extensive knowledge & working experience in secured by design format, I have performed detailed assessments, security goals, targets definition, mitigation plan and continuous automated compliance checks with NIST and OSWAP provided criteria / checklists.
