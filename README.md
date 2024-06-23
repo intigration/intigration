@@ -7,7 +7,7 @@
 ▶ As a seasoned Full Stack Development Engineer with over 10 years of practical development experience, with strong analytical skills and expertise in broad range of technologies.
 
 ▶ Demonstrated ability to create innovative AI solutions for diverse applications such as natural language processing, computer vision, and autonomous systems.
-<img src="play.png" alt="play" style="height: 350px; width:700px;"/>
+<img src="play.png" alt="play" style="height: 350px; width:850px;"/>
 
 ▶ Having hands on product development experience in IoT domain, specifically covered back-end development using Java, Python and related open source technologies.
 
@@ -22,8 +22,6 @@
 ▶ Having hands on experience in build automation using Jenkins, Gitlab CI, Circle CI
 <img src="13.06.2024_02.02.48_REC.png" alt="MarineGEO circle logo" style="height: 350px; width:1200px;"/>
 Throughout my career, I have successfully led and contributed to numerous projects, from inception through deployment, consistently ensuring optimal performance, security, and user experience. My proficiency in agile methodologies and collaborative environments enables me to work effectively within diverse teams, driving innovation and continuous improvement.
-
-Sure, here is your content converted into a markdown list:
 
 - **NLP application for Generative AI based LLM Model**
   - Scale up test development
