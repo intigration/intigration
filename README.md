@@ -82,6 +82,7 @@ Throughout my career, I have successfully led and contributed to numerous projec
 
 In spare time, I would like to go on long drive with family or friends.
 <h2>Some beautifull cities around the world I visited:</h2>
+
 ```geojson
 
 { "type": "FeatureCollection",
