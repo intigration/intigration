@@ -83,7 +83,80 @@ Throughout my career, I have successfully led and contributed to numerous projec
 In spare time, I would like to go on long drive with family or friends.
 <h2>Some beautifull cities around the world I visited:</h2>
 ```geojson
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"coordinates":[74.31480784312367,31.575163021123416],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[39.77676390702942,21.474255414563075],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[39.21760112478512,21.572830323156055],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[39.5916838864959,24.476489026098136],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[12.446693675723395,41.895843876460106],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[12.345557589991586,45.45498554280363],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[9.167435136547653,45.47596656507983],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[8.540890198150379,47.3769035772186],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[11.090229350443536,49.45475451226915],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[11.000417102659924,49.60507235023783],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[11.582190193645488,48.13578384511584],"type":"Point"}},{"type":"Feature","properties":{},"geometry":{"coordinates":[28.76223124502937,41.016614540316795],"type":"Point"},"id":11},{"type":"Feature","properties":{},"geometry":{"coordinates":[67.40450602705667,24.882320441375768],"type":"Point"}}]}
+
+{ "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.31480784312,
+              31.57516302112
+            ],
+            [
+              39.77676390703,
+              21.47425541456
+            ],
+            [
+              39.21760112479,
+              21.57283032316
+            ],
+            [
+              39.5916838865,
+              24.4764890261
+            ],
+            [
+              12.44669367572,
+              41.89584387646
+            ],
+            [
+              12.34555758999,
+              45.4549855428
+            ],
+            [
+              9.167435136548,
+              45.47596656508
+            ],
+            [
+              8.54089019815,
+              47.37690357722
+            ],
+            [
+              11.09022935044,
+              49.45475451227
+            ],
+            [
+              11.00041710266,
+              49.60507235024
+            ],
+            [
+              11.58219019365,
+              48.13578384512
+            ],
+            [
+              28.76223124503,
+              41.01661454032
+            ],
+            [
+              67.40450602706,
+              24.88232044138
+            ],
+             [
+              74.31480784312,
+              31.57516302112
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
 ```
 
 Vulnerability management, Supply chain assurance & Cybersecurity 2.0
