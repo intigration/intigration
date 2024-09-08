@@ -5,7 +5,7 @@
 
 - - supported by strong credentials of releasing commercially viable products and solutions to customers in timely and cost effectively manner. -->
 >[!NOTE]
-▶ As a seasoned Full Stack Development Engineer with over 10 years of practical development experience, with strong analytical skills and expertise in broad range of technologies.
+▶ As a seasoned Systems and Data Engineer with over 14 years of practical development experience, with strong analytical skills and expertise in broad range of technologies.
 
 ▶ Demonstrated ability to create innovative AI solutions for diverse applications such as natural language processing, computer vision, and autonomous systems.
 <img src="play.png" alt="play" style="height: 350px; width:850px;"/>
