@@ -1,84 +1,28 @@
-## 👋 Hi, I’m Muhammad Farhan   *An 🗣️enthusiastic ,  🧠curious, 🚀innovative  & 🧗🏾‍♀️passionate about making technology purposeful and sellable*.   
+## 👋 *An 
+  🗣️enthusiastic ,  
+        🧠curious, 🚀
+               innovative  
+                   🧗🏾‍♀️passionate 
+   about making technology purposeful and sellable*.   
 - - To give you a bit of perspective of my expertise for Realtime mission critical systems & processes that cover all of the design, implementation, verification & deployment. Over a decade, I have spent thousands of man hours in managing operations & developing & industrial graded systems & Realtime solution for large scale processing
  
 <!-- ## AI Architect (Quality Assurance) Highly responsible & naturally curious SQA professional with over 15 years of demonstrated success, 
 
 - - supported by strong credentials of releasing commercially viable products and solutions to customers in timely and cost effectively manner. -->
->[!NOTE]
-▶ As a seasoned Systems and Data Engineer with over 14 years of practical development experience, with strong analytical skills and expertise in broad range of technologies.
-
-▶ Demonstrated ability to create innovative AI solutions for diverse applications such as natural language processing, computer vision, and autonomous systems.
+▶  Hi, I’m Muhammad Farhan. a seasoned Engineer with over 14 years of practical experience,  
+    ▶ strong ownership skills
+    ▶ expertise in broad range of technologies.
+  ▶ Agile software development using SCRUM.
+▶ I make solutions for diverse applications of autonomous systems.
 <img src="play.png" alt="play" style="height: 350px; width:850px;"/>
-
-▶ Having hands on product development experience in IoT domain, specifically covered back-end development using Java, Python and related open source technologies.
-
-▶ Experience in Agile software development using SCRUM.
-
-▶ Expertise in Python, JavaScript, TypeScript, ReactJS, VueJS, Selenium, Postman, Playwright, Electron, Angular, Spring, ReadyAPI, Hibernate, MongoDB, MySQL and Cassandra.
-
-▶ Proficient in design and development of software applications especially in software as a service (SaaS) layer and micro-services.
-
-▶ Exposed to designing system level database, restful services.
-
-▶ Having hands on experience in build automation using Jenkins, Gitlab CI, Circle CI
+   ▶ experience in building high performing teams 
+     ▶ designing system level database, restful services.
+     ▶ software as a service (SaaS) layer and micro-services.
+  
+  
+  
 <img src="13.06.2024_02.02.48_REC.png" alt="MarineGEO circle logo" style="height: 350px; width:1200px;"/>
-Throughout my career, I have successfully led and contributed to numerous projects, from inception through deployment, consistently ensuring optimal performance, security, and user experience. My proficiency in agile methodologies and collaborative environments enables me to work effectively within diverse teams, driving innovation and continuous improvement.
 
-- **NLP application for Generative AI based LLM Model**
-  - Scale up test development
-  - Increase coverage
-  - Improve overall execution speed
-
-- **RAG and file embedding**
-  - Serve specialized engineering copilot cases
-  - Add test effectiveness and reusability aspects
-
-- **Better recovery and less failovers**
-  - Autonomous healing agents
-
-- **Enhancing observability and monitoring capability**
-  - Application analytics
-
-- **Self-Healing & supervised services**
-
-- **Anomaly detection and event reporting**
-
-- **Access to real-time and historical data**
-
-- **External data connectors**
-  - Pulling data
-
-- **Utilizing Machine Learning**
-  - Acoustic monitoring
-  - Vision monitoring
-
-- **Recommendation Systems**
-
-- **Predictive Analytics**
-
-- **Inference engine / Anomaly Detection**
-
-- **Skills and Collaboration**
-  - Comprehensive, team player
-  - Understanding of technical and domain-specific details
-  - Ability to collaborate and build mutual agreements across the board
-
-- **Speedy resolutions to common SDLC challenges**
-
-- **Risk assessment, mitigation & management reporting**
-
-- **Key technology expert and team leadership roles**
-  - Siemens
-  - Mentor Graphics
-  - Intech Process Automation
-
-- **Practical, usable and repeatable automation**
-  - Apply continuous automation techniques and verification checkpoints
-  - Within release workflows, testing pipelines, and external source dependencies
-  - Assure deliverables meet timelines
-  - Adhere to the highest standards of quality, availability, and maintainabilit
-
-"Self-reflection is key to purposeful testing."
 
 In spare time, I would like to go on long drive with family or friends.
 <h2>Some beautifull cities around the world I visited:</h2>
